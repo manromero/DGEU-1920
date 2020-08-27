@@ -1,8 +1,16 @@
 import React from 'react';
+import {createUseStyles} from 'react-jss';
 
-function App() {
+const useStyles = createUseStyles({
+  myDiv: {
+    backgroundColor: 'red'
+  }
+});
+
+const App = () => {
+  const classes = useStyles()
   return (
-    <div>
+    <div className={classes.myDiv}>
       Hello world
     </div>
   );
