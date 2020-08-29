@@ -1168,8 +1168,8 @@ const Body = () => {
                     </a>
                   </div>
 
-      TODO manromero reseñas clientes
-      <div className="a-fixed-left-grid-col a-col-right" style={{ paddingLeft: "3.5%", float: "left" }}>
+
+                  <div className="a-fixed-left-grid-col a-col-right" style={{ paddingLeft: "3.5%", float: "left" }}>
                     <div className="a-row">
                       <span className="a-text-bold">Libros de texto por colegio</span>
                     </div>
@@ -1594,20 +1594,8 @@ const Body = () => {
                   <div className="a-row cm_cr_grid_center_container">
                     <div className="a-fixed-right-grid-col cm_cr_grid_center_left" style={{ float: "left" }}></div>
                     <div className="a-fixed-right-grid-col cm_cr_grid_center_right" style={{ float: "left" }}>
-                      <span className="cr-widget-MedleyCustomerImages" data-hook="cr-widget-MedleyCustomerImages">
-                        <div className="a-popover-preload" id="a-popover-reviews-image-gallery">
-                          <div className="reviewLightboxPopoverContainer" data-hook="customer-images-modal">
-                            <div className="reviewsLightbox" id="reviews-image-gallery"></div>
-                          </div>
-                        </div>
-                        <CustomerImages />
-                      </span>
-                      <span className="cr-lazy-widget cr-summarization-lighthut" data-widget-name="cr-summarization-lighthut"><span className="cr-widget-Lighthut" data-hook="cr-widget-Lighthut">
-                        <div id="cr-dp-desktop-lighthut" className="cr-lighthut-boundary cr-lighthouse-anchor-buffer celwidget" data-cel-widget="cr-dp-desktop-lighthut" data-csa-c-id="qd3yxc-ag2bbw-isqlpw-plzqw">
-                          <ReviewsMetions />
-                        </div>
-                      </span>
-                      </span>
+                      <CustomerImages />
+                      <ReviewsMetions />
                       <Reviews />
                       <ReviewsInternationals />
                     </div>
@@ -1641,10 +1629,10 @@ const Body = () => {
                 </div>
               </div>
             </div>
-      
+
         </div>
 
         </div>
-      </React.Fragment>
-    );
+    </React.Fragment >
+  );
 }
