@@ -507,17 +507,8 @@ const MainProductInformation = () => {
       <div id="dynamicIframe_feature_div" className="celwidget" data-feature-name="dynamicIframe" data-csa-c-id="rahtmj-wrf1lu-kk11dv-18jibz" data-cel-widget="dynamicIframe_feature_div"></div>
       <div id="productOverview_feature_div" className="celwidget" data-feature-name="productOverview" data-csa-c-id="6xa6cv-y374z4-kjksdr-h4c4x0" data-cel-widget="productOverview_feature_div"></div>
       <div id="bookDescription_feature_div" className="celwidget" data-feature-name="bookDescription" data-csa-c-id="4qh2e0-ut9lvm-p4c30o-tizzk1" data-cel-widget="bookDescription_feature_div">
-        <noscript>
-          <div> <p>192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.</p> <p>De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.</p></div>
-          <em></em>
-        </noscript>
-        <div id="outer_postBodyPS" style={{ overflow: "hidden", zIndex: 1, height: "112px", display: "block" }}>
-          <div id="postBodyPS" style={{ overflow: "hidden" }}>
-            <div id="bookDesc_iframe_wrapper" className="maxReadableWidth">
-              <iframe id="bookDesc_iframe" className="ap_never_hide" width="100%" scrolling="no" style={{ height: "230px" }}></iframe>
-            </div>
-          </div>
-        </div>
+        <div> <p>192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.</p> <p>De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.</p></div>
+        <em></em>
         <div id="psPlaceHolder" style={{ height: "20px", display: "block" }}>
           <div style={{ zIndex: 3 }}>
             <a className="a-link-expander h2-expander">
