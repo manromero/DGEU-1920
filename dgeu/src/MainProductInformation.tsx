@@ -23,7 +23,7 @@ const MainProductInformation = () => {
           de
           <span className="author notFaded" data-width="">
             <span className="a-declarative" data-action="a-popover" data-a-popover="{&quot;closeButtonLabel&quot;:&quot;Cerrar mensaje emergente de diálogo de autor&quot;,&quot;name&quot;:&quot;contributor-info-B00JA7ZCES&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;popoverLabel&quot;:&quot;Mensaje emergente de diálogo de autor&quot;,&quot;allowLinkDefault&quot;:&quot;true&quot;}">
-              <a data-asin="B00JA7ZCES" className="a-link-normal contributorNameID" href="https://www.amazon.es/Santiago-Posteguillo/e/B00JA7ZCES/ref=dp_byline_cont_book_1">Santiago Posteguillo</a>
+              <a data-asin="B00JA7ZCES" className="a-link-normal contributorNameID" href="https://www.amazon.es/Santiago-Posteguillo/e/B00JA7ZCES/ref=dp_byline_cont_book_1"> Santiago Posteguillo</a>
               <a href="javascript:void(0)" className="a-popover-trigger a-declarative"><i className="a-icon a-icon-popover"></i></a>
             </span>
             <span className="contribution">
