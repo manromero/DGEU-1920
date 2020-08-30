@@ -36,6 +36,39 @@ const ArticlesToDiscover = () => {
       author: "Carmen Mola",
       cover: "Tapa blanda",
       price: "18,90 €"
+    },
+    {
+      title: "La última cripta",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL480_SR321,480_.jpg",
+      linkUrl: "https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      linkOpinions: "https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      numberOpinions: 1424,
+      rating: 4.0,
+      author: "Mr Fernando Gamboa",
+      cover: "Tapa blanda",
+      price: "20,68 €"
+    },
+    {
+      title: "El enigma de la habitación 622 (Literaturas)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg",
+      linkUrl: "https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      linkOpinions: "https://www.amazon.es/product-reviews/1481924699/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      numberOpinions: 456,
+      rating: 3.8,
+      author: "Joël Dicker",
+      cover: "Tapa blanda",
+      price: "21,75 €"
+    },
+    {
+      title: "El chico de las bobinas (Áncora &amp; Delfin)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL480_SR282,480_.jpg",
+      linkUrl: "https://www.amazon.es/chico-las-bobinas-%C3%81ncora-Delfin/dp/8423357171/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      linkOpinions: "https://www.amazon.es/product-reviews/8423357171/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      numberOpinions: 47,
+      rating: 4.7,
+      author: "Pere Cervantes",
+      cover: "Tapa blanda",
+      price: "19,85 €"
     }
   ];
 
@@ -91,70 +124,6 @@ const ArticlesToDiscover = () => {
                           price={art.price}
                         />
                       ))}
-                      <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-                        <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_4&quot;,&quot;asin&quot;:&quot;1481924699&quot;}" className="a-section a-spacing-none p13n-asin">
-                          <a className="a-link-normal" href="https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><div className="a-section a-spacing-mini">
-
-                            <img alt="La última cripta" src="https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL480_SR321,480_.jpg" className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="107" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL320_SR214,320_.jpg&quot;:[320,214],&quot;https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL160_SR107,160_.jpg&quot;:[160,107],&quot;https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL480_SR321,480_.jpg&quot;:[480,321]}" />
-
-                          </div>
-                            <div className="p13n-sc-truncated" aria-hidden="true" data-rows="3">La última cripta</div>
-                          </a>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-base">Mr Fernando Gamboa</span></div>
-                          <div className="a-icon-row a-spacing-none">
-                            <a className="a-link-normal" title="4,0 de un máximo de 5 estrellas" href="https://www.amazon.es/product-reviews/1481924699/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <i className="a-icon a-icon-star a-star-4 aok-align-top"><span className="a-icon-alt">4,0 de un máximo de 5 estrellas</span></i>
-                            </a>
-                            <a className="a-size-small a-link-normal" href="https://www.amazon.es/product-reviews/1481924699/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">1.424</a>
-                          </div>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-secondary">Tapa blanda</span></div><div className="a-row"><a className="a-link-normal a-text-normal" href="https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><span className="a-size-base a-color-price"><span className="p13n-sc-price">20,68&nbsp;€</span></span></a>   </div>
-                        </div>
-                      </li>
-                      <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-                        <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_5&quot;,&quot;asin&quot;:&quot;842043938X&quot;}" className="a-section a-spacing-none p13n-asin">
-                          <a className="a-link-normal" href="https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><div className="a-section a-spacing-mini">
-
-                            <img alt="El enigma de la habitación 622 (Literaturas)" src="https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg" className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="101" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg&quot;:[480,303],&quot;https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL320_SR202,320_.jpg&quot;:[320,202],&quot;https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL160_SR101,160_.jpg&quot;:[160,101]}" />
-
-                          </div>
-                            <div className="p13n-sc-truncated" aria-hidden="true" data-rows="3">El enigma de la habitación 622 (Literaturas)</div>
-                          </a>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-base">Joël Dicker</span></div>
-                          <div className="a-icon-row a-spacing-none">
-                            <a className="a-link-normal" title="3,8 de un máximo de 5 estrellas" href="https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <i className="a-icon a-icon-star a-star-4 aok-align-top"><span className="a-icon-alt">3,8 de un máximo de 5 estrellas</span></i>
-                            </a>
-                            <a className="a-size-small a-link-normal" href="https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">456</a>
-                          </div>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-secondary">Tapa blanda</span></div><div className="a-row"><a className="a-link-normal a-text-normal" href="https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><span className="a-size-base a-color-price"><span className="p13n-sc-price">21,75&nbsp;€</span></span></a>   </div>
-                        </div>
-                      </li><li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-                        <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_6&quot;,&quot;asin&quot;:&quot;8423357171&quot;}" className="a-section a-spacing-none p13n-asin">
-                          <a className="a-link-normal" href="https://www.amazon.es/chico-las-bobinas-%C3%81ncora-Delfin/dp/8423357171/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><div className="a-section a-spacing-mini">
-
-                            <img alt="El chico de las bobinas (Áncora &amp; Delfin)" src="https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL480_SR282,480_.jpg" className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="94" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL320_SR188,320_.jpg&quot;:[320,188],&quot;https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL480_SR282,480_.jpg&quot;:[480,282],&quot;https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL160_SR94,160_.jpg&quot;:[160,94]}" />
-                          </div>
-                            <div className="p13n-sc-truncated" aria-hidden="true" data-rows="3">El chico de las bobinas (Áncora &amp; Delfin)</div>
-                          </a>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-base">Pere Cervantes</span></div>
-                          <div className="a-icon-row a-spacing-none">
-                            <a className="a-link-normal" title="4,7 de un máximo de 5 estrellas" href="https://www.amazon.es/product-reviews/8423357171/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <i className="a-icon a-icon-star a-star-4-5 aok-align-top"><span className="a-icon-alt">4,7 de un máximo de 5 estrellas</span></i>
-                            </a>
-                            <a className="a-size-small a-link-normal" href="https://www.amazon.es/product-reviews/8423357171/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">47</a>
-                          </div>
-                          <div className="a-row a-size-small">
-                            <span className="a-size-small a-color-secondary">Tapa blanda</span>
-                          </div>
-                          <div className="a-row">
-                            <a className="a-link-normal a-text-normal" href="https://www.amazon.es/chico-las-bobinas-%C3%81ncora-Delfin/dp/8423357171/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <span className="a-size-base a-color-price">
-                                <span className="p13n-sc-price">19,85&nbsp;€</span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
                     </ol>
                   </div>
                 </div>
