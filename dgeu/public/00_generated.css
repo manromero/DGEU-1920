@@ -802,3 +802,34 @@ a.nav-npt-a {
 .bia-link-caret {
   color: #e47911;
 }
+
+div.fionaPublish {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/G/30/kindle/merch/global/kindle-widget-photo._CB485935390_.jpg');
+  background-repeat: no-repeat;
+  min-height: 8em;
+  height: auto  !important;
+  height: 8em;
+}
+
+div.fionaPublish div {
+  margin: 0 5px 0 69px;
+  font-size: 11px;
+}
+
+div.fionaRentalPublish {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/G/30/kindle/rentals/rent-book-promo-image._CB485918029_.png');
+  background-repeat: no-repeat;
+  min-height: 6em;
+  height: auto  !important;
+  height: 6em;
+}
+
+div.fionaRentalPublish div {
+  margin: 0 5px 0 110px;
+  font-size: 11px;
+}
+
+div.fionaPublishBox {
+  padding-top: 10px;
+  text-align: left;
+}

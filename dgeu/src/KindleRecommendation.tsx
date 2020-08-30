@@ -82,12 +82,12 @@ const KindleRecommendation = () => {
         <div id="fiona-publisher-signup-link" className="a-row a-spacing-medium a-size-small">
           <div className="fionaPublishBox">
             <div className="cBox grayBox">
-              <span className="cBoxTL">{'>'}</span>
-              <span className="cBoxTR">{'>'}</span>
-              <span className="cBoxR">{'>'}</span>
-              <span className="cBoxBL">{'>'}</span>
-              <span className="cBoxBR">{'>'}</span>
-              <span className="cBoxB">{'>'}</span>
+              <span className="cBoxTL"></span>
+              <span className="cBoxTR"></span>
+              <span className="cBoxR"></span>
+              <span className="cBoxBL"></span>
+              <span className="cBoxBR"></span>
+              <span className="cBoxB"></span>
               <div className="cBoxInner">
                 <div className="fionaPublish">
                   <div>
