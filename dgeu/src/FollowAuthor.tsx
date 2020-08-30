@@ -1,4 +1,5 @@
 import React from 'react';
+import ImgAuthor from './static/images/author.jpg';
 
 const FollowAuthor = () => {
   return (
@@ -11,7 +12,7 @@ const FollowAuthor = () => {
         <div className="a-column a-span3">
           <div className="a-section smallAuthorImageContainer">
             <a className="a-link-normal a-text-normal" href="https://www.amazon.es/Santiago-Posteguillo/e/B00JA7ZCES?ref_=dbs_p_pbk_r00_abau_000000">
-              <img alt="" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/fj3totl6ka7b27nl449543a6l7._SY600_.jpg" className="smallAuthorImage" />
+              <img alt="" src={ImgAuthor} className="smallAuthorImage" />
             </a>
           </div>
         </div>

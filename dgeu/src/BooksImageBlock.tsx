@@ -1,12 +1,10 @@
 import React from 'react';
+import ImgMinBook from './static/images/min_book.jpg';
 
 const BooksImageBlock = () => {
   return (
     <div id="booksImageBlock_feature_div" className="celwidget" data-feature-name="booksImageBlock" data-csa-c-id="x8kkg-hcfy8m-ghs8aa-sbr4xz" data-cel-widget="booksImageBlock_feature_div">
       <div id="imageBlockOuter" className="a-row">
-        <div id="sitbLogo" style={{ width: "137px", height: "19px", top: "10px", left: "107.188px" }}>
-          <img id="sitbLogoImg" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/sitb-sticker-v3-xsmall._CB485942735_.png" className="litb-on-click" />
-        </div>
         <div id="imageBlock" className="a-row" style={{ height: "361.6666666666667px" }}>
           <div id="imageBlockContainer" className="a-row a-grid-vertical-align a-grid-center maintain-height" style={{ height: "346px" }}>
             <div id="main-image-container" className="a-column a-span12 a-text-center maintain-height a-span-last">
@@ -58,7 +56,7 @@ const BooksImageBlock = () => {
         <div id="imageBlockThumbs" className="a-row a-spacing-mini a-spacing-top-micro">
           <span className="a-declarative" data-action="a-modal" data-a-modal="{&quot;name&quot;:&quot;imageGallery&quot;,&quot;header&quot;:&quot;Imágenes (1)&quot;,&quot;popoverLabel&quot;:&quot;&quot;,&quot;content&quot;:&quot;\u003cdiv id=\&quot;imgGalleryContent\&quot; className=\&quot;a-row\&quot;>\n\u003cdiv className=\&quot;a-column a-span8 a-text-center ig-main-image\&quot;>\n\u003cdiv className=\&quot;img-wrapper maintain-height\&quot;>\n\u003cdiv id=\&quot;igInner\&quot; className=\&quot;maintain-height zoomed-out\&quot; style=\&quot;height:200px;\&quot;>\n\u003cimg id=\&quot;igImage\&quot;>\n\u003cdiv className=\&quot;a-popover-loading-wrapper a-text-center loading-bar\&quot;>\n\u003cdiv className=\&quot;a-box a-color-base-background a-popover-loading\&quot;>\u003c\/div>\n\u003c\/div>\n\u003c\/div>\n\u003c\/div>\n\u003c\/div>\n\u003cdiv className=\&quot;a-column a-span4 ig-thumbs a-span-last\&quot;>\n\u003c\/div>\n\u003c\/div>\n\u003cscript type=\&quot;text/javascript\&quot;>\nP.register(\&quot;ImageGalleryMarkup\&quot;);\n\u003c\/script>&quot;}" id="imgThumbs">
             <div className="a-column a-span3 a-spacing-micro imageThumb thumb">
-              <img src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/4191OJsSR1L._AC_SX60_CR,0,0,60,60_.jpg" />
+              <img src={ImgMinBook} />
             </div>
             <span className="thumb-text thumb">
               <span className="a-color-link">Ver esta imagen</span>

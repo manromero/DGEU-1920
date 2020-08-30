@@ -187,15 +187,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="nav-right">
-            <div id="nav-swmslot">
-              <div id="navSwmHoliday" style={{ height: "39px", width: "400px", overflow: "hidden", position: "relative" }} data-cel-widget="nav_sitewide_msg">
-                <a aria-label="Prime Video" href="https://www.amazon.es/gp/redirect.html/?ie=UTF8&amp;location=https%3A%2F%2Fwww.primevideo.com%2F&amp;token=43572C242AECB0579ACDFEE2961E8E275761601B&amp;ref_=nav_swm_nav_swm_dvm_crs_swm_es_ts_unrec&amp;pf_rd_p=c9fabf70-6962-404b-aad8-cc7835b34600&amp;pf_rd_s=nav-sitewide-msg&amp;pf_rd_t=4201&amp;pf_rd_i=navbar-4201&amp;pf_rd_m=A1RKKUPIHCS9HS&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW" className="nav-imageHref" target="_blank" >
-                  <img alt="Prime Video" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/ES_SWM_400x39_FT_2._CB485921345_.jpg" />
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
         <div id="nav-subnav-toaster"></div>
         <div id="nav-subnav" data-category="books">

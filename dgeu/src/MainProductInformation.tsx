@@ -1,4 +1,5 @@
 import React from 'react';
+import ImgBooks from './static/images/books.jpg';
 
 const MainProductInformation = () => {
   return (
@@ -527,7 +528,7 @@ const MainProductInformation = () => {
             <div className="a-fixed-left-grid-inner" style={{ paddingLeft: "75px" }}>
               <div className="a-fixed-left-grid-col a-col-left" style={{ width: "75px", marginLeft: "-75px", float: "left" }}>
                 <a className="a-link-normal" href="https://librosdelcole.es/">
-                  <img alt="" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/Books_NYP_379x304._CB410090549_.jpg" height="75" width="75" />
+                  <img alt="" src={ImgBooks} height="75" width="75" />
                 </a>
               </div>
               <div className="a-fixed-left-grid-col a-col-right" style={{ paddingLeft: "3.5%", float: "left" }}>

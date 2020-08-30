@@ -16,10 +16,7 @@ const ArticlesToDiscover = () => {
                 <div className="a-column a-span4 a-span-last a-text-right">
                   <span className="a-carousel-pagination a-size-base" style={{ visibility: "visible" }}>
                     <span className="a-carousel-page-count">
-                      Página
-                      <span className="a-carousel-page-current">1</span>
-                      de
-                      <span className="a-carousel-page-max">16</span>
+                      Página <span className="a-carousel-page-current">1</span> de <span className="a-carousel-page-max">16</span>
                     </span>
                     <span className="a-carousel-restart-container" style={{ display: "none" }}>
                       <span className="a-text-separator"></span>

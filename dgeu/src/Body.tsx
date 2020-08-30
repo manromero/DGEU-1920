@@ -55,7 +55,7 @@ const Body = () => {
         <RelatedProducts />
         <PreloadPopUp />
         <ProductDescription />
-        <KindleRecommendation />
+        {/* <KindleRecommendation /> */}
         <ProductDetails />
         <div id="legal_feature_div" className="celwidget" data-feature-name="legal" data-csa-c-id="lsm0c7-lovfh3-fl195c-w2cgss" data-cel-widget="legal_feature_div">
         </div>

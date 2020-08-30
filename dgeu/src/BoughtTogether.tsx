@@ -1,4 +1,7 @@
 import React from 'react';
+import ImgBuyTogether1 from './static/images/buy_together_1.jpg';
+import ImgBuyTogether2 from './static/images/buy_together_2.jpg';
+import ImgBuyTogether3 from './static/images/buy_together_3.jpg';
 
 const BoughtTogether = () => {
   return (
@@ -17,7 +20,7 @@ const BoughtTogether = () => {
                   <li className="a-align-center sims-fbt-image-1">
                     <span className="a-list-item">
                       <div className="a-section">
-                        <img alt="Yo, Julia: Premio Planeta 2018 (Autores Españoles e Iberoamericanos)" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/91vOlX49DIL._AC_UL115_.jpg" className="sims-fbt-image" />
+                        <img alt="Yo, Julia: Premio Planeta 2018 (Autores Españoles e Iberoamericanos)" src={ImgBuyTogether1} className="sims-fbt-image" />
                       </div>
                     </span>
                   </li>
@@ -28,7 +31,7 @@ const BoughtTogether = () => {
                     <span className="a-list-item">
                       <a className="a-link-normal" href="https://www.amazon.es/Julia-dioses-Autores-Espa%C3%B1oles-Iberoamericanos/dp/8408224697/ref=pd_bxgy_img_2/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8408224697&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=yDUK0&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=12d945b9-5148-4c92-8c2a-6d4b36ee4de4&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
                         <div className="a-section">
-                          <img alt="Y Julia retó a los dioses: Cuando el enemigo es tu propio hijo..., ¿existe la victoria? (Autores Españoles e Iberoamericanos)" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/911XSy2BH9L._AC_UL115_.jpg" className="sims-fbt-image" />
+                          <img alt="Y Julia retó a los dioses: Cuando el enemigo es tu propio hijo..., ¿existe la victoria? (Autores Españoles e Iberoamericanos)" src={ImgBuyTogether2} className="sims-fbt-image" />
                         </div>
                       </a>
                     </span>
@@ -40,7 +43,7 @@ const BoughtTogether = () => {
                     <span className="a-list-item">
                       <a className="a-link-normal" href="https://www.amazon.es/Sidi-HISPANICA-Arturo-P%C3%A9rez-Reverte/dp/8420435473/ref=pd_bxgy_img_3/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8420435473&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=yDUK0&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=12d945b9-5148-4c92-8c2a-6d4b36ee4de4&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
                         <div className="a-section">
-                          <img alt="Sidi (Hispánica)" src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/71N6zowIrIL._AC_UL115_.jpg" className="sims-fbt-image" />
+                          <img alt="Sidi (Hispánica)" src={ImgBuyTogether3} className="sims-fbt-image" />
                         </div>
                       </a>
                     </span>

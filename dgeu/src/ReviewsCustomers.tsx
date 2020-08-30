@@ -1,4 +1,5 @@
 import React from 'react';
+import ImgDefaultUser from './static/images/default_user.png';
 
 const ReviewsCustomers = () => {
   return (
@@ -54,7 +55,7 @@ const ReviewsCustomers = () => {
                     <a href="https://www.amazon.es/gp/profile/amzn1.account.AF7VZANIMJ6KNCMNBJ3LAP3YDLMA/ref=cm_cr_dp_d_gw_tr?ie=UTF8" className="a-profile" data-a-size="small">
                       <div aria-hidden="true" className="a-profile-avatar-wrapper">
                         <div className="a-profile-avatar">
-                          <img src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/default._CR0,0,1024,1024_SX48_.png" className="" data-src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png" />
+                          <img src={ImgDefaultUser} className="" data-src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png" />
                           <noscript>
                             <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png" />
                           </noscript>
