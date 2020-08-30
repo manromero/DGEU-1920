@@ -1,6 +1,44 @@
 import React from 'react';
+import Article from './Article';
 
 const ArticlesToDiscover = () => {
+
+  const articles = [
+    {
+      title: "Un mar violeta oscuro: Finalista Premio Planeta 2018: 3 (Autores Españoles e Iberoamericanos)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL480_SR315,480_.jpg",
+      linkUrl: "https://www.amazon.es/mar-violeta-oscuro-Finalista-Iberoamericanos/dp/840819741X/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      linkOpinions: "https://www.amazon.es/product-reviews/840819741X/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      numberOpinions: 110,
+      rating: 4.3,
+      author: "Ayanta Barilli",
+      cover: "Tapa Dura",
+      price: "20,42 €"
+    },
+    {
+      title: "ql xvii la sangre de roma (Narrativas Históricas)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL480_SR312,480_.jpg",
+      linkUrl: "https://www.amazon.es/ql-xvii-sangre-roma/dp/8435063496/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      linkOpinions: "https://www.amazon.es/product-reviews/8435063496/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      numberOpinions: 39,
+      rating: 4.7,
+      author: "Simon Scarrow",
+      cover: "Tapa Dura",
+      price: "23,75 €"
+    },
+    {
+      title: "La novia gitana (La novia gitana 1)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL480_SR303,480_.jpg",
+      linkUrl: "https://www.amazon.es/novia-gitana-ALFAGUARA-NEGRA/dp/8420433187/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      linkOpinions: "https://www.amazon.es/product-reviews/8420433187/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+      numberOpinions: 759,
+      rating: 4.5,
+      author: "Carmen Mola",
+      cover: "Tapa blanda",
+      price: "18,90 €"
+    }
+  ];
+
   return (
     <div className="celwidget pd_rd_w-PWZ4h pf_rd_p-4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7 pf_rd_r-VBVEMCD60R9FPEJFGNHW pd_rd_r-c6b0e583-be80-4aa3-867d-b89df4127853 pd_rd_wg-nVWqQ" data-csa-c-id="1hepyn-9nt3gb-91itr4-2vher3" data-cel-widget="desktop-dp-sims_dpbmx2_ALL-single-bucket-0_5">
       <div id="p13n-m-desktop-dp-sims_dpbmx2.ALL-single-bucket-0.5-sims-feature-3" className="celwidget" data-csa-c-id="8lqtrn-rd1u6e-jhzdkn-knko9r" data-cel-widget="desktop-dp-sims_dpbmx2.ALL-single-bucket-0.5-sims-feature-3">
@@ -40,85 +78,20 @@ const ArticlesToDiscover = () => {
                 <div className="a-carousel-col a-carousel-center">
                   <div className="a-carousel-viewport" style={{ height: "294px" }} id="anonCarousel4">
                     <ol className="a-carousel" role="list">
+                      {articles.map(art => (
+                        <Article
+                          title={art.title}
+                          imgUrl={art.imgUrl}
+                          linkUrl={art.linkUrl}
+                          linkOpinions={art.linkOpinions}
+                          numberOpinions={art.numberOpinions}
+                          rating={art.rating}
+                          author={art.author}
+                          cover={art.cover}
+                          price={art.price}
+                        />
+                      ))}
                       <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-                        <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_1&quot;,&quot;asin&quot;:&quot;840819741X&quot;}" className="a-section a-spacing-none p13n-asin">
-                          <a className="a-link-normal" href="https://www.amazon.es/mar-violeta-oscuro-Finalista-Iberoamericanos/dp/840819741X/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                            <div className="a-section a-spacing-mini">
-                              <img alt="Un mar violeta oscuro: Finalista Premio Planeta 2018: 3 (Autores Españoles e Iberoamericanos)" src="https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL480_SR315,480_.jpg" className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="105" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL320_SR210,320_.jpg&quot;:[320,210],&quot;https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL480_SR315,480_.jpg&quot;:[480,315],&quot;https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL160_SR105,160_.jpg&quot;:[160,105]}" />
-                            </div>
-                            <div className="p13n-sc-truncated" aria-hidden="true" data-rows="3" title="Un mar violeta oscuro: Finalista Premio Planeta 2018: 3 (Autores Españoles e Iberoamericanos)">Un mar violeta oscuro: Finalista Premio Planeta 2018: 3 (Autores…</div>
-                          </a>
-                          <div className="a-row a-size-small">
-                            <span className="a-size-small a-color-base">Ayanta Barilli</span>
-                          </div>
-                          <div className="a-icon-row a-spacing-none">
-                            <a className="a-link-normal" title="4,3 de un máximo de 5 estrellas" href="https://www.amazon.es/product-reviews/840819741X/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <i className="a-icon a-icon-star a-star-4-5 aok-align-top"><span className="a-icon-alt">4,3 de un máximo de 5 estrellas</span></i>
-                            </a>
-                            <a className="a-size-small a-link-normal" href="https://www.amazon.es/product-reviews/840819741X/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">110</a>
-                          </div>
-                          <div className="a-row a-size-small">
-                            <span className="a-size-small a-color-secondary">Tapa dura</span>
-                          </div>
-                          <div className="a-row">
-                            <a className="a-link-normal a-text-normal" href="https://www.amazon.es/mar-violeta-oscuro-Finalista-Iberoamericanos/dp/840819741X/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <span className="a-size-base a-color-price">
-                                <span className="p13n-sc-price">20,42&nbsp;€</span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-                        <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_2&quot;,&quot;asin&quot;:&quot;8435063496&quot;}" className="a-section a-spacing-none p13n-asin">
-                          <a className="a-link-normal" href="https://www.amazon.es/ql-xvii-sangre-roma/dp/8435063496/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                            <div className="a-section a-spacing-mini">
-                              <img alt="ql xvii la sangre de roma (Narrativas Históricas)" src="https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL480_SR312,480_.jpg" className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="104" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL160_SR104,160_.jpg&quot;:[160,104],&quot;https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL480_SR312,480_.jpg&quot;:[480,312],&quot;https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL320_SR208,320_.jpg&quot;:[320,208]}" />
-                            </div>
-                            <div className="p13n-sc-truncated" aria-hidden="true" data-rows="3">ql xvii la sangre de roma (Narrativas Históricas)</div>
-                          </a>
-                          <div className="a-row a-size-small">
-                            <span className="a-size-small a-color-base">Simon Scarrow</span>
-                          </div>
-                          <div className="a-icon-row a-spacing-none">
-                            <a className="a-link-normal" title="4,7 de un máximo de 5 estrellas" href="https://www.amazon.es/product-reviews/8435063496/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <i className="a-icon a-icon-star a-star-4-5 aok-align-top">
-                                <span className="a-icon-alt">4,7 de un máximo de 5 estrellas</span>
-                              </i>
-                            </a>
-                            <a className="a-size-small a-link-normal" href="https://www.amazon.es/product-reviews/8435063496/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">39</a>
-                          </div>
-                          <div className="a-row a-size-small">
-                            <span className="a-size-small a-color-secondary">Tapa dura</span>
-                          </div>
-                          <div className="a-row">
-                            <a className="a-link-normal a-text-normal" href="https://www.amazon.es/ql-xvii-sangre-roma/dp/8435063496/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <span className="a-size-base a-color-price">
-                                <span className="p13n-sc-price">23,75&nbsp;€</span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-                        <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_3&quot;,&quot;asin&quot;:&quot;8420433187&quot;}" className="a-section a-spacing-none p13n-asin">
-                          <a className="a-link-normal" href="https://www.amazon.es/novia-gitana-ALFAGUARA-NEGRA/dp/8420433187/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><div className="a-section a-spacing-mini">
-
-                            <img alt="La novia gitana (La novia gitana 1)" src="https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL480_SR303,480_.jpg" className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="101" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL480_SR303,480_.jpg&quot;:[480,303],&quot;https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL160_SR101,160_.jpg&quot;:[160,101],&quot;https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL320_SR202,320_.jpg&quot;:[320,202]}" />
-
-                          </div>
-                            <div className="p13n-sc-truncated" aria-hidden="true" data-rows="3">La novia gitana (La novia gitana 1)</div>
-                          </a>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-base">Carmen Mola</span></div>
-                          <div className="a-icon-row a-spacing-none">
-                            <a className="a-link-normal" title="4,5 de un máximo de 5 estrellas" href="https://www.amazon.es/product-reviews/8420433187/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">
-                              <i className="a-icon a-icon-star a-star-4-5 aok-align-top"><span className="a-icon-alt">4,5 de un máximo de 5 estrellas</span></i>
-                            </a>
-                            <a className="a-size-small a-link-normal" href="https://www.amazon.es/product-reviews/8420433187/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW">759</a>
-                          </div>
-                          <div className="a-row a-size-small"><span className="a-size-small a-color-secondary">Tapa blanda</span></div><div className="a-row"><a className="a-link-normal a-text-normal" href="https://www.amazon.es/novia-gitana-ALFAGUARA-NEGRA/dp/8420433187/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><span className="a-size-base a-color-price"><span className="p13n-sc-price">18,90&nbsp;€</span></span></a>   </div>
-                        </div>
-                      </li><li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
                         <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_4&quot;,&quot;asin&quot;:&quot;1481924699&quot;}" className="a-section a-spacing-none p13n-asin">
                           <a className="a-link-normal" href="https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><div className="a-section a-spacing-mini">
 
@@ -136,7 +109,8 @@ const ArticlesToDiscover = () => {
                           </div>
                           <div className="a-row a-size-small"><span className="a-size-small a-color-secondary">Tapa blanda</span></div><div className="a-row"><a className="a-link-normal a-text-normal" href="https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><span className="a-size-base a-color-price"><span className="p13n-sc-price">20,68&nbsp;€</span></span></a>   </div>
                         </div>
-                      </li><li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
+                      </li>
+                      <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
                         <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_5&quot;,&quot;asin&quot;:&quot;842043938X&quot;}" className="a-section a-spacing-none p13n-asin">
                           <a className="a-link-normal" href="https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW"><div className="a-section a-spacing-mini">
 
