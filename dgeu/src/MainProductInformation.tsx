@@ -1,23 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ImgBooks from './static/images/books.jpg';
+import MainProductTitle from './MainProductTitle';
 
 const MainProductInformation = () => {
+
+  const [readMore, setReadMore] = useState(false);
+
   return (
     <div id="centerCol" className="centerColumn">
       <div id="qpeTitleTag_feature_div" className="celwidget" data-feature-name="qpeTitleTag" data-csa-c-id="9vrxse-fb5s2x-1kzx0f-vg3oc" data-cel-widget="qpeTitleTag_feature_div">
       </div>
-      <div id="titleblock_feature_div" className="celwidget" data-feature-name="titleblock" data-csa-c-id="kbhgy7-r8tp5s-s8w2vz-8zuy7m" data-cel-widget="titleblock_feature_div">
-        <div className="a-section a-spacing-none">
-          <h1 id="title" className="a-spacing-none a-text-normal">
-            <span id="productTitle" className="a-size-extra-large">
-              Yo, Julia: Premio Planeta 2018 (Autores Españoles e Iberoamericanos)
-            </span>
-            <span id="productSubtitle" className="a-size-large a-color-secondary">
-              (Español) Tapa dura – 6 noviembre 2018
-            </span>
-          </h1>
-        </div>
-      </div>
+      <MainProductTitle />
       <div id="bylineInfo_feature_div" className="celwidget" data-feature-name="bylineInfo" data-csa-c-id="866dkm-njwzze-j8m38o-y9mqzv" data-cel-widget="bylineInfo_feature_div">
         <div id="bylineInfo" className="a-section a-spacing-micro bylineHidden feature" data-cel-widget="bylineInfo">
           de
@@ -508,14 +501,22 @@ const MainProductInformation = () => {
       <div id="dynamicIframe_feature_div" className="celwidget" data-feature-name="dynamicIframe" data-csa-c-id="rahtmj-wrf1lu-kk11dv-18jibz" data-cel-widget="dynamicIframe_feature_div"></div>
       <div id="productOverview_feature_div" className="celwidget" data-feature-name="productOverview" data-csa-c-id="6xa6cv-y374z4-kjksdr-h4c4x0" data-cel-widget="productOverview_feature_div"></div>
       <div id="bookDescription_feature_div" className="celwidget" data-feature-name="bookDescription" data-csa-c-id="4qh2e0-ut9lvm-p4c30o-tizzk1" data-cel-widget="bookDescription_feature_div">
-        <div> <p>192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.</p> <p>De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.</p></div>
+        <div>
+          <p>192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.</p>
+          {readMore ? (
+            <p>De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.</p>
+          ) : null}
+        </div>
         <em></em>
         <div id="psPlaceHolder" style={{ height: "20px", display: "block" }}>
           <div style={{ zIndex: 3 }}>
-            <a className="a-link-expander h2-expander">
+            <a className="a-link-expander h2-expander" onClick={() => setReadMore(!readMore)}>
               <i id="bdExpanderIcon" className="a-icon a-icon-expand" role="img"></i>
-              <span id="bdSeeAllPrompt" style={{ display: "block" }}>Leer más</span>
-              <span id="bdSeeLessPrompt" style={{ display: "none" }}>Leer menos</span>
+              {readMore ? (
+                <span id="bdSeeLessPrompt" style={{ display: "block" }}>Leer menos</span>
+              ) : (
+                  <span id="bdSeeAllPrompt" style={{ display: "block" }}>Leer más</span>
+                )}
             </a>
           </div>
         </div>
