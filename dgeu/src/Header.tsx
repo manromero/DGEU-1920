@@ -78,7 +78,7 @@ const Header = () => {
                 </div>
                 <div className="nav-fill">
                   <div className="nav-search-field ">
-                    <input type="text" id="twotabsearchtextbox" value="yo julia" name="field-keywords" placeholder="" className="nav-input" dir="auto" aria-label="Buscar" />
+                    <input type="text" id="twotabsearchtextbox" value="" name="field-keywords" placeholder="" className="nav-input" dir="auto" aria-label="Buscar" />
                   </div>
                   <div id="nav-iss-attach"></div>
                 </div>

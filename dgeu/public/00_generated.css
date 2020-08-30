@@ -1,0 +1,804 @@
+
+#upsell-container.buybox {
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(0,0,0,.1);
+}
+  
+#upsell-container .imgPadding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#upsell-container .borrowbutton {
+  display: block;
+  width: 100%;
+}
+
+#bbop-sbbop-container {
+  margin-bottom: 0px;
+}
+ 
+#bbopAndCartBox .a-box-inner {
+/* #00A8E1 */
+}
+
+#bbopAndCartBox #bbop-sbbop-container {
+    margin-bottom: 12px !important;
+}
+
+#bbop-sbbop-container {
+    margin-bottom: 12px !important;
+}
+
+#bbop {
+    /* background-color: #3191af; dark blue #0079AF or light blue #00A8E1 */
+    padding: 1px;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    text-align: center;
+}
+
+#bbop-title {
+    background-color: #CCC; /* light green #ADE421 or blue-green #36C2B4 or green #51a451 */
+    font-weight: bold;
+    font-size: 12.5px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#bbop .a-checkbox label, #bbop .a-radio label {
+    /* color: white; */
+    padding: 0px;
+    margin-right: -3px;
+    top: 0px;
+    position: relative;
+}
+
+#bbopAndCartBox {
+    margin-bottom: 10px !important;
+    background-color: rgb(246, 246, 246) !important;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+#bbopAndCartBox #bbop {
+    font-size: 12px;
+    margin-bottom: 0px !important;
+}
+
+#bbop #bbopCheckboxSection label {
+    font-weight: bold;
+}
+
+#bbop-check-box {
+    margin: 0px;
+    top: 8px;
+    left: 16px;
+    z-index: 1;
+    float: left;
+    position: absolute;
+}
+
+.prime-bbop-logo img {
+    width: 100px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.registry-button-width {
+  width:100%;
+  /* margin-left: ;
+  margin-right: ; */
+}
+.add-to-baby-button-spacing-bottom {
+  margin-bottom: 0;
+}
+/*
+* Fix for UDP-1061. Average customer reviews has a small extra line on hover
+* https://omni-grok.amazon.com/xref/src/appgroup/websiteTemplates/retail/SoftlinesDetailPageAssets/udp-intl-lock/src/legacy.css?indexName=WebsiteTemplates#40
+*/
+.noUnderline a:hover {
+  text-decoration: none;
+}
+
+#a-page div.unified_widget.rcmBody {
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    line-height: 1.4 em;
+}
+#a-page div.unified_widget.rcmBody h2 {
+    font-size:135%; 
+    font-weight:bold;
+    margin:0 0 0.35em 0px;
+    color:#E47911; 
+    padding:0;
+}
+#a-page div.unified_widget.rcmBody .headline {
+    color: #E47911;
+    font-size: .92em;
+    display: block;
+    font-weight: bold;
+}
+#a-page div.unified_widget.rcmBody p {
+    margin:0 0 0.5em 0;
+    line-height:1.4em;
+}
+#a-page div.unified_widget.rcmBody a {
+    color: #004B91;
+    text-decoration: underline;
+}
+#a-page div.unified_widget.rcmBody a:active {
+    color: #FF9933;
+}
+#a-page div.unified_widget.rcmBody a:visited {
+    color: #996633;
+}
+#a-page div.unified_widget.rcmBody hr {
+    border-top: ridge;
+    margin: 0px;
+}
+#a-page div.unified_widget.rcmBody ul {
+    list-style-position: inside;
+    margin: 1em 0;
+    padding: 0 0 0 30px;
+    color: #111;
+}
+#a-page div.unified_widget.rcmBody ul li {
+    list-style: disc;
+}
+#a-page div.unified_widget.rcmBody div.bannerImage {
+    text-align: center;
+}
+#a-page div.unified_widget.rcmBody .carat {
+    font-weight: bold;
+    font-size: 120%;
+    color: #E47911;
+    margin-right: 0.2em;
+    font-family: verdana,arial,helvetica,sans-serif;
+}
+#a-page div.unified_widget.rcmBody div.prodImage {
+    margin: 0 0.5em 0.25em 0;
+    float: left;
+}
+
+    
+.sp_large_format_widgetTitle_asinImage_spacing {     margin-bottom: 40px; } .sp_large_format_asinImage_productDescription_spacing {     margin-bottom: 30px; } .sp_large_format_carousel {     height: 461px; } .sp_large_format_offerVertical {     height: 375px; } .sp_book_carousel_header {     margin-bottom: 10px; } .sp_badge_spacing_above_image {     margin-top: 0px;     margin-bottom: 5px; } .sp_badge_spacing_below_image {     margin-top: 6px;     margin-bottom: 6px; } .sp_invisible_badge {     visibility: hidden; } .sp_prime_wardrobe_badge {     position: relative;     top: 2px; } .sp_softline_brand_line {     margin-top: 16px;     font-size: 16px;     color: #555555;     margin-bottom: 12px;     display: inline-block; } .sp_softline_oneline_title {     white-space: nowrap;     overflow: hidden;     text-overflow: ellipsis; } .sp_softline_large_image_container {     padding-top: 130%;     position: relative;     margin-bottom: 4px; } .sp_softline_large_image_faceout {     position: absolute;     max-width: 100%;     max-height: 100%;     margin: auto;     top: 0;     bottom: 0;     left: 0;     right: 0; } .unified_ad_labeling_title_margin {     margin-bottom: 0; } .sp_desktop_sponsored_label {     font-size: 11px;     line-height: 11px;     font-family: AmazonEmber,"Amazon Ember",Arial,sans-serif;     font-weight: normal;     margin-top: 4px !important;     margin-bottom: 7px !important; }
+
+.sp_amazon_certified_text {     font-size: 13px;     color: #C45500; } .sp_works_with_alexa {     font-size: 13px;     color: #111111; }
+    
+.sp_ppu_string {     vertical-align:bottom;     display: inline-block; }
+    
+.inner-container
+{
+    text-align:center;
+}
+
+.kcpAppBaseBox_{
+    text-align:center;
+    padding:10px 0;
+    font-size:0.85em;
+}
+  
+.kcpAppBaseBox_ .kcpAppDesc{
+    text-align: center;
+    padding: 0;
+}
+  
+  
+.kcpAppBaseBox_ .kcpAppBaseHeader{
+    color: #c60;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+
+.kcpAppBaseBox_{
+    text-align:center;
+    padding:10px 0;
+    font-size:0.85em;
+}
+  
+.kcpAppBaseBox_ img, #kcpAppDirectURL img{
+    border: none;
+}
+
+.kcpAppsPopOverDialog_ .kcpApp-device {
+    display: block;
+    width: auto;
+    height: auto;
+    text-indent: -9000px; 
+}
+
+.kcpAppsPopOverDialog_ .kcpAppDeviceListItem{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+
+.kcpAppsPopOverDialog_ .kcpAppDeviceList .invisible{
+  display: none;
+}
+
+.kcpAppsPopOverDialog_{
+  font-size: 0.85em;
+  text-align: left;
+}
+
+.kcpAppsPopOverDialog_ ul{
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.kcpAppsPopOverDialog_ .kcpAppDeviceUL{
+  display: block;
+  margin: 0 0 0 1.5em;
+  box-sizing: border-box;
+}
+  
+.kcpAppsPopOverDialog_ .kcpAppDeviceList{
+  width: 150px;
+  display: inline;
+  margin: 0;
+  margin-right: 20px !important;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+  
+.kcpAppsPopOverDialog_ .kcpAppWidgetDetailDesc{
+  border-bottom: .15em groove threedface;
+  padding-bottom: .8em;
+}
+
+.kcpAppsPopOverDialog_ .kcpAppWidgetHeader{
+  color: #c60;
+  font-weight: bold;
+}
+
+.kcpAppsPopOverDialog_ .kcpAppWidgetInlineDiv{
+  display: inline-table;
+}
+
+.kcpAppsPopOverDialog_ .selectedElement{
+    width: 0; 
+    height: 0px; 
+    border-bottom: 20px solid #ccc; 
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent;
+    display: block;
+}
+
+.kcpAppBaseBox_ .kcpAppsPopOver{
+  cursor: hand;
+  cursor: pointer;
+}
+
+.kcpAppsPopOverDialog_ #kcpAppTinyImage{
+  width: 8.5em;
+  height: 3em;
+  padding-right: .5em;
+}
+
+#kcpAppDeliveryInProgress{
+  color: #c60;
+}
+
+#kcpAppDeliveryError {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+#kcpAppDeliverySuccess{
+    display: block;
+    color: green;
+    font-weight: bold;
+}
+
+#kcpAppDownloadMessage{
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.kcpAppsPopOverDialog_ #kcpApp-form, .kcpAppBaseBox_ #kcpApp-form{
+  background-color: transparent;
+  padding: 10px 0 10px 5px;
+  margin-bottom: 1em;
+}
+
+.kcpAppsPopOverDialog_ #kcpApp-form img{
+  vertical-align: middle;
+  cursor: hand;
+  cursor: pointer;
+}
+
+#kcpAppRecipient{
+  width: 20em;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding-left: 0.3em;
+  margin: 0 .5em 0 .5em;
+}
+
+.kcpAppsPopOverDialog_ .kcpAppWidgetFooterLinks td{
+  vertical-align: top;
+}
+
+.kcpAppsPopOverDialog_ .kcpAppWidgetFooterLinks table{
+  width: 90%;
+}
+
+.kcpAppsPopOverDialog_ .placeholder
+{
+  color: #aaa;
+}  
+
+.detail-bullets-wrapper ul.detail-bullet-list {
+margin: 0 0 1px 18px;
+}
+.detail-bullets-wrapper ul li {
+margin-bottom: 5.5px;
+}
+.detail-bullets-wrapper ul li .detail-bullet-label {
+color: #333;
+}
+.detail-bullets-wrapper:last-child {
+margin-bottom: 4.5px;
+}
+
+/*
+* Fix for UDP-1061. Average customer reviews has a small extra line on hover
+* https://omni-grok.amazon.com/xref/src/appgroup/websiteTemplates/retail/SoftlinesDetailPageAssets/udp-intl-lock/src/legacy.css?indexName=WebsiteTemplates#40
+*/
+.noUnderline a:hover {
+text-decoration: none;
+}
+ 
+.cr-lighthouse-anchor-buffer {
+  padding-top :  60px;
+  margin-top  : -60px;
+}
+
+.cr-lighthouse-term {
+  background-color : #D7E8EA;
+  padding          : 0px 14px;
+  line-height      : 29px;
+  margin           : 0px 10px 14px 0px;
+  border-bottom    : solid 1px #969696;
+  display          : inline-block;
+  font-size        : 13px;
+  color            : #111111;
+}
+
+.cr-mobile-lighthouse-term {
+  background-color : #D7E8EA;
+  padding          : 0px 14px;
+  line-height      : 40px;
+  margin           : 0px 10px 13px 0px;
+  border-bottom    : solid 1px #969696;
+  display          : inline-block;
+  font-size        : 16px;
+  color            : #111111;
+}
+
+.cr-lighthouse-term.cr-lighthut-term-selected {
+  background-color : #00464F;
+  color : #FFFFFF;
+}
+
+.cr-mobile-lighthouse-term.selected {
+  display : none;
+}
+
+.cr-lighthouse-terms {
+  max-height : 118px; 
+  overflow   : hidden;
+}
+
+.cr-mobile-lighthouse-terms {
+  max-height: 324px; 
+  overflow : hidden;
+}
+
+.cr-lighthut-boundary {
+  width     : 582px;
+}
+  
+
+#nav-prime-tooltip{
+  padding: 0 20px 2px 20px;
+  background-color: white;
+  font-family: arial,sans-serif;
+}
+.nav-npt-text-title{
+  font-family: arial,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #E47923;
+}
+.nav-npt-text-detail, a.nav-npt-a{
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+  margin: 2px 0px;
+}
+a.nav-npt-a {
+  text-decoration: underline;
+}
+  
+#csr-hcb-wrapper {
+  display: none;
+}
+
+.bia-item .bia-action-button {
+  display: inline-block;
+  height: 22px;
+  margin-top: 3px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #111;
+  font-family: Arial,sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  cursor: pointer;
+  outline: 0;
+  border: 1px solid;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  border-radius: 0\9;
+  border-color: #bcc1c8 #bababa #adb2bb;
+  background: #eff0f3;
+  background: -moz-linear-gradient(top, #f7f8fa, #e7e9ec);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f8fa), color-stop(100%, #e7e9ec));
+  background: -webkit-linear-gradient(top, #f7f8fa, #e7e9ec);
+  background: -o-linear-gradient(top, #f7f8fa, #e7e9ec);
+  background: -ms-linear-gradient(top, #f7f8fa, #e7e9ec);
+  background: linear-gradient(top, #f7f8fa, #e7e9ec);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f8fa', endColorstr='#e7e9ec',GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff;
+  -moz-box-shadow: inset 0 1px 0 0 #fff;
+  box-shadow: inset 0 1px 0 0 #fff;
+  box-sizing: border-box;
+}
+  
+/*related to defect found in YSH page in www.amazon.fr
+  font family was overriden causing button overflow on
+  that particular page.
+  Related SIM: https://issues.amazon.com/issues/P13N-CONSUMABLES-3104
+*/
+#bia-hcb-widget .a-button-text {
+    font-family: Arial,sans-serif !important;
+}
+
+/*This class was added to remove star ratings from
+    Shared Component's templates. Star ratings are
+    currently not configurable. This will work as an
+    immediate solution.
+    TODO: Work with shared components to make star
+    ratings configurable in their Shared View Templates
+*/
+#bia_content .a-icon-row {
+    display: none;
+}
+
+#bia-hcb-widget .a-icon-row {
+      display: none;
+}
+
+#bia_content {
+    width: 266px;
+}
+
+.nav-flyout-sidePanel {
+    width: 266px !important;
+}
+.aui-atc-button {
+    margin-top: 3px;
+    overflow: hidden;
+    color: #111;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+}
+.bia-item .bia-action-button:hover {
+  border-color: #aeb4bd #adadad #9fa5af;
+  background: #e0e3e8;
+  background: -moz-linear-gradient(top, #e7eaf0, #d9dce1);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7eaf0), color-stop(100%, #d9dce1));
+  background: -webkit-linear-gradient(top, #e7eaf0, #d9dce1);
+  background: -o-linear-gradient(top, #e7eaf0, #d9dce1);
+  background: -ms-linear-gradient(top, #e7eaf0, #d9dce1);
+  background: linear-gradient(top, #e7eaf0, #d9dce1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eaf0', endColorstr='#d9dce1',GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.6) inset;
+  -moz-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.6) inset;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.6) inset;
+}
+
+.bia-item .bia-action-button:active {
+  background-color: #dcdfe3;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.bia-item .bia-action-button-disabled {
+  background: #f7f8fa;
+  color: #b7b7b7;
+  border-color: #e0e0e0;
+  box-shadow: none;
+  cursor: default;
+}
+
+.bia-item .bia-action-button-disabled:hover {
+  background: #f7f8fa;
+  color: #b7b7b7;
+  border-color: #e0e0e0;
+  box-shadow: none;
+  cursor: default;
+}
+
+.bia-action-button-inner {
+  border-bottom-color: #111111;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  border-left-color: #111111;
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: #111111;
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: #111111;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  display: block;
+  height: 20px;
+  line-height: 19px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.bia-action-inner {
+  border: 0;
+  display: inline;
+  font-size: 11px;
+  height: auto;
+  line-height: 19px;
+  padding: 0px 4px 0px 4px;
+  text-align: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.csr-content {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  width: 220px;
+  line-height: 19px;
+}
+
+.bia-header {
+  font-size: 16px;
+  color: #E47911;
+  padding-bottom: 10px;
+}
+
+.bia-header-widget {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.b2b-nav-header {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.bia-space-right {
+  padding-right: 18px;
+  white-space: normal;
+  float: left;
+}
+
+.b2b-see-more-link a {
+  display: inline;
+  float: left;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.hcb-see-more-link a {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.bia-hcb-body {
+  overflow: hidden;
+}
+
+.bia-item {
+  width: 220px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.bia-item-image {
+  float: left;
+  margin-right: 15px;
+  width: 75px;
+  height: 75px;
+}
+
+.bia-image {
+  max-height: 75px;
+  max-width: 75px;
+  border: 0;
+}
+
+.bia-item-data {
+  float: left;
+  width: 130px;
+}
+
+.bia-title {
+  line-height: 19px;
+  font-size: 13px;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.bia-link:link {
+  text-decoration: none;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.bia-link:visited {
+  text-decoration: none;
+  color: #004B91;
+}
+
+.bia-price-nav {
+  margin-top: -4px;
+  color: #800;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+.bia-price-yorr {
+    margin-top: -8px;
+    color: #800;
+    font-size: 12px;
+    vertical-align: bottom;
+}
+
+.bia-price {
+  color: #800;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+.bia-vpc-t1{
+  color: #008a00;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bia-vpc-t2{
+  color: #008a00;
+  font-size: 12px;
+}
+
+.bia-vpc-t3{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.bia-vpc-t3-badge{
+  color: #ffffff;
+  background-color: #e47911;
+  font-weight: normal;
+
+}
+
+.bia-vpc-t3-badge::before{
+  border-bottom: 10px solid #e47911;
+}
+
+.bia-vpc-t3-badge:after{
+  border-top: 10px solid #e47911;
+}
+
+.bia-ppu {
+  color: #800;
+  font-size: 10px;
+}
+
+.bia-prime-badge {
+  border: 0;
+  vertical-align: middle;
+}
+
+.bia-cart-action {
+  display: none;
+}
+
+.bia-cart-msg {
+  display: block;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  line-height: 19px;
+}
+
+.bia-cart-icon {
+  background-image:
+      url("https://images-na.ssl-images-amazon.com/images/G/30/Recommendations/MissionExperience/BIA/bia-atc-confirm-icon.jpg");
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  top: 3px;
+  line-height: 19px;
+  position: relative;
+  vertical-align: top;
+}
+
+.bia-cart-success {
+  color: #090!important;
+  display: inline-block;
+  margin: 0;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.bia-cart-title {
+  margin-bottom: 3px;
+}
+
+.bia-cart-form {
+  margin: 0px;
+}
+
+.bia-inline-cart-form {
+  margin: 0px;
+}
+
+.bia-cart-submit {
+  cursor: inherit;
+  left: 0;
+  top: 0;
+  line-height: 19px;
+  height: 100%;
+  width: 100%;
+  padding: 1px 6px 1px 6px;
+  position: absolute;
+  opacity: 0.01;
+  overflow: visible;
+  filter: alpha(opacity=1);
+  z-index: 20;
+}
+  
+.bia-link-caret {
+  color: #e47911;
+}
