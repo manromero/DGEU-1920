@@ -7,21 +7,25 @@ const RelatedProducts = () => {
         <hr aria-hidden="true" className="a-divider-normal bucketDivider" />
         <div id="sp_detail-none" data-a-carousel-options="{&quot;initialSeenAsins&quot;:[&quot;B08DP2Z6BR&quot;,&quot;B0881Z3QLN&quot;,&quot;B002P7VL7M&quot;,&quot;B08DJ6DN1R&quot;,&quot;B07H6JGWZT&quot;,&quot;B07GDBTM15&quot;,&quot;B07RNDSSLB&quot;,&quot;B08B575KJS&quot;,&quot;B00BG50NR8&quot;,&quot;B084YSMWM6&quot;],&quot;set_size&quot;:69,&quot;name&quot;:&quot;sp_detail-none_carousel&quot;,&quot;auto_adjust_height&quot;:&quot;true&quot;,&quot;circular&quot;:false,&quot;ajax&quot;:{&quot;params&quot;:{&quot;cc&quot;:10,&quot;widgetLocale&quot;:&quot;es_ES&quot;,&quot;themeSelector&quot;:&quot;none&quot;,&quot;wName&quot;:&quot;sp_detail&quot;,&quot;referringSearchEngine&quot;:&quot;Amazon&quot;,&quot;isMultiPlacementRequest&quot;:false,&quot;searchTerms&quot;:&quot;yo julia&quot;,&quot;start&quot;:10,&quot;ASIN&quot;:&quot;8408197401&quot;,&quot;pRID&quot;:&quot;VBVEMCD60R9FPEJFGNHW&quot;,&quot;isPantry&quot;:0,&quot;isFresh&quot;:0},&quot;url&quot;:&quot;/gp/nemo/spd/handlers/spd-shov.html&quot;}}" data-a-display-strategy="swap" data-a-transition-strategy="swap" data-a-ajax-strategy="clicksCustomAjax" className="a-begin a-carousel-container a-carousel-display-swap a-carousel-transition-swap a-carousel-initialized">
           <input type="hidden" className="a-carousel-firstvisibleitem" />
-          <div className="a-row a-carousel-header-row a-size-large pa_componentTitleTest sp_book_carousel_header"><div className="a-column a-span8"><h2 className="a-carousel-heading">Productos patrocinados relacionados con este artículo</h2></div><div className="a-column a-span4 a-span-last a-text-right">
-            <span className="a-carousel-pagination a-size-base" style={{ visibility: "visible" }}>
-              <span className="a-carousel-page-count">
-                Página
-              <span className="a-carousel-page-current">1</span>
-              de
-              <span className="a-carousel-page-max">12</span>
+          <div className="a-row a-carousel-header-row a-size-large pa_componentTitleTest sp_book_carousel_header">
+            <div className="a-column a-span8">
+              <h2 className="a-carousel-heading">Productos patrocinados relacionados con este artículo</h2>
+            </div>
+            <div className="a-column a-span4 a-span-last a-text-right">
+              <span className="a-carousel-pagination a-size-base" style={{ visibility: "visible" }}>
+                <span className="a-carousel-page-count">
+                  Página
+                <span className="a-carousel-page-current">1</span>
+                de
+                <span className="a-carousel-page-max">12</span>
+                </span>
+                <span className="a-carousel-restart-container" style={{ display: "none" }}>
+                  <span className="a-text-separator"></span>
+                  <a className="a-carousel-restart" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#">Comenzar de nuevo</a>
+                </span>
+                <span className="a-carousel-accessibility-page-info a-offscreen" aria-live="polite">Página 1 de 12</span>
               </span>
-              <span className="a-carousel-restart-container" style={{ display: "none" }}>
-                <span className="a-text-separator"></span>
-                <a className="a-carousel-restart" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#">Comenzar de nuevo</a>
-              </span>
-              <span className="a-carousel-accessibility-page-info a-offscreen" aria-live="polite">Página 1 de 12</span>
-            </span>
-          </div>
+            </div>
           </div>
           <div className="a-row">
             <div className="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons">

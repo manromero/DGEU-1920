@@ -24,9 +24,6 @@ const TellAFriend = () => {
               <i className="a-icon a-icon-share-pinterest" role="img" aria-label="Pinterest"></i>
             </a>
             <span className="a-letter-space"></span>
-            <span className="a-declarative" data-action="a-modal" data-a-modal="{&quot;padding&quot;:&quot;none&quot;,&quot;cache&quot;:&quot;false&quot;,&quot;width&quot;:&quot;832&quot;,&quot;name&quot;:&quot;kpModal&quot;,&quot;header&quot;:&quot;Comparte o incrusta una vista previa gratuita de un libro Kindle&quot;,&quot;popoverLabel&quot;:&quot;Comparte o incrusta una vista previa gratuita de un libro Kindle&quot;,&quot;url&quot;:&quot;https://leer.amazon.es/kp/taf/modal?asin=8408197401&amp;websiteDisplayGroup=book_display_on_website&amp;placementId=mv9rFbVVMD09P&amp;language=es_ES&quot;,&quot;height&quot;:&quot;664&quot;}">
-              <a className="a-link-normal" title="Incrusta una visa previa de este libro" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#">&lt;Incrustar&gt;</a>
-            </span>
           </div>
         </div>
       </div>
