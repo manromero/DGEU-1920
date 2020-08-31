@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Article from './Article';
 
 const ArticlesToDiscover = () => {
@@ -12,7 +12,7 @@ const ArticlesToDiscover = () => {
       numberOpinions: 110,
       rating: 4.3,
       author: "Ayanta Barilli",
-      cover: "Tapa Dura",
+      cover: "Tapa dura",
       price: "20,42 €"
     },
     {
@@ -23,7 +23,7 @@ const ArticlesToDiscover = () => {
       numberOpinions: 39,
       rating: 4.7,
       author: "Simon Scarrow",
-      cover: "Tapa Dura",
+      cover: "Tapa dura",
       price: "23,75 €"
     },
     {
@@ -69,8 +69,98 @@ const ArticlesToDiscover = () => {
       author: "Pere Cervantes",
       cover: "Tapa blanda",
       price: "19,85 €"
+    },
+    {
+      title: "El pintor de almas (Novela histórica)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91mVs9cU83L._AC_UL480_SR312,480_.jpg",
+      linkUrl: "https://www.amazon.es/El-pintor-almas-Novela-hist%C3%B3rica/dp/8425357241/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8425357241&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+      linkOpinions: "https://www.amazon.es/product-reviews/8425357241/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&pd_rd_i=8425357241&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+      numberOpinions: 518,
+      rating: 4.3,
+      author: "Ildefonso Falcones",
+      cover: "Tapa blanda",
+      price: "21,75 €"
+    },
+    {
+      title: "Tú no matarás (Éxitos)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/817D4wVmN4L._AC_UL480_SR312,480_.jpg",
+      linkUrl: "https://www.amazon.es/T%C3%BA-no-matar%C3%A1s-Julia-Navarro/dp/8401021162/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8401021162&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+      linkOpinions: "https://www.amazon.es/product-reviews/8401021162/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&pd_rd_i=8401021162&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+      numberOpinions: 615,
+      rating: 4.2,
+      author: "Julia Navarro",
+      cover: "Tapa blanda",
+      price: "22,70 €"
+    },
+    {
+      title: "El enigma de la habitación 622 (Literaturas)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg",
+      linkUrl: "https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&pd_rd_i=842043938X&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+      linkOpinions: "https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&pd_rd_i=842043938X&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+      numberOpinions: 503,
+      rating: 3.8,
+      author: "Joël Dicker",
+      cover: "Tapa blanda",
+      price: "21,75 €"
+    },
+    {
+      title: "El destino de los héroes (Novela histórica)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81v3vzMKfQL._AC_UL480_SR312,480_.jpg",
+      linkUrl: "https://www.amazon.es/destino-los-h%C3%A9roes-Novela-hist%C3%B3rica/dp/8425358213/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8425358213&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+      linkOpinions: "https://www.amazon.es/product-reviews/8425358213/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&pd_rd_i=8425358213&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+      numberOpinions: 103,
+      rating: 4.5,
+      author: "Chufo Lloréns",
+      cover: "Tapa dura",
+      price: "22,70 €"
+    },
+    {
+      title: "Despiértame cuando acabe septiembre (Thriller y suspense)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/71G4f2oBXML._AC_UL480_SR306,480_.jpg",
+      linkUrl: "https://www.amazon.es/Despi%C3%A9rtame-cuando-septiembre-Thriller-suspense/dp/8417305807/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8417305807&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+      linkOpinions: "https://www.amazon.es/product-reviews/8417305807/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&pd_rd_i=8417305807&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+      numberOpinions: 570,
+      rating: 4.3,
+      author: "Mónica Rouanet",
+      cover: "Tapa blanda",
+      price: "17,00 €"
+    },
+    {
+      title: "Estuche Trilogía de Trajano (Novela histórica)",
+      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/8189f3OX9-L._AC_UL320_SR316,320_.jpg",
+      linkUrl: "https://www.amazon.es/Estuche-Trilog%C3%ADa-Trajano-Novela-hist%C3%B3rica/dp/8408197428/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8408197428&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+      linkOpinions: "https://www.amazon.es/product-reviews/8408197428/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&pd_rd_i=8408197428&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+      numberOpinions: 323,
+      rating: 4.7,
+      author: "Santiago Posteguillo",
+      cover: "Tapa blanda",
+      price: "28,40 €"
     }
   ];
+
+  const articlesPerPage = 6;
+  const numberOfPages = Math.ceil(articles.length / articlesPerPage);
+  const [page, setPage] = useState(1);
+
+  const minIndex = (page - 1) * articlesPerPage;
+  const maxIndex = page * articlesPerPage;
+  const articlesFiltered = articles.filter((art, index) => (
+    minIndex <= index && index < maxIndex
+  ));
+
+  const onPrevPage = () => {
+    if (page > 1) {
+      setPage(page - 1);
+    }
+  }
+
+  const onNextPage = () => {
+    if (page < numberOfPages) {
+      setPage(page + 1);
+    }
+  }
+
+
 
   return (
     <div className="celwidget pd_rd_w-PWZ4h pf_rd_p-4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7 pf_rd_r-VBVEMCD60R9FPEJFGNHW pd_rd_r-c6b0e583-be80-4aa3-867d-b89df4127853 pd_rd_wg-nVWqQ" data-csa-c-id="1hepyn-9nt3gb-91itr4-2vher3" data-cel-widget="desktop-dp-sims_dpbmx2_ALL-single-bucket-0_5">
@@ -87,7 +177,7 @@ const ArticlesToDiscover = () => {
                 <div className="a-column a-span4 a-span-last a-text-right">
                   <span className="a-carousel-pagination a-size-base" style={{ visibility: "visible" }}>
                     <span className="a-carousel-page-count">
-                      Página <span className="a-carousel-page-current">1</span> de <span className="a-carousel-page-max">16</span>
+                      Página <span className="a-carousel-page-current">{page}</span> de <span className="a-carousel-page-max">{numberOfPages}</span>
                     </span>
                     <span className="a-carousel-restart-container" style={{ display: "none" }}>
                       <span className="a-text-separator"></span>
@@ -100,7 +190,7 @@ const ArticlesToDiscover = () => {
               <span className="aok-offscreen p13n-sc-offscreen">Esta función de compra continuará cargando productos cuando se presione la tecla Intro. Para navegar fuera de este carrusel, usa tu tecla de acceso rápido de encabezados para navegar hacia el encabezado siguiente o anterior.</span>
               <div className="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"><div className="a-carousel-row-inner">
                 <div className="a-carousel-col a-carousel-left" style={{ height: "294px", visibility: "visible" }}>
-                  <a className="a-button a-button-image a-carousel-button a-carousel-goto-prevpage" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#" id="a-autoid-19" style={{ top: "117.594px" }}>
+                  <a className={`a-button a-button-image a-carousel-button a-carousel-goto-prevpage ${page === 1 ? 'a-button-disabled' : ''}`} id="a-autoid-19" style={{ top: "117.594px" }} onClick={onPrevPage}>
                     <span className="a-button-inner">
                       <i className="a-icon a-icon-previous">
                         <span className="a-icon-alt">Atrás</span>
@@ -111,7 +201,7 @@ const ArticlesToDiscover = () => {
                 <div className="a-carousel-col a-carousel-center">
                   <div className="a-carousel-viewport" style={{ height: "294px" }} id="anonCarousel4">
                     <ol className="a-carousel" role="list">
-                      {articles.map(art => (
+                      {articlesFiltered.map(art => (
                         <Article
                           title={art.title}
                           imgUrl={art.imgUrl}
@@ -128,7 +218,7 @@ const ArticlesToDiscover = () => {
                   </div>
                 </div>
                 <div className="a-carousel-col a-carousel-right" style={{ height: "294px", visibility: "visible" }}>
-                  <a className="a-button a-button-image a-carousel-button a-carousel-goto-nextpage" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#" id="a-autoid-20" style={{ top: "117.594px" }}>
+                  <a className={`a-button a-button-image a-carousel-button a-carousel-goto-nextpage ${page === numberOfPages ? 'a-button-disabled' : ''}`} id="a-autoid-20" style={{ top: "117.594px" }} onClick={onNextPage}>
                     <span className="a-button-inner">
                       <i className="a-icon a-icon-next">
                         <span className="a-icon-alt">Siguiente</span>
