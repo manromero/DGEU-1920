@@ -5,7 +5,7 @@ import KindleRecommendation from './KindleRecommendation';
 import ReviewsBox from './ReviewsBox';
 import PreloadPopUp from './PreloadPopUp';
 import RightPanel from './RightPanel';
-import MainProductInformation from './MainProductInformation';
+import MainProductInformation from '../containers/MainProductInformation';
 import SitbReaderPlaceholder from './SitbReaderPlaceholder';
 import SpecialOffers from './SpecialOffers';
 import BoughtTogether from './BoughtTogether';

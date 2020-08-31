@@ -3,7 +3,22 @@ import MainProductTitle from './MainProductTitle';
 import FormatsAndEditions from './FormatsAndEditions';
 import CollegeBooks from './CollegeBooks';
 
-const MainProductInformation = () => {
+interface IProps {
+  title: string;
+  subtitle: string;
+  author: string;
+  authorUrl: string,
+  collectionName: string,
+  collectionUrl: string,
+  freeDelivery: string;
+  fastDelivery: string;
+  numberOpinions: number;
+  rating: number;
+  description: string;
+  moreDescription: string;
+}
+
+const MainProductInformation = ({ title, subtitle, author, authorUrl, collectionName, collectionUrl, freeDelivery, fastDelivery, numberOpinions, rating, description, moreDescription }: IProps) => {
 
   const [readMore, setReadMore] = useState(false);
   const [showFormats, setShowFormats] = useState(false);
@@ -13,13 +28,13 @@ const MainProductInformation = () => {
     <div id="centerCol" className="centerColumn">
       <div id="qpeTitleTag_feature_div" className="celwidget" data-feature-name="qpeTitleTag" data-csa-c-id="9vrxse-fb5s2x-1kzx0f-vg3oc" data-cel-widget="qpeTitleTag_feature_div">
       </div>
-      <MainProductTitle />
+      <MainProductTitle title={title} subtitle={subtitle} />
       <div id="bylineInfo_feature_div" className="celwidget" data-feature-name="bylineInfo" data-csa-c-id="866dkm-njwzze-j8m38o-y9mqzv" data-cel-widget="bylineInfo_feature_div">
         <div id="bylineInfo" className="a-section a-spacing-micro bylineHidden feature" data-cel-widget="bylineInfo">
           de
           <span className="author notFaded" data-width="">
             <span className="a-declarative" data-action="a-popover" data-a-popover="{&quot;closeButtonLabel&quot;:&quot;Cerrar mensaje emergente de diálogo de autor&quot;,&quot;name&quot;:&quot;contributor-info-B00JA7ZCES&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;popoverLabel&quot;:&quot;Mensaje emergente de diálogo de autor&quot;,&quot;allowLinkDefault&quot;:&quot;true&quot;}">
-              <a data-asin="B00JA7ZCES" className="a-link-normal contributorNameID" href="https://www.amazon.es/Santiago-Posteguillo/e/B00JA7ZCES/ref=dp_byline_cont_book_1"> Santiago Posteguillo</a>
+              <a data-asin="B00JA7ZCES" className="a-link-normal contributorNameID" href={authorUrl}>{author}</a>
               <a href="javascript:void(0)" className="a-popover-trigger a-declarative"><i className="a-icon a-icon-popover"></i></a>
             </span>
             <span className="contribution">
@@ -39,7 +54,7 @@ const MainProductInformation = () => {
                   }
                 }}>
                   <i className="a-icon a-icon-star a-star-4-5">
-                    <span className="a-icon-alt">4,5 de 5 estrellas</span>
+                    <span className="a-icon-alt">{rating} de 5 estrellas</span>
                   </i>
                   <i className="a-icon a-icon-popover"></i>
                 </a>
@@ -55,7 +70,7 @@ const MainProductInformation = () => {
               }
             }}>
               <span id="acrCustomerReviewText" className="a-size-base">
-                990 valoraciones
+                {numberOpinions} valoraciones
               </span>
             </a>
           </span>
@@ -63,8 +78,8 @@ const MainProductInformation = () => {
       </div>
       <div id="seriesTitle_feature_div" className="celwidget" data-feature-name="seriesTitle" data-csa-c-id="8eo4wd-ua7ctr-8rlm8r-cguog3" data-cel-widget="seriesTitle_feature_div">
         <span className="a-size-small a-color-secondary a-text-bold">Libro 1</span><span className="a-size-small a-color-secondary"> de 2 en la colección </span>
-        <a id="series-page-link" className="a-link-normal" href="https://www.amazon.es/gp/bookseries/B08FH7GDHL/ref=dp_st_8408197401">
-          <span className="a-size-small">Julia Domna </span>
+        <a id="series-page-link" className="a-link-normal" href={collectionUrl}>
+          <span className="a-size-small">{collectionName}</span>
         </a>
       </div>
       <div id="acBadge_feature_div" className="celwidget" data-feature-name="acBadge" data-csa-c-id="uecex-jaq1m8-pjemru-a6dshx" data-cel-widget="acBadge_feature_div"></div>
@@ -214,15 +229,12 @@ const MainProductInformation = () => {
           <div id="ddmDeliveryMessage" className="a-section a-spacing-mini">
             <a href="https://www.amazon.es/gp/help/customer/display.html?ie=UTF8&amp;pop-up=1&amp;nodeId=202093880" target="AmazonHelp" >Entrega GRATIS:</a>
             <b>
-              3 - 4 de sept.
+              {' '}{freeDelivery}
             </b>
             <a href="https://www.amazon.es/gp/help/customer/display.html/ref=ftinfo_dp_?ie=UTF8&amp;pop-up=1&amp;nodeId=202052960" target="AmazonHelp" >Ver detalles</a>
             <br />
             <div className="a-section a-spacing-top-mini">
-              Entrega más rápida:
-              <b>
-                sábado, 29 de ag.
-              </b>
+              Entrega más rápida: <b>{fastDelivery}</b>
               <a href="https://www.amazon.es/gp/help/customer/display.html/ref=ddm_ft_dp?ie=UTF8&amp;pop-up=1&amp;nodeId=200556720" target="AmazonHelp">Ver detalles</a>
             </div>
           </div>
@@ -236,9 +248,9 @@ const MainProductInformation = () => {
       <div id="productOverview_feature_div" className="celwidget" data-feature-name="productOverview" data-csa-c-id="6xa6cv-y374z4-kjksdr-h4c4x0" data-cel-widget="productOverview_feature_div"></div>
       <div id="bookDescription_feature_div" className="celwidget" data-feature-name="bookDescription" data-csa-c-id="4qh2e0-ut9lvm-p4c30o-tizzk1" data-cel-widget="bookDescription_feature_div">
         <div>
-          <p>192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.</p>
+          <p>{description}</p>
           {readMore ? (
-            <p>De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.</p>
+            <p>{moreDescription}</p>
           ) : null}
         </div>
         <em></em>

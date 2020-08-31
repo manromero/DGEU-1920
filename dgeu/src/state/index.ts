@@ -2,7 +2,13 @@ import { IArticle, IReview } from '../commons/interfaces';
 
 export interface IInitialState {
   title: string;
+  subtitle: string;
   author: string;
+  authorUrl: string;
+  collectionName: string;
+  collectionUrl: string;
+  freeDelivery: string;
+  fastDelivery: string;
   numberOpinions: number;
   rating: number;
   description: string;
@@ -642,8 +648,14 @@ const internationalReviews: IReview[] = [
 ];
 
 export const initialState: IInitialState = {
-  title: "Yo, Julia: Premio Planeta 2018 (Autores Españoles e Iberoamericanos)(Español) Tapa dura – 6 noviembre 2018",
+  title: "Yo, Julia: Premio Planeta 2018 (Autores Españoles e Iberoamericanos)(Español)",
+  subtitle: "Tapa dura – 6 noviembre 2018",
   author: "Santiago Posteguillo",
+  authorUrl: "https://www.amazon.es/Santiago-Posteguillo/e/B00JA7ZCES/ref=dp_byline_cont_book_1",
+  collectionName: "Julia Donna",
+  collectionUrl: "https://www.amazon.es/gp/bookseries/B08FH7GDHL/ref=dp_st_8408197401",
+  freeDelivery: "3 - 4 de sept.",
+  fastDelivery: "sábado, 29 de ag.",
   numberOpinions: 990,
   rating: 4.5,
   description: "192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.",
