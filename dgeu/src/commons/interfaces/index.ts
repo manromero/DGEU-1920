@@ -20,6 +20,7 @@ export interface IReview {
   comment: string;
   utilNumber: number;
   reviewUrl: string;
+  date: number;
 }
 
 export interface IPriceFormat {

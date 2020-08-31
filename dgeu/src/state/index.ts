@@ -603,6 +603,7 @@ const customerReviews: IReview[] = [
     summary: "No es el mejor Posteguillo",
     rating: 3.0,
     revisionDate: "Revisado en España el 4 de diciembre de 2018",
+    date: 20181204,
     comment: "Me he leido las otras dos trilogías romanas de Posteguillo, y he de decir en honor a la verdad, que como la primera de Escipión el africano no he vuelto a ver. Para mi gusto las legiones malditas el segundo libro de esa trilogía es de lo mejor que hay en novela histórica o en historia novelada como gustan llamarla otros a lo que hace Santiago Posteguillo. Pero con Yo Julia ha bajado muchísimo el nivel, para lo que él ha demostrado que puede hacer, esta novela está muy por debajo. Si fuera otro autor quizás le daría cuatro estrellas, pero un autor capaz de hacer una maravilla como la trilogía de Escipión no puede defraudar así, ha ido en descenso desde la primera trilogía y no para de perder calidad, es una pena porque admiro sus obras y espero con ansia una serie de televisión sobre sus novelas. Para los que le seguimos desde el principio, que somos muchos ha sido una decepción.",
     utilNumber: 53,
     reviewUrl: "https://www.amazon.es/gp/profile/amzn1.account.AF7VZANIMJ6KNCMNBJ3LAP3YDLMA/ref=cm_cr_dp_d_gw_tr?ie=UTF8"
@@ -614,6 +615,7 @@ const customerReviews: IReview[] = [
     summary: "Mediocre",
     rating: 2.0,
     revisionDate: "Revisado en España el 20 de diciembre de 2018",
+    date: 20181220,
     comment: "He leído la trilogía de Escipión y la que hizo con los emperadores hispanos.  Esta es más de lo mismo, solo que bastante peor.  En realidad es una versión novelada de lo que puedes encontrarte en la Wikipedia, carente de ritmo y totalmente plana y carente de interés. Sinceramente no me parece merecedora de un premio planeta",
     utilNumber: 8,
     reviewUrl: "https://www.amazon.es/gp/profile/amzn1.account.AFRUEPB2MVFR2DTAP7SMLZK55L6A/ref=cm_cr_dp_d_gw_tr?ie=UTF8"
@@ -625,6 +627,7 @@ const customerReviews: IReview[] = [
     summary: "Buen libro",
     rating: 5.0,
     revisionDate: "Revisado en España el 12 de noviembre de 2018",
+    date: 20181112,
     comment: "El libro físicamente mide 23x15, con 704 páginas, no es cómodo para leer en la cama... En cuánto al contenido, ya estoy enganchada! aunque sólo llevo unas 50 páginas, sabía que iba a gustarme.\nSantiago Posteguillo documenta genial sus libros de la Roma clásica, aparte de ser muy ameno.\nMe alegro de que le hayan dado el Planeta a una historia de humanidades, ya era hora!",
     utilNumber: 21,
     reviewUrl: "https://www.amazon.es/gp/customer-reviews/RWFT9KVRRTUNQ/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"
@@ -639,6 +642,7 @@ const internationalReviews: IReview[] = [
     summary: "If you love Rome, you will love this.",
     rating: 4.0,
     revisionDate: "Revisado en Reino Unido el 25 de noviembre de 2018",
+    date: 20181125,
     comment: "I love Santiago Posteguillo. I think I have read all of his novels. I like this one, but maybe not as much as the previous ones. True the previous ones were magnificent, in my opinion, so the bar was very high, but I felt a bit like “is it that it?” I missed some depth, some stories did not develop at the same rythm, and the end....I am being selfish now, but it could have gone further in their lives. Nevertheless, a great book.",
     utilNumber: 2,
     reviewUrl: "https://www.amazon.es/gp/profile/amzn1.account.AGVPAXXL3ROR2QVOX3PAU75PYYNQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8"
@@ -650,6 +654,7 @@ const internationalReviews: IReview[] = [
     summary: "muy buen libro",
     rating: 5.0,
     revisionDate: "Revisado en Reino Unido el 30 de septiembre de 2019",
+    date: 20190930,
     comment: "lo super recomiendo! me encanto! soy fan de Julia ahora :)",
     utilNumber: 5,
     reviewUrl: "https://www.amazon.es/gp/customer-reviews/R2J0RIC944N4TK/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"
@@ -661,6 +666,7 @@ const internationalReviews: IReview[] = [
     summary: "mejorable",
     rating: 3.0,
     revisionDate: "Revisado en Argentina el 15 de noviembre de 2018",
+    date: 20181115,
     comment: "Aunque es fácil de leer, en mi opinión la forma de escribir es algo infantil. Rápido de leer pero prosa mejorable.",
     utilNumber: 18,
     reviewUrl: "https://www.amazon.es/gp/customer-reviews/R2M74YCW4OOV71/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"

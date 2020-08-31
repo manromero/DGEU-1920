@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Review from './Review';
 import { IReview } from '../commons/interfaces';
+import { sortReviewMostImportant, sortReviewDate } from '../commons/utils';
 
 interface IProps {
   customerReviews: IReview[]
@@ -11,6 +12,13 @@ const ReviewsCustomers = ({ customerReviews }: IProps) => {
   let reviews = customerReviews.map(e => ({ ...e }));
 
   const [viewAll, setViewAll] = useState(false);
+  const [sort, setSort] = useState('util');
+
+  if (sort === 'util') {
+    reviews.sort(sortReviewMostImportant);
+  } else {
+    reviews.sort(sortReviewDate);
+  }
 
   if (!viewAll) {
     reviews = reviews.filter((e, index) => index < 2);
@@ -23,24 +31,14 @@ const ReviewsCustomers = ({ customerReviews }: IProps) => {
       <div id="cm-cr-dp-review-sort-type" data-reftag="cm_cr_dp_d_fltrs_srt" className="a-section a-spacing-small">
         <span className="a-declarative" data-action="reviews:filter-action:change" >
           <span className="a-dropdown-container">
-            <select name="" id="cm-cr-sort-dropdown" data-action="a-dropdown-select" className="a-native-dropdown a-declarative">
-              <option value="helpful" data-a-css-className="cm-cr-sort-order-option">
+            <select value={sort} id="cm-cr-sort-dropdown" onChange={e => setSort(e.target.value)} data-action="a-dropdown-select" className="a-native-dropdown a-declarative">
+              <option value="util" data-a-css-className="cm-cr-sort-order-option">
                 Reseñas más importantes
               </option>
-              <option value="recent" data-a-css-className="cm-cr-sort-order-option">
+              <option value="date" data-a-css-className="cm-cr-sort-order-option">
                 Más recientes
               </option>
             </select>
-            <span data-a-className="cm-cr-dp-filter-dropdown" className="a-button a-button-dropdown a-button-small cm-cr-dp-filter-dropdown" aria-hidden="true" id="a-autoid-23" style={{ minWidth: "0%" }}>
-              <span className="a-button-inner">
-                <span className="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true" id="a-autoid-23-announce">
-                  <span className="a-dropdown-prompt">
-                    Reseñas más importantes
-                  </span>
-                </span>
-                <i className="a-icon a-icon-dropdown"></i>
-              </span>
-            </span>
           </span>
         </span>
       </div>
@@ -63,17 +61,7 @@ const ReviewsCustomers = ({ customerReviews }: IProps) => {
         <div className="a-section a-spacing-extra-large reviews-content filterable-reviews-content celwidget" data-csa-c-id="hhykyl-40wor-8d0xfm-wlh0ba" data-cel-widget="">
           <div id="cm-cr-dp-review-list" data-hook="top-customer-reviews-widget" className="a-section review-views celwidget" data-csa-c-id="tqp5wy-5otbre-vy1hqw-ysd8sr" data-cel-widget="cm-cr-dp-review-list">
             {reviews.map(rev => (
-              <Review
-                id={rev.id}
-                author={rev.author}
-                authorImgUrl={rev.authorImgUrl}
-                summary={rev.summary}
-                rating={rev.rating}
-                revisionDate={rev.revisionDate}
-                comment={rev.comment}
-                utilNumber={rev.utilNumber}
-                reviewUrl={rev.reviewUrl}
-              />
+              <Review {...rev} />
             ))}
           </div>
         </div>

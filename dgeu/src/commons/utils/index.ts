@@ -1,3 +1,4 @@
+import { IReview } from "../interfaces";
 
 export const calculateStartsClass = (rating: number) => {
   let startIcon = "a-star-0";
@@ -13,4 +14,20 @@ export const calculateStartsClass = (rating: number) => {
     startIcon = "a-star-5";
   }
   return startIcon;
+}
+
+export const sortReviewMostImportant = (review1: IReview, review2: IReview) => {
+  if (review1.utilNumber >= review2.utilNumber) {
+    return -1;
+  } else {
+    return 1;
+  }
+}
+
+export const sortReviewDate = (review1: IReview, review2: IReview) => {
+  if (review1.date >= review2.date) {
+    return -1;
+  } else {
+    return 1;
+  }
 }
