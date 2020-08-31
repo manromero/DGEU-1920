@@ -1,4 +1,5 @@
 import React from 'react';
+import useStyles from '../styles/MainProductTitle';
 
 interface IProps {
   title: string;
@@ -6,14 +7,15 @@ interface IProps {
 }
 
 const MainProductTitle = ({ title, subtitle }: IProps) => {
+  const classes = useStyles();
   return (
-    <div id="titleblock_feature_div" className="celwidget" data-feature-name="titleblock" data-csa-c-id="kbhgy7-r8tp5s-s8w2vz-8zuy7m" data-cel-widget="titleblock_feature_div">
-      <div className="a-section a-spacing-none">
-        <h1 id="title" className="a-spacing-none a-text-normal">
-          <span id="productTitle" className="a-size-extra-large">
+    <div>
+      <div className={classes.container}>
+        <h1 className={classes.title}>
+          <span className={classes.productTitle}>
             {title}
           </span>
-          <span id="productSubtitle" className="a-size-large a-color-secondary">
+          <span className={classes.productSubtitle}>
             {' '}{subtitle}
           </span>
         </h1>

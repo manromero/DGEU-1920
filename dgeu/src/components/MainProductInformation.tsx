@@ -7,6 +7,7 @@ import DeliveryDates from './DeliveryDates';
 import MainProductAuthor from './MainProductAuthor';
 import MainProductReview from './MainProductReview';
 import MainProductCollection from './MainProductCollection';
+import useStyles from '../styles/MainProductInformation';
 
 interface IProps {
   title: string;
@@ -32,8 +33,10 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
 
   const isSelectedKindle = priceFormats.find(e => e.id === 0 && e.selected);
 
+  const classes = useStyles();
+
   return (
-    <div id="centerCol" >
+    <div className={classes.centerCol} >
       <MainProductTitle title={title} subtitle={subtitle} />
       <MainProductAuthor author={author} authorUrl={authorUrl} />
       <MainProductReview rating={rating} numberOpinions={numberOpinions} />
