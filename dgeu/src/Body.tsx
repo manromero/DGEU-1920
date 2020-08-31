@@ -7,7 +7,7 @@ import PreloadPopUp from './PreloadPopUp';
 import RightPanel from './RightPanel';
 import MainProductInformation from './MainProductInformation';
 import SitbReaderPlaceholder from './SitbReaderPlaceholder';
-import ArticlesToDiscover from './ArticlesToDiscover';
+import Articles from './Articles';
 import SpecialOffers from './SpecialOffers';
 import BoughtTogether from './BoughtTogether';
 import Breadcrumbs from './Breadcrumbs';
@@ -29,11 +29,11 @@ const Body = () => {
         <hr className="bucketDivider" />
         <SpecialOffers />
         <BoughtTogether />
-        <ArticlesToDiscover
+        <Articles
           title="¿Qué otros productos compran los clientes tras ver este producto?"
           articlesPerPage={4}
         />
-        <ArticlesToDiscover
+        <Articles
           title="Productos patrocinados relacionados con este artículo"
           articlesPerPage={6}
         />
@@ -41,11 +41,11 @@ const Body = () => {
         <ProductDescription />
         <KindleRecommendation />
         <ProductDetails />
-        <ArticlesToDiscover
+        <Articles
           title="Más artículos por descubrir"
           articlesPerPage={6}
         />
-        <ArticlesToDiscover
+        <Articles
           title="Productos patrocinados relacionados con este artículo"
           articlesPerPage={6}
         />

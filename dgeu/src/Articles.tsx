@@ -6,7 +6,7 @@ interface IProps {
   articlesPerPage: number;
 };
 
-const ArticlesToDiscover = ({ title, articlesPerPage }: IProps) => {
+const Articles = ({ title, articlesPerPage }: IProps) => {
 
   const articles = [
     {
@@ -98,15 +98,15 @@ const ArticlesToDiscover = ({ title, articlesPerPage }: IProps) => {
       price: "22,70 €"
     },
     {
-      title: "El enigma de la habitación 622 (Literaturas)",
-      imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg",
-      linkUrl: "https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&pd_rd_i=842043938X&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
-      linkOpinions: "https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&pd_rd_i=842043938X&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
-      numberOpinions: 503,
-      rating: 3.8,
-      author: "Joël Dicker",
-      cover: "Tapa blanda",
-      price: "21,75 €"
+      title: "La sangre manda (Éxitos)",
+      imgUrl: "https://m.media-amazon.com/images/I/51eaWTBzmYL._BG0,0,0,0_FMpng_AC_SY160_SX160_.jpg",
+      linkUrl: "https://www.amazon.es/gp/slredirect/picassoRedirect.html/ref=sspa_dk_detail_1?ie=UTF8&adId=A09058622ZP8LQEV6EZVY&qualifier=1598543179&id=346373722007478&widgetName=sp_detail&url=%2Fdp%2F8401024757%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1",
+      linkOpinions: "https://www.amazon.es/gp/slredirect/picassoRedirect.html/ref=sspa_dk_detail_1?ie=UTF8&adId=A09058622ZP8LQEV6EZVY&qualifier=1598543179&id=346373722007478&widgetName=sp_detail&url=%2Fdp%2F8401024757%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1#customerReviews",
+      numberOpinions: 61,
+      rating: 3.9,
+      author: "Stephen King",
+      cover: "Tapa dura",
+      price: "22,70 €"
     },
     {
       title: "El destino de los héroes (Novela histórica)",
@@ -239,4 +239,4 @@ const ArticlesToDiscover = ({ title, articlesPerPage }: IProps) => {
   );
 }
 
-export default ArticlesToDiscover;
+export default Articles;

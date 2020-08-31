@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import ImgBooks from './static/images/books.jpg';
 import MainProductTitle from './MainProductTitle';
 import FormatsAndEditions from './FormatsAndEditions';
+import CollegeBooks from './CollegeBooks';
 
 const MainProductInformation = () => {
 
   const [readMore, setReadMore] = useState(false);
   const [showFormats, setShowFormats] = useState(false);
+  const [selectedFormat, setSelectedFormat] = useState(0);
 
   return (
     <div id="centerCol" className="centerColumn">
@@ -92,11 +93,11 @@ const MainProductInformation = () => {
           ) : null}
           <div id="tmmSwatches" className="a-row">
             <ul className="a-unordered-list a-nostyle a-button-list a-horizontal">
-              <li className="swatchElement unselected" data-width="173">
+              <li className={`swatchElement ${selectedFormat === 0 ? 'selected' : 'unselected'}`} data-width="173">
                 <span className="a-list-item">
-                  <span className="a-button a-spacing-mini a-button-toggle format" id="a-autoid-6">
+                  <span className={`a-button a-spacing-mini a-button-toggle format ${selectedFormat === 0 ? 'a-button-selected' : ''}`} id="a-autoid-6" onClick={() => setSelectedFormat(0)}>
                     <span className="a-button-inner">
-                      <a href="https://www.amazon.es/Yo-Julia-Planeta-Volumen-independiente-ebook/dp/B07JK6ZS94/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=1598543175&amp;sr=8-1" className="a-button-text" role="button" id="a-autoid-6-announce">
+                      <a className="a-button-text" role="button" id="a-autoid-6-announce">
                         <span>Versión Kindle</span>
                         <br />
                         <span className="a-color-secondary">
@@ -123,11 +124,11 @@ const MainProductInformation = () => {
                   <span className="tmm-olp-links"></span>
                 </span>
               </li>
-              <li className="swatchElement selected" data-width="163">
+              <li className={`swatchElement ${selectedFormat === 1 ? 'selected' : 'unselected'}`} data-width="163">
                 <span className="a-list-item">
-                  <span className="a-button a-button-selected a-spacing-mini a-button-toggle format" id="a-autoid-7">
+                  <span className={`a-button a-spacing-mini a-button-toggle format ${selectedFormat === 1 ? 'a-button-selected' : ''}`} id="a-autoid-7" onClick={() => setSelectedFormat(1)}>
                     <span className="a-button-inner">
-                      <a href="javascript:void(0)" className="a-button-text" role="button" id="a-autoid-7-announce">
+                      <a className="a-button-text" role="button" id="a-autoid-7-announce">
                         <span>Tapa dura</span>
                         <br />
                         <span className="a-color-base">
@@ -162,11 +163,11 @@ const MainProductInformation = () => {
                   </span>
                 </span>
               </li>
-              <li className="swatchElement unselected" data-width="143">
+              <li className={`swatchElement ${selectedFormat === 2 ? 'selected' : 'unselected'}`} data-width="143">
                 <span className="a-list-item">
-                  <span className="a-button a-spacing-mini a-button-toggle format" id="a-autoid-8">
+                  <span className={`a-button a-spacing-mini a-button-toggle format ${selectedFormat === 2 ? 'a-button-selected' : ''}`} id="a-autoid-8" onClick={() => setSelectedFormat(2)}>
                     <span className="a-button-inner">
-                      <a href="https://www.amazon.es/Yo-Julia-Domna-Novela-hist%C3%B3rica/dp/8408234498/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=1598543175&amp;sr=8-1" className="a-button-text" role="button" id="a-autoid-8-announce">
+                      <a className="a-button-text" role="button" id="a-autoid-8-announce">
                         <span>Tapa blanda</span>
                         <br />
                         <span className="a-color-secondary">
@@ -184,34 +185,6 @@ const MainProductInformation = () => {
                       <span className="a-declarative" data-action="show-all-offers-display" data-show-all-offers-display="{&quot;aodWeblabName&quot;:&quot;DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;asin&quot;:&quot;8408234498&quot;,&quot;aodWeblabTreatment&quot;:&quot;C&quot;}">
                         <a className="a-size-mini a-link-normal" href="https://www.amazon.es/gp/offer-listing/8408234498/ref=tmm_pap_new_olp_0?ie=UTF8&amp;condition=new&amp;qid=1598543175&amp;sr=8-1">
                           13 Nuevo <span className="olp-from">desde</span> 13,25&nbsp;€
-                        </a>
-                      </span>
-                    </span>
-                  </span>
-                </span>
-              </li>
-              <li className="swatchElement unselected" data-width="169" style={{ display: "none" }}>
-                <span className="a-list-item">
-                  <span className="a-button a-spacing-mini a-button-toggle format" id="a-autoid-9">
-                    <span className="a-button-inner">
-                      <a href="https://www.amazon.es/Yo-Julia/dp/8408205250/ref=tmm_other_meta_binding_swatch_0?_encoding=UTF8&amp;qid=1598543175&amp;sr=8-1" className="a-button-text" role="button" id="a-autoid-9-announce">
-                        <span>Digital</span>
-                        <br />
-                        <span className="a-color-secondary">
-                          <span className="a-size-base a-color-secondary">
-                            372,19&nbsp;€
-                          </span>
-                        </span>
-                        <div style={{ display: "inline-block" }}></div>
-                      </a>
-                    </span>
-                  </span>
-                  <span className="tmm-olp-links"></span>
-                  <span className="tmm-olp-links">
-                    <span className="olp-used olp-link">
-                      <span className="a-declarative" data-action="show-all-offers-display" data-show-all-offers-display="{&quot;aodWeblabName&quot;:&quot;DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923&quot;,&quot;condition&quot;:&quot;used&quot;,&quot;asin&quot;:&quot;8408205250&quot;,&quot;aodWeblabTreatment&quot;:&quot;C&quot;}">
-                        <a className="a-size-mini a-link-normal" href="https://www.amazon.es/gp/offer-listing/8408205250/ref=tmm_other_meta_binding_used_olp_0?ie=UTF8&amp;condition=used&amp;qid=1598543175&amp;sr=8-1">
-                          2 De 2ª mano <span className="olp-from">desde</span> 372,19&nbsp;€
                         </a>
                       </span>
                     </span>
@@ -275,31 +248,9 @@ const MainProductInformation = () => {
         </div>
       </div>
       <div id="edpIngress_feature_div" className="celwidget" data-feature-name="edpIngress" data-csa-c-id="7qjdpw-d5r2vy-ifb3sd-zc3ew4" data-cel-widget="edpIngress_feature_div"></div>
-      <div id="universalHQP_feature_div" className="celwidget" data-feature-name="universalHQP" data-csa-c-id="t3vdrk-ui6j2y-7dwwxs-7i2oyg" data-cel-widget="universalHQP_feature_div">
-        <hr className="a-divider-normal" />
-        <div className="a-section a-spacing-base">
-          <div className="a-fixed-left-grid universal_hqp_grid_clear_fix">
-            <div className="a-fixed-left-grid-inner" style={{ paddingLeft: "75px" }}>
-              <div className="a-fixed-left-grid-col a-col-left" style={{ width: "75px", marginLeft: "-75px", float: "left" }}>
-                <a className="a-link-normal" href="https://librosdelcole.es/">
-                  <img alt="" src={ImgBooks} height="75" width="75" />
-                </a>
-              </div>
-              <div className="a-fixed-left-grid-col a-col-right" style={{ paddingLeft: "3.5%", float: "left" }}>
-                <div className="a-row">
-                  <span className="a-text-bold">Libros de texto por colegio</span>
-                </div>
-                <div className="a-row">
-                  Encuentra tus libros en librosdelcole.es y finaliza tu compra en amazon.es
-                  <a className="a-link-normal" title="Libros de texto por colegio" href="https://librosdelcole.es/">Entra ya</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CollegeBooks />
       <div id="andonCord_feature_div" className="celwidget" data-feature-name="andonCord" data-csa-c-id="5b41qt-tv1w9f-odtmjk-2auro9" data-cel-widget="andonCord_feature_div"></div>
-    </div>
+    </div >
   );
 }
 
