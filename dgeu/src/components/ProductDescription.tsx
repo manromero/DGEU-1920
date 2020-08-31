@@ -34,7 +34,6 @@ const ProductDescription = ({ flapNote, backCover, biography }: IProps) => {
           ) : null}
           <div className="a-row">
             <a className="a-expander-header a-declarative a-expander-extend-header" onClick={() => setReadMore(!readMore)}>
-              <i id="bdExpanderIcon" className="a-icon a-icon-expand" role="img"></i>
               {readMore ? (
                 <span id="bdSeeLessPrompt" style={{ display: "block" }}>Leer menos</span>
               ) : (
