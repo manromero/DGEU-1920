@@ -12,7 +12,7 @@ const Article = ({ title, imgUrl, linkUrl, linkOpinions, numberOpinions, rating,
 
   return (
     <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
-      <div data-p13n-asin-metadata="{&quot;ref&quot;:&quot;bmx_1&quot;,&quot;asin&quot;:&quot;840819741X&quot;}" className="a-section a-spacing-none p13n-asin">
+      <div className="a-section a-spacing-none p13n-asin">
         <a className="a-link-normal" href={linkUrl}>
           <div className="a-section a-spacing-mini">
             <img alt={title} src={imgUrl} className="a-dynamic-image p13n-sc-dynamic-image" height="160" width="105" />

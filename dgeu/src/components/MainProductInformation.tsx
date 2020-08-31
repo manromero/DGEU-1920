@@ -4,14 +4,17 @@ import FormatsAndEditions from './FormatsAndEditions';
 import CollegeBooks from './CollegeBooks';
 import { IPriceFormat } from '../commons/interfaces';
 import DeliveryDates from './DeliveryDates';
+import MainProductAuthor from './MainProductAuthor';
+import MainProductReview from './MainProductReview';
+import MainProductCollection from './MainProductCollection';
 
 interface IProps {
   title: string;
   subtitle: string;
   author: string;
-  authorUrl: string,
-  collectionName: string,
-  collectionUrl: string,
+  authorUrl: string;
+  collectionName: string;
+  collectionUrl: string;
   freeDelivery: string;
   fastDelivery: string;
   numberOpinions: number;
@@ -30,70 +33,13 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
   const isSelectedKindle = priceFormats.find(e => e.id === 0 && e.selected);
 
   return (
-    <div id="centerCol" className="centerColumn">
-      <div id="qpeTitleTag_feature_div" className="celwidget" data-feature-name="qpeTitleTag" data-csa-c-id="9vrxse-fb5s2x-1kzx0f-vg3oc" data-cel-widget="qpeTitleTag_feature_div">
-      </div>
+    <div id="centerCol" >
       <MainProductTitle title={title} subtitle={subtitle} />
-      <div id="bylineInfo_feature_div" className="celwidget" data-feature-name="bylineInfo" data-csa-c-id="866dkm-njwzze-j8m38o-y9mqzv" data-cel-widget="bylineInfo_feature_div">
-        <div id="bylineInfo" className="a-section a-spacing-micro bylineHidden feature" data-cel-widget="bylineInfo">
-          de
-          <span className="author notFaded" data-width="">
-            <span className="a-declarative" data-action="a-popover" data-a-popover="{&quot;closeButtonLabel&quot;:&quot;Cerrar mensaje emergente de diálogo de autor&quot;,&quot;name&quot;:&quot;contributor-info-B00JA7ZCES&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;popoverLabel&quot;:&quot;Mensaje emergente de diálogo de autor&quot;,&quot;allowLinkDefault&quot;:&quot;true&quot;}">
-              <a data-asin="B00JA7ZCES" className="a-link-normal contributorNameID" href={authorUrl}>{' '}{author}</a>
-              <a href="javascript:void(0)" className="a-popover-trigger a-declarative"><i className="a-icon a-icon-popover"></i></a>
-            </span>
-            <span className="contribution">
-              <span className="a-color-secondary">(Autor)</span>
-            </span>
-          </span>
-        </div>
-      </div>
-      <div id="averageCustomerReviews_feature_div" className="celwidget" data-feature-name="averageCustomerReviews" data-csa-c-id="josfti-dtztjc-3vhzik-3qkxb1" data-cel-widget="averageCustomerReviews_feature_div">
-        <div id="averageCustomerReviews" data-asin="8408197401" data-ref="dpx_acr_pop_">
-          <span className="a-declarative" data-action="acrStarsLink-click-metrics" data-acrstarslink-click-metrics="{}">
-            <span id="acrPopover" className="reviewCountTextLinkedHistogram noUnderline" title="4,5 de 5 estrellas">
-              <span className="a-declarative" data-action="a-popover" data-a-popover="{&quot;max-width&quot;:&quot;700&quot;,&quot;closeButton&quot;:&quot;false&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;url&quot;:&quot;/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&amp;asin=8408197401&quot;}">
-                <a className="a-popover-trigger a-declarative" onClick={() => {
-                  if (document.getElementById('reviewsMedley')) {
-                    document.getElementById('reviewsMedley')!.scrollIntoView()
-                  }
-                }}>
-                  <i className="a-icon a-icon-star a-star-4-5">
-                    <span className="a-icon-alt">{rating} de 5 estrellas</span>
-                  </i>
-                  <i className="a-icon a-icon-popover"></i>
-                </a>
-              </span>
-              <span className="a-letter-space"></span>
-            </span>
-          </span>
-          <span className="a-letter-space"></span>
-          <span className="a-declarative" data-action="acrLink-click-metrics" data-acrlink-click-metrics="{}">
-            <a id="acrCustomerReviewLink" className="a-link-normal" onClick={() => {
-              if (document.getElementById('reviewsMedley')) {
-                document.getElementById('reviewsMedley')!.scrollIntoView()
-              }
-            }}>
-              <span id="acrCustomerReviewText" className="a-size-base">
-                {numberOpinions} valoraciones
-              </span>
-            </a>
-          </span>
-        </div>
-      </div>
-      <div id="seriesTitle_feature_div" className="celwidget" data-feature-name="seriesTitle" data-csa-c-id="8eo4wd-ua7ctr-8rlm8r-cguog3" data-cel-widget="seriesTitle_feature_div">
-        <span className="a-size-small a-color-secondary a-text-bold">Libro 1</span><span className="a-size-small a-color-secondary"> de 2 en la colección </span>
-        <a id="series-page-link" className="a-link-normal" href={collectionUrl}>
-          <span className="a-size-small">{collectionName}</span>
-        </a>
-      </div>
-      <div id="acBadge_feature_div" className="celwidget" data-feature-name="acBadge" data-csa-c-id="uecex-jaq1m8-pjemru-a6dshx" data-cel-widget="acBadge_feature_div"></div>
-      <div id="zeitgeistBadge_feature_div" className="celwidget" data-feature-name="zeitgeistBadge" data-csa-c-id="rupkca-gdm32v-h9erb6-4ys10p" data-cel-widget="zeitgeistBadge_feature_div"></div>
+      <MainProductAuthor author={author} authorUrl={authorUrl} />
+      <MainProductReview rating={rating} numberOpinions={numberOpinions} />
+      <MainProductCollection collectionName={collectionName} collectionUrl={collectionUrl} />
       <hr />
-      <div id="MediaMatrix" className="celwidget" data-feature-name="MediaMatrix" data-csa-c-id="oxlltn-7eirb0-mrjffi-nitmbc" data-cel-widget="MediaMatrix">
-        <span className="a-declarative" data-action="close-all-offers-display" data-close-all-offers-display="{}">
-          <div id="aod-background" className="a-section aok-hidden aod-darken-background"></div>
-        </span>
+      <div id="MediaMatrix" className="celwidget">
         <div id="formats" className="a-section a-spacing-large responsive">
           <a className="a-link-expander a-spacing-top-micro a-spacing-small a-size-small" onClick={() => setShowFormats(!showFormats)}>
             <i id="formatsIcon" className="a-icon a-icon-arrow" role="img"></i>
@@ -159,9 +105,7 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
           </div>
         </div>
       </div>
-      <div id="edpIngress_feature_div" className="celwidget" data-feature-name="edpIngress" data-csa-c-id="7qjdpw-d5r2vy-ifb3sd-zc3ew4" data-cel-widget="edpIngress_feature_div"></div>
       <CollegeBooks />
-      <div id="andonCord_feature_div" className="celwidget" data-feature-name="andonCord" data-csa-c-id="5b41qt-tv1w9f-odtmjk-2auro9" data-cel-widget="andonCord_feature_div"></div>
     </div >
   );
 }
