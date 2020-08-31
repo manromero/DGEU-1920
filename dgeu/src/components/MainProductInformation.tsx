@@ -33,7 +33,11 @@ const MainProductInformation = () => {
           <span className="a-declarative" data-action="acrStarsLink-click-metrics" data-acrstarslink-click-metrics="{}">
             <span id="acrPopover" className="reviewCountTextLinkedHistogram noUnderline" title="4,5 de 5 estrellas">
               <span className="a-declarative" data-action="a-popover" data-a-popover="{&quot;max-width&quot;:&quot;700&quot;,&quot;closeButton&quot;:&quot;false&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;url&quot;:&quot;/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&amp;asin=8408197401&quot;}">
-                <a href="javascript:void(0)" className="a-popover-trigger a-declarative">
+                <a className="a-popover-trigger a-declarative" onClick={() => {
+                  if (document.getElementById('reviewsMedley')) {
+                    document.getElementById('reviewsMedley')!.scrollIntoView()
+                  }
+                }}>
                   <i className="a-icon a-icon-star a-star-4-5">
                     <span className="a-icon-alt">4,5 de 5 estrellas</span>
                   </i>
@@ -45,7 +49,11 @@ const MainProductInformation = () => {
           </span>
           <span className="a-letter-space"></span>
           <span className="a-declarative" data-action="acrLink-click-metrics" data-acrlink-click-metrics="{}">
-            <a id="acrCustomerReviewLink" className="a-link-normal" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#customerReviews">
+            <a id="acrCustomerReviewLink" className="a-link-normal" onClick={() => {
+              if (document.getElementById('reviewsMedley')) {
+                document.getElementById('reviewsMedley')!.scrollIntoView()
+              }
+            }}>
               <span id="acrCustomerReviewText" className="a-size-base">
                 990 valoraciones
               </span>

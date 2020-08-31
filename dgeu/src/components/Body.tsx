@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductDetails from '../containers/ProductDetails';
-import ProductDescription from './ProductDescription';
+import ProductDescription from '../containers/ProductDescription';
 import KindleRecommendation from './KindleRecommendation';
 import ReviewsBox from './ReviewsBox';
 import PreloadPopUp from './PreloadPopUp';
