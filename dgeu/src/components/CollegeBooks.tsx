@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgBooks from './static/images/books.jpg';
+import ImgBooks from '../static/images/books.jpg';
 
 const CollegeBooks = () => {
   return (

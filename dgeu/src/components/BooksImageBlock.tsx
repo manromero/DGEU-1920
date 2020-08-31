@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgMinBook from './static/images/min_book.jpg';
+import ImgMinBook from '../static/images/min_book.jpg';
 
 const BooksImageBlock = () => {
   return (

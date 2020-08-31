@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgAuthor from './static/images/author.jpg';
+import ImgAuthor from '../static/images/author.jpg';
 
 const FollowAuthor = () => {
   return (

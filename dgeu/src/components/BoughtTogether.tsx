@@ -1,7 +1,7 @@
 import React from 'react';
-import ImgBuyTogether1 from './static/images/buy_together_1.jpg';
-import ImgBuyTogether2 from './static/images/buy_together_2.jpg';
-import ImgBuyTogether3 from './static/images/buy_together_3.jpg';
+import ImgBuyTogether1 from '../static/images/buy_together_1.jpg';
+import ImgBuyTogether2 from '../static/images/buy_together_2.jpg';
+import ImgBuyTogether3 from '../static/images/buy_together_3.jpg';
 
 const BoughtTogether = () => {
   return (

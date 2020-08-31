@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgDefaultUser from './static/images/default_user.png';
+import ImgDefaultUser from '../static/images/default_user.png';
 
 const ReviewsCustomers = () => {
   return (
