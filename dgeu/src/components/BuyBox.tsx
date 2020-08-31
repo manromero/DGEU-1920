@@ -120,15 +120,6 @@ const BuyBox = ({ priceFormats }: IProps) => {
                             <option value="29">29</option>
                             <option value="30">30</option>
                           </select>
-                          <span className="a-button a-button-dropdown a-button-small" aria-hidden="true" id="a-autoid-0" style={{ minWidth: "0%" }}>
-                            <span className="a-button-inner">
-                              <span className="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true" id="a-autoid-0-announce">
-                                <span className="a-dropdown-label">Cantidad:</span>
-                                <span className="a-dropdown-prompt">1</span>
-                              </span>
-                              <i className="a-icon a-icon-dropdown"></i>
-                            </span>
-                          </span>
                         </span>
                       </div>
                     </div>
