@@ -48,10 +48,10 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
             <i id="formatsIcon" className="a-icon a-icon-arrow" role="img"></i>
             {showFormats ?
               (
-                <span id="hideMoreFormatsPrompt" className="tmmShowPrompt">Ocultar otros formatos y ediciones</span>
+                <span className={classes.othersFormatLinks}>Ocultar otros formatos y ediciones</span>
               ) :
               (
-                <span id="showMoreFormatsPrompt" className="tmmShowPrompt">Ver los  formatos y ediciones</span>
+                <span className={classes.othersFormatLinks}>Ver los  formatos y ediciones</span>
               )
             }
           </a>
@@ -95,14 +95,14 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
           ) : null}
         </div>
         <em></em>
-        <div id="psPlaceHolder" style={{ height: "20px", display: "block" }}>
+        <div className={classes.readMoreContainer}>
           <div style={{ zIndex: 3 }}>
-            <a className="a-link-expander h2-expander" onClick={() => setReadMore(!readMore)}>
-              <i id="bdExpanderIcon" className="a-icon a-icon-expand" role="img"></i>
+            <a className={classes.readMoreLink} onClick={() => setReadMore(!readMore)}>
+              <i className={classes.readMoreIcon} role="img"></i>
               {readMore ? (
-                <span id="bdSeeLessPrompt" style={{ display: "block" }}>Leer menos</span>
+                <span className={classes.readMoreLabel}>Leer menos</span>
               ) : (
-                  <span id="bdSeeAllPrompt" style={{ display: "block" }}>Leer más</span>
+                  <span className={classes.readMoreLabel}>Leer más</span>
                 )}
             </a>
           </div>

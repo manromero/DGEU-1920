@@ -1,7 +1,8 @@
 import React from 'react';
 import { IReview } from '../commons/interfaces';
-
 import { calculateStartsClass } from '../commons/utils';
+
+import useStyles from '../styles/Review';
 
 interface IProps extends IReview {
 
@@ -11,12 +12,14 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
 
   const startIcon = calculateStartsClass(rating);
 
+  const classes = useStyles();
+
   return (
-    <div id={id} data-hook="review" className="a-section review aok-relative">
+    <div id={id} className="a-section review aok-relative">
       <div id={`${id}-review-card`} className="a-row a-spacing-none">
-        <div id={`customer_review-${id}`} className="a-section celwidget" data-csa-c-id="q26fnx-jn57q5-sy77qg-7pobyv" data-cel-widget="customer_review-R1NCBWWFLGHUY5">
-          <div data-hook="genome-widget" className="a-row a-spacing-mini">
-            <a href={reviewUrl} className="a-profile" data-a-size="small">
+        <div id={`customer_review-${id}`} className="a-section celwidget">
+          <div className="a-row a-spacing-mini">
+            <a href={reviewUrl} className="a-profile">
               <div aria-hidden="true" className="a-profile-avatar-wrapper">
                 <div className="a-profile-avatar">
                   <img src={authorImgUrl} />
@@ -34,20 +37,20 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
               </i>
             </a>
             <span className="a-letter-space"></span>
-            <a data-hook="review-title" className="a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold" href={reviewUrl}>
+            <a className="a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold" href={reviewUrl}>
               <span>{summary}</span>
             </a>
           </div>
-          <span data-hook="review-date" className="a-size-base a-color-secondary review-date">
+          <span className={classes.revisionDate}>
             {revisionDate}
           </span>
-          <div className="a-row a-spacing-mini review-data review-format-strip">
-            <span data-hook="avp-badge-linkless" className="a-size-mini a-color-state a-text-bold">Compra verificada</span>
+          <div className={classes.verifiedPurchaseContainer}>
+            <span className={classes.verifiedPurchase}>Compra verificada</span>
           </div>
           <div className="a-row a-spacing-small review-data">
-            <span data-hook="review-body" className="a-size-base review-text">
-              <div aria-live="polite" data-a-expander-name="review_text_read_more" data-a-expander-collapsed-height="300" className="a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container" style={{ maxHeight: "300px" }}>
-                <div data-hook="review-collapsed" aria-expanded="false" className="a-expander-content reviewText review-text-content a-expander-partial-collapse-content">
+            <span className="a-size-base review-text">
+              <div aria-live="polite" className="a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container" style={{ maxHeight: "300px" }}>
+                <div aria-expanded="false" className="a-expander-content reviewText review-text-content a-expander-partial-collapse-content">
                   <span>
                     {comment}
                   </span>
@@ -55,15 +58,15 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
               </div>
             </span>
           </div>
-          <div data-hook="review-comments" className="a-row review-comments cr-vote-action-bar">
-            <span className="cr-vote" data-hook="review-voting-widget">
+          <div className="a-row review-comments cr-vote-action-bar">
+            <span className="cr-vote" >
               <div className="a-row a-spacing-small">
-                <span data-hook="helpful-vote-statement" className="a-size-base a-color-tertiary cr-vote-text">A {utilNumber} personas les ha parecido esto útil</span>
+                <span className={classes.utilNumber}>A {utilNumber} personas les ha parecido esto útil</span>
               </div>
               <div className="cr-helpful-button aok-float-left">
-                <span className="a-button a-button-base" id="a-autoid-24">
+                <span className="a-button a-button-base">
                   <span className="a-button-inner">
-                    <a data-hook="vote-helpful-button" className="a-button-text" role="button" id="a-autoid-24-announce">
+                    <a className="a-button-text" role="button">
                       <div className="cr-helpful-text">
                         Útil
                       </div>
@@ -73,11 +76,11 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
               </div>
             </span>
             <i className="a-icon a-icon-text-separator" role="img" aria-label="|"></i>
-            <a data-hook="review-comment" className="a-size-base a-link-normal a-color-secondary a-text-normal" href={reviewUrl}>Comentar</a>
+            <a className="a-size-base a-link-normal a-color-secondary a-text-normal" href={reviewUrl}>Comentar</a>
             <span className="cr-footer-line-height">
               <span>
                 <i className="a-icon a-icon-text-separator" role="img" aria-label="|"></i>
-                <span className="a-declarative" data-action="cr-popup">
+                <span className="a-declarative">
                   <a className="a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal" href={reviewUrl}>Informar de un abuso</a>
                 </span>
               </span>
