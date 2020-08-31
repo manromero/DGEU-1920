@@ -1,5 +1,5 @@
 import React from 'react';
-import BuyBox from './BuyBox';
+import BuyBox from '../containers/BuyBox';
 import WishListButtonStack from './WishListButtonStack';
 
 const BuyBoxFeature = () => {

@@ -1,4 +1,4 @@
-import { IArticle, IReview } from '../commons/interfaces';
+import { IArticle, IReview, IPriceFormat } from '../commons/interfaces';
 
 export interface IInitialState {
   title: string;
@@ -13,8 +13,7 @@ export interface IInitialState {
   rating: number;
   description: string;
   moreDescription: string;
-  // TODO MANORMERO definir
-  formats: any[];
+  priceFormats: IPriceFormat[];
   othersCustomersArticles: IArticle[];
   sponsoredArticles1: IArticle[];
   undiscoveredArticles: IArticle[];
@@ -34,6 +33,27 @@ export interface IInitialState {
   customerReviews: IReview[];
   internationalReviews: IReview[];
 };
+
+const priceFormats: IPriceFormat[] = [
+  {
+    id: 0,
+    price: 6.64,
+    product: "Versión Kindle",
+    selected: false
+  },
+  {
+    id: 1,
+    price: 21.75,
+    product: "Tapa dura",
+    selected: true
+  },
+  {
+    id: 2,
+    price: 13.25,
+    product: "Tapa blanda",
+    selected: false
+  }
+]
 
 const othersCustomersArticles: IArticle[] = [
   {
@@ -660,8 +680,7 @@ export const initialState: IInitialState = {
   rating: 4.5,
   description: "192 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más ambicioso: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén.",
   moreDescription: "De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.",
-  // TODO MANORMERO definir
-  formats: [],
+  priceFormats: priceFormats,
   othersCustomersArticles: othersCustomersArticles,
   sponsoredArticles1: sponsoredArticles1,
   undiscoveredArticles: undiscoveredArticles,

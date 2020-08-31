@@ -1,6 +1,18 @@
 import React from 'react';
+import { IPriceFormat } from '../commons/interfaces';
 
-const BuyBox = () => {
+interface IProps {
+  priceFormats: IPriceFormat[];
+}
+
+const BuyBox = ({ priceFormats }: IProps) => {
+
+  const priceFormatSelected = priceFormats.find(e => e.selected);
+
+  if (!priceFormatSelected) {
+    return null;
+  }
+
   return (
     <div id="buybox" className="a-row a-spacing-medium">
       <div className="a-box rbbSection">
@@ -10,7 +22,9 @@ const BuyBox = () => {
               <div className="a-section">
                 <div className="a-row">
                   <span className="inlineBlock-display">
-                    <span className="a-size-medium a-color-price offer-price a-text-normal">21,75&nbsp;€</span>
+                    <span className="a-size-medium a-color-price offer-price a-text-normal">
+                      {(priceFormatSelected.price).toFixed(2)} €
+                    </span>
                   </span>
                 </div>
               </div>
@@ -20,14 +34,16 @@ const BuyBox = () => {
                 <ul className="a-unordered-list a-nostyle a-vertical">
                   <li>
                     <span className="a-list-item">
-                      <span className="a-color-secondary">Precio recomendado:</span>
-                      <span className="a-color-secondary a-text-strike">22,90&nbsp;€</span>
+                      <span className="a-color-secondary">Precio recomendado: </span>
+                      <span className="a-color-secondary a-text-strike">
+                        {(priceFormatSelected.price * 1.05).toFixed(2)} €
+                      </span>
                     </span>
                   </li>
                   <li>
                     <span className="a-list-item">
                       <span className="a-size-base a-color-secondary">
-                        Ahorras: 1,15&nbsp;€
+                        Ahorras: {(priceFormatSelected.price * 1.05 - priceFormatSelected.price).toFixed(2)} €
                         (5%)
                       </span>
                     </span>

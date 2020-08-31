@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
+import { bindActionCreators, Dispatch } from 'redux';
 import { IInitialState } from '../state';
 import MainProductInformation from '../components/MainProductInformation';
+import { acSetProductSelected } from '../actions';
 
 const mapStateToProps = (state: IInitialState) => ({
   title: state.title,
@@ -14,7 +16,16 @@ const mapStateToProps = (state: IInitialState) => ({
   numberOpinions: state.numberOpinions,
   rating: state.rating,
   description: state.description,
-  moreDescription: state.moreDescription
+  moreDescription: state.moreDescription,
+  priceFormats: state.priceFormats
 });
 
-export default connect(mapStateToProps, {})(MainProductInformation);
+const mapDispatchToProps = (dispatch: Dispatch) =>
+  bindActionCreators(
+    {
+      acSetProductSelected: acSetProductSelected
+    },
+    dispatch
+  );
+
+export default connect(mapStateToProps, mapDispatchToProps)(MainProductInformation);

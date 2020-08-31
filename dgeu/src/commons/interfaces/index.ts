@@ -21,3 +21,10 @@ export interface IReview {
   utilNumber: number;
   reviewUrl: string;
 }
+
+export interface IPriceFormat {
+  id: number;
+  product: string;
+  price: number;
+  selected: boolean;
+}
