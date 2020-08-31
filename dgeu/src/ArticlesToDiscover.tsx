@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import Article from './Article';
 
-const ArticlesToDiscover = () => {
+interface IProps {
+  title: string;
+  articlesPerPage: number;
+};
+
+const ArticlesToDiscover = ({ title, articlesPerPage }: IProps) => {
 
   const articles = [
     {
@@ -138,7 +143,6 @@ const ArticlesToDiscover = () => {
     }
   ];
 
-  const articlesPerPage = 6;
   const numberOfPages = Math.ceil(articles.length / articlesPerPage);
   const [page, setPage] = useState(1);
 
@@ -160,8 +164,6 @@ const ArticlesToDiscover = () => {
     }
   }
 
-
-
   return (
     <div className="celwidget pd_rd_w-PWZ4h pf_rd_p-4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7 pf_rd_r-VBVEMCD60R9FPEJFGNHW pd_rd_r-c6b0e583-be80-4aa3-867d-b89df4127853 pd_rd_wg-nVWqQ" data-csa-c-id="1hepyn-9nt3gb-91itr4-2vher3" data-cel-widget="desktop-dp-sims_dpbmx2_ALL-single-bucket-0_5">
       <div id="p13n-m-desktop-dp-sims_dpbmx2.ALL-single-bucket-0.5-sims-feature-3" className="celwidget" data-csa-c-id="8lqtrn-rd1u6e-jhzdkn-knko9r" data-cel-widget="desktop-dp-sims_dpbmx2.ALL-single-bucket-0.5-sims-feature-3">
@@ -172,7 +174,7 @@ const ArticlesToDiscover = () => {
               <input type="hidden" className="a-carousel-firstvisibleitem" />
               <div className="a-row a-carousel-header-row a-size-large">
                 <div className="a-column a-span8">
-                  <h2 className="a-carousel-heading">Más artículos por descubrir</h2>
+                  <h2 className="a-carousel-heading">{title}</h2>
                 </div>
                 <div className="a-column a-span4 a-span-last a-text-right">
                   <span className="a-carousel-pagination a-size-base" style={{ visibility: "visible" }}>

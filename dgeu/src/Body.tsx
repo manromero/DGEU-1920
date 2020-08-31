@@ -3,14 +3,11 @@ import ProductDetails from './ProductDetails';
 import ProductDescription from './ProductDescription';
 import KindleRecommendation from './KindleRecommendation';
 import Reviews from './Reviews';
-import RelatedProducts from './RelatedProducts';
-import OtherCustomerProducts from './OtherCustomerProducts';
 import PreloadPopUp from './PreloadPopUp';
 import RightPanel from './RightPanel';
 import MainProductInformation from './MainProductInformation';
 import SitbReaderPlaceholder from './SitbReaderPlaceholder';
 import ArticlesToDiscover from './ArticlesToDiscover';
-import RelatedProducts2 from './RelatedProducts2';
 import SpecialOffers from './SpecialOffers';
 import BoughtTogether from './BoughtTogether';
 import Breadcrumbs from './Breadcrumbs';
@@ -32,15 +29,27 @@ const Body = () => {
         <hr className="bucketDivider" />
         <SpecialOffers />
         <BoughtTogether />
-        <OtherCustomerProducts />
-        <RelatedProducts />
+        <ArticlesToDiscover
+          title="¿Qué otros productos compran los clientes tras ver este producto?"
+          articlesPerPage={4}
+        />
+        <ArticlesToDiscover
+          title="Productos patrocinados relacionados con este artículo"
+          articlesPerPage={6}
+        />
         <PreloadPopUp />
         <ProductDescription />
         <KindleRecommendation />
         <ProductDetails />
-        <ArticlesToDiscover />
+        <ArticlesToDiscover
+          title="Más artículos por descubrir"
+          articlesPerPage={6}
+        />
         <hr className="a-divider-normal" />
-        <RelatedProducts2 />
+        <ArticlesToDiscover
+          title="Productos patrocinados relacionados con este artículo"
+          articlesPerPage={6}
+        />
         <hr aria-hidden="true" className="a-spacing-large a-divider-normal" />
         <Reviews />
       </div>
