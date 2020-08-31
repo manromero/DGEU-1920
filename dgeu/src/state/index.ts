@@ -626,8 +626,8 @@ const customerReviews: IReview[] = [
     authorImgUrl: "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/6c7b45b8-92ee-4e5b-a966-92dd2b94ca82._CR140,0,844,844_SX48_.jpg",
     summary: "Buen libro",
     rating: 5.0,
-    revisionDate: "Revisado en España el 12 de noviembre de 2018",
-    date: 20181112,
+    revisionDate: "Revisado en España el 12 de febrero de 2020",
+    date: 20200212,
     comment: "El libro físicamente mide 23x15, con 704 páginas, no es cómodo para leer en la cama... En cuánto al contenido, ya estoy enganchada! aunque sólo llevo unas 50 páginas, sabía que iba a gustarme.\nSantiago Posteguillo documenta genial sus libros de la Roma clásica, aparte de ser muy ameno.\nMe alegro de que le hayan dado el Planeta a una historia de humanidades, ya era hora!",
     utilNumber: 21,
     reviewUrl: "https://www.amazon.es/gp/customer-reviews/RWFT9KVRRTUNQ/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"
@@ -641,10 +641,10 @@ const internationalReviews: IReview[] = [
     authorImgUrl: "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/d24ec5a2-e26f-415f-a747-d6502a320189._CR62,0,375,375_SX48_.jpg",
     summary: "If you love Rome, you will love this.",
     rating: 4.0,
-    revisionDate: "Revisado en Reino Unido el 25 de noviembre de 2018",
-    date: 20181125,
+    revisionDate: "Revisado en Reino Unido el 25 de enero de 2020",
+    date: 20200125,
     comment: "I love Santiago Posteguillo. I think I have read all of his novels. I like this one, but maybe not as much as the previous ones. True the previous ones were magnificent, in my opinion, so the bar was very high, but I felt a bit like “is it that it?” I missed some depth, some stories did not develop at the same rythm, and the end....I am being selfish now, but it could have gone further in their lives. Nevertheless, a great book.",
-    utilNumber: 2,
+    utilNumber: 25,
     reviewUrl: "https://www.amazon.es/gp/profile/amzn1.account.AGVPAXXL3ROR2QVOX3PAU75PYYNQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8"
   },
   {
