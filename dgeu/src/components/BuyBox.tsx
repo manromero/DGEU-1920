@@ -1,5 +1,6 @@
 import React from 'react';
 import { IPriceFormat } from '../commons/interfaces';
+import useStyles from '../styles/BuyBox';
 
 interface IProps {
   priceFormats: IPriceFormat[];
@@ -8,6 +9,8 @@ interface IProps {
 const BuyBox = ({ priceFormats }: IProps) => {
 
   const priceFormatSelected = priceFormats.find(e => e.selected);
+
+  const classes = useStyles();
 
   if (!priceFormatSelected) {
     return null;
@@ -22,7 +25,7 @@ const BuyBox = ({ priceFormats }: IProps) => {
               <div className="a-section">
                 <div className="a-row">
                   <span className="inlineBlock-display">
-                    <span className="a-size-medium a-color-price offer-price a-text-normal">
+                    <span className={classes.price}>
                       {(priceFormatSelected.price).toFixed(2)} €
                     </span>
                   </span>
@@ -34,15 +37,15 @@ const BuyBox = ({ priceFormats }: IProps) => {
                 <ul className="a-unordered-list a-nostyle a-vertical">
                   <li>
                     <span className="a-list-item">
-                      <span className="a-color-secondary">Precio recomendado: </span>
-                      <span className="a-color-secondary a-text-strike">
+                      <span className={classes.recommendedPriceLabel}>Precio recomendado: </span>
+                      <span className={classes.recommendedPrice}>
                         {(priceFormatSelected.price * 1.05).toFixed(2)} €
                       </span>
                     </span>
                   </li>
                   <li>
                     <span className="a-list-item">
-                      <span className="a-size-base a-color-secondary">
+                      <span className={classes.saveLabel}>
                         Ahorras: {(priceFormatSelected.price * 1.05 - priceFormatSelected.price).toFixed(2)} €
                         (5%)
                       </span>
@@ -50,7 +53,7 @@ const BuyBox = ({ priceFormats }: IProps) => {
                   </li>
                   <li>
                     <span className="a-list-item a-size-small">
-                      <span className="a-size-base">Precio final del producto</span>
+                      <span className={classes.finalPriceLabel}>Precio final del producto</span>
                     </span>
                   </li>
                 </ul>
@@ -67,7 +70,7 @@ const BuyBox = ({ priceFormats }: IProps) => {
               <div className="a-section a-spacing-none"></div>
               <div className="a-section a-spacing-small">
                 <div id="availability" className="a-section a-spacing-none">
-                  <span className="a-size-medium a-color-success">
+                  <span className={classes.stock}>
                     En stock.
                   </span>
                   <br />

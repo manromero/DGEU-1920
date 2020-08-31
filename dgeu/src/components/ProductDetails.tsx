@@ -1,5 +1,6 @@
 import React from 'react';
 import { calculateStartsClass } from '../commons/utils';
+import useStyles from '../styles/ProductDetails';
 
 interface IProps {
   pages: number;
@@ -17,6 +18,8 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
 
   const startIcon = calculateStartsClass(rating);
 
+  const classes = useStyles();
+
   return (
     <div id="detailBullets_feature_div" className="celwidget" data-feature-name="detailBullets" data-csa-c-id="6f39ob-liu4wh-tvarz-dybm62" data-cel-widget="detailBullets_feature_div">
       <div id="detailBulletsWrapper_feature_div" data-feature-name="detailBullets" data-template-name="detailBullets" className="a-section feature detail-bullets-wrapper bucket" data-cel-widget="detailBulletsWrapper_feature_div">
@@ -26,44 +29,44 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
         <div id="detailBullets_feature_div">
           <ul className="a-unordered-list a-nostyle a-vertical a-spacing-none detail-bullet-list">
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">Tapa dura: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>Tapa dura: </span>
                 <span>{pages} páginas</span>
               </span>
             </li>
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">ISBN-10: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>ISBN-10: </span>
                 <span>{isbn10}</span>
               </span>
             </li>
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">ISBN-13: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>ISBN-13: </span>
                 <span>{isbn13}</span>
               </span>
             </li>
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">Dimensiones del producto: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>Dimensiones del producto: </span>
                 <span>{dimensions}</span>
               </span>
             </li>
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">Peso del producto: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>Peso del producto: </span>
                 <span>{weight} g</span>
               </span>
             </li>
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">Editorial: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>Editorial: </span>
                 <span>{publisher}</span>
               </span>
             </li>
             <li>
-              <span className="a-list-item">
-                <span className="detail-bullet-label a-text-bold">Idioma: </span>
+              <span className={classes.listItem}>
+                <span className={classes.label}>Idioma: </span>
                 <span>{languaje}</span>
               </span>
             </li>
@@ -71,8 +74,8 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
         </div>
         <ul className="a-unordered-list a-nostyle a-vertical a-spacing-none detail-bullet-list">
           <li>
-            <span className="a-list-item">
-              <span className="detail-bullet-label a-text-bold">
+            <span className={classes.listItem}>
+              <span className={classes.label}>
                 Opiniones de los clientes:
               </span>
               <div id="detailBullets_averageCustomerReviews" data-asin="8408197401" data-ref="dpx_acr_pop_">
@@ -84,7 +87,7 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
                           document.getElementById('reviewsMedley')!.scrollIntoView()
                         }
                       }}>
-                        <i className="a-icon a-icon-star a-star-4-5">
+                        <i className={`a-icon a-icon-star ${startIcon}`}>
                           <span className="a-icon-alt">{rating} de 5 estrellas</span>
                         </i>
                         <i className="a-icon a-icon-popover"></i>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { IReview } from '../commons/interfaces';
 import { calculateStartsClass } from '../commons/utils';
-
 import useStyles from '../styles/Review';
 
 interface IProps extends IReview {
@@ -36,9 +35,8 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
                 <span className="a-icon-alt">{`${rating} de 5 estrellas`}</span>
               </i>
             </a>
-            <span className="a-letter-space"></span>
-            <a className="a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold" href={reviewUrl}>
-              <span>{summary}</span>
+            <a className={classes.summary} href={reviewUrl}>
+              <span> {summary}</span>
             </a>
           </div>
           <span className={classes.revisionDate}>
@@ -49,8 +47,8 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
           </div>
           <div className="a-row a-spacing-small review-data">
             <span className="a-size-base review-text">
-              <div aria-live="polite" className="a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container" style={{ maxHeight: "300px" }}>
-                <div aria-expanded="false" className="a-expander-content reviewText review-text-content a-expander-partial-collapse-content">
+              <div className={classes.commentContainer}>
+                <div className={classes.comment}>
                   <span>
                     {comment}
                   </span>
@@ -76,12 +74,12 @@ const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comme
               </div>
             </span>
             <i className="a-icon a-icon-text-separator" role="img" aria-label="|"></i>
-            <a className="a-size-base a-link-normal a-color-secondary a-text-normal" href={reviewUrl}>Comentar</a>
+            <a className={classes.inform} href={reviewUrl}>Comentar</a>
             <span className="cr-footer-line-height">
               <span>
                 <i className="a-icon a-icon-text-separator" role="img" aria-label="|"></i>
                 <span className="a-declarative">
-                  <a className="a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal" href={reviewUrl}>Informar de un abuso</a>
+                  <a className={classes.inform} href={reviewUrl}>Informar de un abuso</a>
                 </span>
               </span>
             </span>
