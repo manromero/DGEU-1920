@@ -1,14 +1,19 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
 
 import Header from './components/Header';
-import Body from './components/Body';
+import Body from './containers/Body';
 import Footer from './components/Footer';
 import reducer from './reducer';
 
 const App = () => {
-  const store = createStore(reducer);
+  const store = createStore(reducer,
+    compose(
+      applyMiddleware(thunk)
+    )
+  );
 
   return (
     <React.Fragment>

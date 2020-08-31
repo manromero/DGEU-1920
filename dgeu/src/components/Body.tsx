@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProductDetails from '../containers/ProductDetails';
 import ProductDescription from '../containers/ProductDescription';
 import KindleRecommendation from './KindleRecommendation';
@@ -16,8 +16,27 @@ import SponsoredArticles1 from '../containers/SponsoredArticles1';
 import SponsoredArticles2 from '../containers/SponsoredArticles2';
 import OthersCustomersArticles from '../containers/OthersCustomersArticles';
 import UndiscoveredArticles from '../containers/UndiscoveredArticles';
+import Loader from './Loader';
 
-const Body = () => {
+interface IProps {
+  dataLoaded: boolean;
+  opeLoadData: () => void;
+}
+
+const Body = ({ dataLoaded, opeLoadData }: IProps) => {
+
+  // Similar componentDidMount y componentDidUpdate
+  useEffect(() => {
+    // Intilialize data
+    opeLoadData();
+  });
+
+  if (!dataLoaded) {
+    return (
+      <Loader />
+    );
+  }
+
   return (
     <div id="dp" className="book es_ES">
       <KindlePop />
