@@ -14,6 +14,8 @@ import Breadcrumbs from './Breadcrumbs';
 import LeftPanel from './LeftPanel';
 
 import KindlePop from './KindlePop';
+import SponsoredArticles1 from '../containers/SponsoredArticles1';
+import SponsoredArticles2 from '../containers/SponsoredArticles2';
 
 const Body = () => {
   return (
@@ -32,8 +34,9 @@ const Body = () => {
         <Articles
           title="¿Qué otros productos compran los clientes tras ver este producto?"
           articlesPerPage={4}
+          articles={[]}
         />
-        <Articles
+        <SponsoredArticles1
           title="Productos patrocinados relacionados con este artículo"
           articlesPerPage={6}
         />
@@ -44,8 +47,9 @@ const Body = () => {
         <Articles
           title="Más artículos por descubrir"
           articlesPerPage={6}
+          articles={[]}
         />
-        <Articles
+        <SponsoredArticles2
           title="Productos patrocinados relacionados con este artículo"
           articlesPerPage={6}
         />

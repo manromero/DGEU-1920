@@ -9,13 +9,284 @@ export interface IInitialState {
   moreDescription: string;
   // TODO MANORMERO definir
   formats: any[];
-  articles: IArticle[];
+  sponsoredArticles1: IArticle[];
+  sponsoredArticles2: IArticle[];
   flapNote: string;
   backCover: string;
   biography: string;
   customerReviews: IReview[];
   internationalReviews: IReview[];
 };
+
+const sponsoredArticles1: IArticle[] = [
+  {
+    title: "Un mar violeta oscuro: Finalista Premio Planeta 2018: 3 (Autores Españoles e Iberoamericanos)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL480_SR315,480_.jpg",
+    linkUrl: "https://www.amazon.es/mar-violeta-oscuro-Finalista-Iberoamericanos/dp/840819741X/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/840819741X/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 110,
+    rating: 4.3,
+    author: "Ayanta Barilli",
+    cover: "Tapa dura",
+    price: "20,42 €"
+  },
+  {
+    title: "ql xvii la sangre de roma (Narrativas Históricas)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/ql-xvii-sangre-roma/dp/8435063496/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/8435063496/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 39,
+    rating: 4.7,
+    author: "Simon Scarrow",
+    cover: "Tapa dura",
+    price: "23,75 €"
+  },
+  {
+    title: "La novia gitana (La novia gitana 1)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL480_SR303,480_.jpg",
+    linkUrl: "https://www.amazon.es/novia-gitana-ALFAGUARA-NEGRA/dp/8420433187/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/8420433187/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 759,
+    rating: 4.5,
+    author: "Carmen Mola",
+    cover: "Tapa blanda",
+    price: "18,90 €"
+  },
+  {
+    title: "La última cripta",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL480_SR321,480_.jpg",
+    linkUrl: "https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 1424,
+    rating: 4.0,
+    author: "Mr Fernando Gamboa",
+    cover: "Tapa blanda",
+    price: "20,68 €"
+  },
+  {
+    title: "El enigma de la habitación 622 (Literaturas)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg",
+    linkUrl: "https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/1481924699/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 456,
+    rating: 3.8,
+    author: "Joël Dicker",
+    cover: "Tapa blanda",
+    price: "21,75 €"
+  },
+  {
+    title: "El chico de las bobinas (Áncora &amp; Delfin)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL480_SR282,480_.jpg",
+    linkUrl: "https://www.amazon.es/chico-las-bobinas-%C3%81ncora-Delfin/dp/8423357171/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/8423357171/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 47,
+    rating: 4.7,
+    author: "Pere Cervantes",
+    cover: "Tapa blanda",
+    price: "19,85 €"
+  },
+  {
+    title: "El pintor de almas (Novela histórica)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91mVs9cU83L._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/El-pintor-almas-Novela-hist%C3%B3rica/dp/8425357241/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8425357241&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8425357241/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&pd_rd_i=8425357241&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 518,
+    rating: 4.3,
+    author: "Ildefonso Falcones",
+    cover: "Tapa blanda",
+    price: "21,75 €"
+  },
+  {
+    title: "Tú no matarás (Éxitos)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/817D4wVmN4L._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/T%C3%BA-no-matar%C3%A1s-Julia-Navarro/dp/8401021162/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8401021162&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8401021162/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&pd_rd_i=8401021162&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 615,
+    rating: 4.2,
+    author: "Julia Navarro",
+    cover: "Tapa blanda",
+    price: "22,70 €"
+  },
+  {
+    title: "La sangre manda (Éxitos)",
+    imgUrl: "https://m.media-amazon.com/images/I/51eaWTBzmYL._BG0,0,0,0_FMpng_AC_SY160_SX160_.jpg",
+    linkUrl: "https://www.amazon.es/gp/slredirect/picassoRedirect.html/ref=sspa_dk_detail_1?ie=UTF8&adId=A09058622ZP8LQEV6EZVY&qualifier=1598543179&id=346373722007478&widgetName=sp_detail&url=%2Fdp%2F8401024757%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1",
+    linkOpinions: "https://www.amazon.es/gp/slredirect/picassoRedirect.html/ref=sspa_dk_detail_1?ie=UTF8&adId=A09058622ZP8LQEV6EZVY&qualifier=1598543179&id=346373722007478&widgetName=sp_detail&url=%2Fdp%2F8401024757%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1#customerReviews",
+    numberOpinions: 61,
+    rating: 3.9,
+    author: "Stephen King",
+    cover: "Tapa dura",
+    price: "22,70 €"
+  },
+  {
+    title: "El destino de los héroes (Novela histórica)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81v3vzMKfQL._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/destino-los-h%C3%A9roes-Novela-hist%C3%B3rica/dp/8425358213/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8425358213&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8425358213/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&pd_rd_i=8425358213&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 103,
+    rating: 4.5,
+    author: "Chufo Lloréns",
+    cover: "Tapa dura",
+    price: "22,70 €"
+  },
+  {
+    title: "Despiértame cuando acabe septiembre (Thriller y suspense)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/71G4f2oBXML._AC_UL480_SR306,480_.jpg",
+    linkUrl: "https://www.amazon.es/Despi%C3%A9rtame-cuando-septiembre-Thriller-suspense/dp/8417305807/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8417305807&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8417305807/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&pd_rd_i=8417305807&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 570,
+    rating: 4.3,
+    author: "Mónica Rouanet",
+    cover: "Tapa blanda",
+    price: "17,00 €"
+  },
+  {
+    title: "Estuche Trilogía de Trajano (Novela histórica)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/8189f3OX9-L._AC_UL320_SR316,320_.jpg",
+    linkUrl: "https://www.amazon.es/Estuche-Trilog%C3%ADa-Trajano-Novela-hist%C3%B3rica/dp/8408197428/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8408197428&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8408197428/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&pd_rd_i=8408197428&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 323,
+    rating: 4.7,
+    author: "Santiago Posteguillo",
+    cover: "Tapa blanda",
+    price: "28,40 €"
+  }
+];
+
+const sponsoredArticles2: IArticle[] = [
+  {
+    title: "Un mar violeta oscuro: Finalista Premio Planeta 2018: 3 (Autores Españoles e Iberoamericanos)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81Rpie3Y-VL._AC_UL480_SR315,480_.jpg",
+    linkUrl: "https://www.amazon.es/mar-violeta-oscuro-Finalista-Iberoamericanos/dp/840819741X/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/840819741X/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=840819741X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 110,
+    rating: 4.3,
+    author: "Ayanta Barilli",
+    cover: "Tapa dura",
+    price: "20,42 €"
+  },
+  {
+    title: "ql xvii la sangre de roma (Narrativas Históricas)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91Kish2XV-L._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/ql-xvii-sangre-roma/dp/8435063496/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/8435063496/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8435063496&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 39,
+    rating: 4.7,
+    author: "Simon Scarrow",
+    cover: "Tapa dura",
+    price: "23,75 €"
+  },
+  {
+    title: "La novia gitana (La novia gitana 1)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91pUtW10aTL._AC_UL480_SR303,480_.jpg",
+    linkUrl: "https://www.amazon.es/novia-gitana-ALFAGUARA-NEGRA/dp/8420433187/ref=bmx_3/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/8420433187/ref=bmx_cr_3/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8420433187&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 759,
+    rating: 4.5,
+    author: "Carmen Mola",
+    cover: "Tapa blanda",
+    price: "18,90 €"
+  },
+  {
+    title: "La última cripta",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/51wPrIZBwNL._AC_UL480_SR321,480_.jpg",
+    linkUrl: "https://www.amazon.es/%C3%BAltima-cripta-Mr-Fernando-Gamboa/dp/1481924699/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/842043938X/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 1424,
+    rating: 4.0,
+    author: "Mr Fernando Gamboa",
+    cover: "Tapa blanda",
+    price: "20,68 €"
+  },
+  {
+    title: "El enigma de la habitación 622 (Literaturas)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81--8-2w7OL._AC_UL480_SR303,480_.jpg",
+    linkUrl: "https://www.amazon.es/El-enigma-habitaci%C3%B3n-622-Literaturas/dp/842043938X/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=842043938X&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/1481924699/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=1481924699&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 456,
+    rating: 3.8,
+    author: "Joël Dicker",
+    cover: "Tapa blanda",
+    price: "21,75 €"
+  },
+  {
+    title: "El chico de las bobinas (Áncora &amp; Delfin)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91gFvKohDPL._AC_UL480_SR282,480_.jpg",
+    linkUrl: "https://www.amazon.es/chico-las-bobinas-%C3%81ncora-Delfin/dp/8423357171/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;psc=1&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    linkOpinions: "https://www.amazon.es/product-reviews/8423357171/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&amp;pd_rd_i=8423357171&amp;pd_rd_r=c6b0e583-be80-4aa3-867d-b89df4127853&amp;pd_rd_w=PWZ4h&amp;pd_rd_wg=nVWqQ&amp;pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&amp;pf_rd_r=VBVEMCD60R9FPEJFGNHW&amp;refRID=VBVEMCD60R9FPEJFGNHW",
+    numberOpinions: 47,
+    rating: 4.7,
+    author: "Pere Cervantes",
+    cover: "Tapa blanda",
+    price: "19,85 €"
+  },
+  {
+    title: "El pintor de almas (Novela histórica)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/91mVs9cU83L._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/El-pintor-almas-Novela-hist%C3%B3rica/dp/8425357241/ref=bmx_1/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8425357241&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8425357241/ref=bmx_cr_1/259-6544150-3296161?ie=UTF8&pd_rd_i=8425357241&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 518,
+    rating: 4.3,
+    author: "Ildefonso Falcones",
+    cover: "Tapa blanda",
+    price: "21,75 €"
+  },
+  {
+    title: "Tú no matarás (Éxitos)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/817D4wVmN4L._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/T%C3%BA-no-matar%C3%A1s-Julia-Navarro/dp/8401021162/ref=bmx_2/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8401021162&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8401021162/ref=bmx_cr_2/259-6544150-3296161?ie=UTF8&pd_rd_i=8401021162&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 615,
+    rating: 4.2,
+    author: "Julia Navarro",
+    cover: "Tapa blanda",
+    price: "22,70 €"
+  },
+  {
+    title: "La sangre manda (Éxitos)",
+    imgUrl: "https://m.media-amazon.com/images/I/51eaWTBzmYL._BG0,0,0,0_FMpng_AC_SY160_SX160_.jpg",
+    linkUrl: "https://www.amazon.es/gp/slredirect/picassoRedirect.html/ref=sspa_dk_detail_1?ie=UTF8&adId=A09058622ZP8LQEV6EZVY&qualifier=1598543179&id=346373722007478&widgetName=sp_detail&url=%2Fdp%2F8401024757%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1",
+    linkOpinions: "https://www.amazon.es/gp/slredirect/picassoRedirect.html/ref=sspa_dk_detail_1?ie=UTF8&adId=A09058622ZP8LQEV6EZVY&qualifier=1598543179&id=346373722007478&widgetName=sp_detail&url=%2Fdp%2F8401024757%2Fref%3Dsspa_dk_detail_1%3Fpsc%3D1#customerReviews",
+    numberOpinions: 61,
+    rating: 3.9,
+    author: "Stephen King",
+    cover: "Tapa dura",
+    price: "22,70 €"
+  },
+  {
+    title: "El destino de los héroes (Novela histórica)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/81v3vzMKfQL._AC_UL480_SR312,480_.jpg",
+    linkUrl: "https://www.amazon.es/destino-los-h%C3%A9roes-Novela-hist%C3%B3rica/dp/8425358213/ref=bmx_4/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8425358213&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8425358213/ref=bmx_cr_4/259-6544150-3296161?ie=UTF8&pd_rd_i=8425358213&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 103,
+    rating: 4.5,
+    author: "Chufo Lloréns",
+    cover: "Tapa dura",
+    price: "22,70 €"
+  },
+  {
+    title: "Despiértame cuando acabe septiembre (Thriller y suspense)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/71G4f2oBXML._AC_UL480_SR306,480_.jpg",
+    linkUrl: "https://www.amazon.es/Despi%C3%A9rtame-cuando-septiembre-Thriller-suspense/dp/8417305807/ref=bmx_5/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8417305807&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8417305807/ref=bmx_cr_5/259-6544150-3296161?ie=UTF8&pd_rd_i=8417305807&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 570,
+    rating: 4.3,
+    author: "Mónica Rouanet",
+    cover: "Tapa blanda",
+    price: "17,00 €"
+  },
+  {
+    title: "Estuche Trilogía de Trajano (Novela histórica)",
+    imgUrl: "https://images-na.ssl-images-amazon.com/images/I/8189f3OX9-L._AC_UL320_SR316,320_.jpg",
+    linkUrl: "https://www.amazon.es/Estuche-Trilog%C3%ADa-Trajano-Novela-hist%C3%B3rica/dp/8408197428/ref=bmx_6/259-6544150-3296161?_encoding=UTF8&pd_rd_i=8408197428&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&psc=1&refRID=7QY2MVG9T36VAJQCYR82",
+    linkOpinions: "https://www.amazon.es/product-reviews/8408197428/ref=bmx_cr_6/259-6544150-3296161?ie=UTF8&pd_rd_i=8408197428&pd_rd_r=7de7dff5-9c81-4365-b222-5dcfa00780fb&pd_rd_w=fh6of&pd_rd_wg=HsBZe&pf_rd_p=4ea5ccbb-51b9-48c0-85b0-9fb9c9265ee7&pf_rd_r=7QY2MVG9T36VAJQCYR82&refRID=7QY2MVG9T36VAJQCYR82",
+    numberOpinions: 323,
+    rating: 4.7,
+    author: "Santiago Posteguillo",
+    cover: "Tapa blanda",
+    price: "28,40 €"
+  }
+];
 
 const customerReviews: IReview[] = [
   {
@@ -98,7 +369,8 @@ export const initialState: IInitialState = {
   moreDescription: "De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.",
   // TODO MANORMERO definir
   formats: [],
-  articles: [],
+  sponsoredArticles1: sponsoredArticles1,
+  sponsoredArticles2: sponsoredArticles2,
   flapNote: "92 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más grande: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén. De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.",
   backCover: "92 d.C. Varios hombres luchan por un imperio, pero Julia, hija de reyes, madre de césares y esposa de emperador, piensa en algo más grande: una dinastía. Roma está bajo el control de Cómodo, un emperador loco. El Senado se conjura para terminar con el tirano y los gobernadores militares más poderosos podrían dar un golpe de Estado: Albino en Britania, Severo en el Danubio o Nigro en Siria. Cómodo retiene a sus esposas para evitar su rebelión y Julia, la mujer de Severo, se convierte así en rehén. De pronto, Roma arde. Un incendio asola la ciudad. ¿Es un desastre o una oportunidad? Cinco hombres se disponen a luchar a muerte por el poder. Creen que la partida está a punto de empezar. Pero para Julia la partida ya ha empezado. Sabe que solo una mujer puede forjar una dinastía.",
   biography: "Santiago Posteguillo es profesor de lengua y literatura en la Universidad Jaume I de Castellón. Estudió literatura creativa en Estados Unidos y lingüística, análisis del discurso y traducción en el Reino Unido. De 2006 a 2009 publicó su trilogía Africanus sobre Escipión y Aníbal y de 2011 a 2016 la trilogía sobre el emperador de origen hispano Marco Ulpio Trajano. Ha sido galardonado por la semana de novela histórica de Cartagena, obtuvo el Premio de las Letras de la Comunidad Valenciana en 2010 y el Premio Internacional de Novela Histórica de Barcelona en 2014. En 2015 fue proclamado escritor del año por la Generalitat  Valenciana. Entre 2012 y 2017 publicó también tres volúmenes de relatos sobre la historia de la literatura muy elogiados por crítica y público. Santiago Posteguillo es Doctor por la Universidad de Valencia y ha impartido seminarios sobre ficción histórica en diversas universidades europeas y de América Latina. En 2018 ha sido profesor invitado del Sidney Sussex College de la Universidad de Cambridge. Yo, Julia, su última novela, rescata del olvido la vida y la memoria de la emperatriz más poderosa de la antigua Roma, una mujer que transformó su entorno y cambió el curso de la historia para siempre.",
