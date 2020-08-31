@@ -1,16 +1,10 @@
 import React from 'react';
+import { IReview } from '../commons/interfaces';
+
 import { calculateStartsClass } from '../commons/utils';
 
-interface IProps {
-  id: string;
-  author: string;
-  authorImgUrl: string;
-  summary: string;
-  rating: number;
-  revisionDate: string;
-  comment: string;
-  utilNumber: number;
-  reviewUrl: string;
+interface IProps extends IReview {
+
 };
 
 const Review = ({ id, author, authorImgUrl, summary, rating, revisionDate, comment, utilNumber, reviewUrl }: IProps) => {

@@ -9,3 +9,15 @@ export interface IArticle {
   cover: string;
   price: string;
 };
+
+export interface IReview {
+  id: string;
+  author: string;
+  authorImgUrl: string;
+  summary: string;
+  rating: number;
+  revisionDate: string;
+  comment: string;
+  utilNumber: number;
+  reviewUrl: string;
+}

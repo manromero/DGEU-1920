@@ -2,8 +2,8 @@ import React from 'react';
 import CustomerReviews from './CustomerReviews';
 import CustomerImages from './CustomerImages';
 import ReviewsMetions from './ReviewsMentions';
-import ReviewsCustomers from './ReviewsCustomers';
-import ReviewsInternationals from './ReviewsInternationals';
+import ReviewsCustomers from '../containers/ReviewsCustomers';
+import ReviewsInternationals from '../containers/ReviewsInternationals';
 
 const ReviewsBox = () => {
   return (

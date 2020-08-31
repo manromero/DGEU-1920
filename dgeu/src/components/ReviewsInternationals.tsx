@@ -1,43 +1,15 @@
 import React, { useState } from 'react';
 import Review from './Review';
 
-const ReviewsInternationals = () => {
+import { IReview } from '../commons/interfaces';
 
-  let reviews = [
-    {
-      id: "R1TQ1WB6V34Y4O",
-      author: "Kikealca",
-      authorImgUrl: "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/d24ec5a2-e26f-415f-a747-d6502a320189._CR62,0,375,375_SX48_.jpg",
-      summary: "If you love Rome, you will love this.",
-      rating: 4.0,
-      revisionDate: "Revisado en Reino Unido el 25 de noviembre de 2018",
-      comment: "I love Santiago Posteguillo. I think I have read all of his novels. I like this one, but maybe not as much as the previous ones. True the previous ones were magnificent, in my opinion, so the bar was very high, but I felt a bit like “is it that it?” I missed some depth, some stories did not develop at the same rythm, and the end....I am being selfish now, but it could have gone further in their lives. Nevertheless, a great book.",
-      utilNumber: 2,
-      reviewUrl: "https://www.amazon.es/gp/profile/amzn1.account.AGVPAXXL3ROR2QVOX3PAU75PYYNQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8"
-    },
-    {
-      id: "R3EQ8ZKF7VNQSS",
-      author: "Angel Butron",
-      authorImgUrl: "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png",
-      summary: "muy buen libro",
-      rating: 5.0,
-      revisionDate: "Revisado en Reino Unido el 30 de septiembre de 2019",
-      comment: "lo super recomiendo! me encanto! soy fan de Julia ahora :)",
-      utilNumber: 5,
-      reviewUrl: "https://www.amazon.es/gp/customer-reviews/R2J0RIC944N4TK/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"
-    },
-    {
-      id: "R3EQ8ZKF7VNQSS",
-      author: "Isa",
-      authorImgUrl: "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png",
-      summary: "mejorable",
-      rating: 3.0,
-      revisionDate: "Revisado en Argentina el 15 de noviembre de 2018",
-      comment: "Aunque es fácil de leer, en mi opinión la forma de escribir es algo infantil. Rápido de leer pero prosa mejorable.",
-      utilNumber: 18,
-      reviewUrl: "https://www.amazon.es/gp/customer-reviews/R2M74YCW4OOV71/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"
-    }
-  ];
+interface IProps {
+  internationalReviews: IReview[]
+}
+
+const ReviewsInternationals = ({ internationalReviews }: IProps) => {
+
+  let reviews = internationalReviews.map(e => ({ ...e }));
 
   const [viewAll, setViewAll] = useState(false);
 
