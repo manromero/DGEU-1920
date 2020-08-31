@@ -1,31 +1,14 @@
 import React from 'react';
+import { IArticle } from '../commons/interfaces';
+import { calculateStartsClass } from '../commons/utils';
 
-interface IProps {
-  title: string;
-  imgUrl: string;
-  linkUrl: string;
-  linkOpinions: string;
-  numberOpinions: number;
-  rating: number;
-  author: string;
-  cover: string;
-  price: string;
+interface IProps extends IArticle {
+
 };
 
 const Article = ({ title, imgUrl, linkUrl, linkOpinions, numberOpinions, rating, author, cover, price }: IProps) => {
 
-  let startIcon = "a-star-0";
-  if (rating > 0.5 && rating <= 1.5) {
-    startIcon = "a-star-1";
-  } else if (rating > 1.5 && rating <= 2.5) {
-    startIcon = "a-star-2";
-  } else if (rating > 2.5 && rating <= 3.5) {
-    startIcon = "a-star-3";
-  } else if (rating > 3.5 && rating <= 4.5) {
-    startIcon = "a-star-4";
-  } else if (rating > 4.5 && rating <= 5.5) {
-    startIcon = "a-star-5";
-  }
+  const startIcon = calculateStartsClass(rating);
 
   return (
     <li className="a-carousel-card aok-float-left" role="listitem" style={{ marginLeft: "27px" }}>
