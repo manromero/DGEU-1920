@@ -2,7 +2,7 @@ import React from 'react';
 import ProductDetails from './ProductDetails';
 import ProductDescription from './ProductDescription';
 import KindleRecommendation from './KindleRecommendation';
-import Reviews from './Reviews';
+import ReviewsBox from './ReviewsBox';
 import PreloadPopUp from './PreloadPopUp';
 import RightPanel from './RightPanel';
 import MainProductInformation from './MainProductInformation';
@@ -50,7 +50,7 @@ const Body = () => {
           articlesPerPage={6}
         />
         <hr aria-hidden="true" className="a-spacing-large a-divider-normal" />
-        <Reviews />
+        <ReviewsBox />
       </div>
     </div>
   );

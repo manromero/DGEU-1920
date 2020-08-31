@@ -5,7 +5,7 @@ import ReviewsMetions from './ReviewsMentions';
 import ReviewsCustomers from './ReviewsCustomers';
 import ReviewsInternationals from './ReviewsInternationals';
 
-const Reviews = () => {
+const ReviewsBox = () => {
   return (
     <div id="reviewsMedley" data-hook="reviews-medley-widget" className="a-fixed-left-grid a-spacing-extra-large">
       <div className="a-fixed-left-grid-inner" style={{ paddingLeft: "300px" }}>
@@ -26,4 +26,4 @@ const Reviews = () => {
   );
 }
 
-export default Reviews;
+export default ReviewsBox;

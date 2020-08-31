@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Review from './Review';
 
 const ReviewsCustomers = () => {
 
-  const reviews = [
+  let reviews = [
     {
       id: "R1NCBWWFLGHUY5",
       author: "Plauto",
@@ -25,8 +25,25 @@ const ReviewsCustomers = () => {
       comment: "He leído la trilogía de Escipión y la que hizo con los emperadores hispanos.  Esta es más de lo mismo, solo que bastante peor.  En realidad es una versión novelada de lo que puedes encontrarte en la Wikipedia, carente de ritmo y totalmente plana y carente de interés. Sinceramente no me parece merecedora de un premio planeta",
       utilNumber: 8,
       reviewUrl: "https://www.amazon.es/gp/profile/amzn1.account.AFRUEPB2MVFR2DTAP7SMLZK55L6A/ref=cm_cr_dp_d_gw_tr?ie=UTF8"
+    },
+    {
+      id: "RWFT9KVRRTUNQ",
+      author: "María",
+      authorImgUrl: "https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/6c7b45b8-92ee-4e5b-a966-92dd2b94ca82._CR140,0,844,844_SX48_.jpg",
+      summary: "Buen libro",
+      rating: 5.0,
+      revisionDate: "Revisado en España el 12 de noviembre de 2018",
+      comment: "El libro físicamente mide 23x15, con 704 páginas, no es cómodo para leer en la cama... En cuánto al contenido, ya estoy enganchada! aunque sólo llevo unas 50 páginas, sabía que iba a gustarme.\nSantiago Posteguillo documenta genial sus libros de la Roma clásica, aparte de ser muy ameno.\nMe alegro de que le hayan dado el Planeta a una historia de humanidades, ya era hora!",
+      utilNumber: 21,
+      reviewUrl: "https://www.amazon.es/gp/customer-reviews/RWFT9KVRRTUNQ/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=8408197401"
     }
   ];
+
+  const [viewAll, setViewAll] = useState(false);
+
+  if (!viewAll) {
+    reviews = reviews.filter((e, index) => index < 2);
+  }
 
   return (
     <span className="cr-widget-FocalReviews" data-hook="cr-widget-FocalReviews">
@@ -92,8 +109,12 @@ const ReviewsCustomers = () => {
       </div>
       <div id="reviews-medley-footer" data-hook="reviews-medley-footer" className="a-section">
         <div className="a-row"></div>
-        <div className="a-row a-spacing-extra-large">
-          <a data-hook="see-all-reviews-link-foot" className="a-link-emphasis a-text-bold" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/product-reviews/8408197401/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;reviewerType=all_reviews">Ver todas las reseñas de España</a>
+        <div className="a-row a-spacing-extra-large" onClick={() => setViewAll(!viewAll)}>
+          {viewAll ? (
+            <a className="a-link-emphasis a-text-bold">Ver menos</a>
+          ) : (
+              <a className="a-link-emphasis a-text-bold">Ver todas las reseñas de España</a>
+            )}
         </div>
       </div>
     </span>
