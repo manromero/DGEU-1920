@@ -131,20 +131,6 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
                       </a>
                     </span>
                   </span>
-                  <span className="tmm-olp-links"></span>
-                  <span className="a-size-mini a-color-secondary tmm-olp-links">
-                    <a id="kcpAppsPopOver" className="a-size-mini a-link-normal kcpAppsPopOver" href="javascript:void(0);">
-                      <span className="kcpAppBaseBox_">
-                        <span className="kcpAppsPopOver a-declarative">
-                          Leer con nuestra
-                          <span className="a-color-price a-text-bold">
-                            App gratuita
-                          </span>
-                        </span>
-                      </span>
-                    </a>
-                  </span>
-                  <span className="tmm-olp-links"></span>
                 </span>
               </li>
               <li className={`swatchElement ${selectedFormat === 1 ? 'selected' : 'unselected'}`} data-width="163">
@@ -161,27 +147,6 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
                         </span>
                         <div style={{ display: "inline-block" }}></div>
                       </a>
-                    </span>
-                  </span>
-                  <span className="tmm-olp-links"></span>
-                  <span className="tmm-olp-links">
-                    <span className="olp-used olp-link">
-                      <span className="a-declarative" data-action="show-all-offers-display" data-show-all-offers-display="{&quot;aodWeblabName&quot;:&quot;DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923&quot;,&quot;condition&quot;:&quot;used&quot;,&quot;asin&quot;:&quot;8408197401&quot;,&quot;aodWeblabTreatment&quot;:&quot;C&quot;}">
-                        <a className="a-size-mini a-link-normal" href="https://www.amazon.es/gp/offer-listing/8408197401/ref=tmm_hrd_used_olp_0?ie=UTF8&amp;condition=used&amp;qid=1598543175&amp;sr=8-1">
-                          1 De 2ª mano
-                          <span className="olp-from">desde</span>
-                          24,00&nbsp;€
-                        </a>
-                      </span>
-                    </span>
-                    <span className="olp-new olp-link">
-                      <span className="a-declarative" data-action="show-all-offers-display" data-show-all-offers-display="{&quot;aodWeblabName&quot;:&quot;DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;asin&quot;:&quot;8408197401&quot;,&quot;aodWeblabTreatment&quot;:&quot;C&quot;}">
-                        <a className="a-size-mini a-link-normal" href="https://www.amazon.es/gp/offer-listing/8408197401/ref=tmm_hrd_new_olp_0?ie=UTF8&amp;condition=new&amp;qid=1598543175&amp;sr=8-1">
-                          17 Nuevo
-                        <span className="olp-from">desde</span>
-                        21,40&nbsp;€
-                      </a>
-                      </span>
                     </span>
                   </span>
                 </span>
@@ -202,28 +167,12 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
                       </a>
                     </span>
                   </span>
-                  <span className="tmm-olp-links"></span>
-                  <span className="tmm-olp-links">
-                    <span className="olp-new olp-link">
-                      <span className="a-declarative" data-action="show-all-offers-display" data-show-all-offers-display="{&quot;aodWeblabName&quot;:&quot;DP_ALL_OFFERS_DISPLAY_DESKTOP_MASTER_221923&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;asin&quot;:&quot;8408234498&quot;,&quot;aodWeblabTreatment&quot;:&quot;C&quot;}">
-                        <a className="a-size-mini a-link-normal" href="https://www.amazon.es/gp/offer-listing/8408234498/ref=tmm_pap_new_olp_0?ie=UTF8&amp;condition=new&amp;qid=1598543175&amp;sr=8-1">
-                          13 Nuevo <span className="olp-from">desde</span> 13,25&nbsp;€
-                        </a>
-                      </span>
-                    </span>
-                  </span>
                 </span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div id="persistentWidget_feature_div" className="celwidget" data-feature-name="persistentWidget" data-csa-c-id="1ap7wq-6ao52-73lut7-8eov7y" data-cel-widget="persistentWidget_feature_div"></div>
-      <div id="b2bUpsell_feature_div" className="celwidget" data-feature-name="b2bUpsell" data-csa-c-id="mvh5kt-bvme8b-z6lpfw-qh7mdy" data-cel-widget="b2bUpsell_feature_div"></div>
-      <div id="iconfarmv2_feature_div" className="celwidget" data-feature-name="iconfarmv2" data-csa-c-id="86hhyo-7dc5dh-d9n3gy-h03d9r" data-cel-widget="iconfarmv2_feature_div"></div>
-      <div id="applicablePromotionList_feature_div" className="celwidget" data-feature-name="applicablePromotionList" data-csa-c-id="mgbq6m-yolovm-6q7st0-rdrcoi" data-cel-widget="applicablePromotionList_feature_div"></div>
-      <div id="holidayDeliveryMessage_feature_div" className="celwidget" data-feature-name="holidayDeliveryMessage" data-csa-c-id="qitrtr-l8ci77-ijjp7g-kmwdbt" data-cel-widget="holidayDeliveryMessage_feature_div"></div>
-      <div id="globalStoreBadgePopover_feature_div" className="celwidget" data-feature-name="globalStoreBadgePopover" data-csa-c-id="z2uvaq-wal04i-cbsrzp-yemrt5" data-cel-widget="globalStoreBadgePopover_feature_div"></div>
       <div id="dynamicDeliveryMessage_feature_div" className="celwidget" data-feature-name="dynamicDeliveryMessage" data-csa-c-id="mflt6p-t0awbx-yubasz-1h8nvl" data-cel-widget="dynamicDeliveryMessage_feature_div">
         <div id="dynamicDeliveryMessage" className="a-section a-spacing-mini a-spacing-top-mini">
           <div id="ddmDeliveryMessage" className="a-section a-spacing-mini">
