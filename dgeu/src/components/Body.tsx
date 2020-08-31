@@ -7,15 +7,15 @@ import PreloadPopUp from './PreloadPopUp';
 import RightPanel from './RightPanel';
 import MainProductInformation from './MainProductInformation';
 import SitbReaderPlaceholder from './SitbReaderPlaceholder';
-import Articles from './Articles';
 import SpecialOffers from './SpecialOffers';
 import BoughtTogether from './BoughtTogether';
 import Breadcrumbs from './Breadcrumbs';
 import LeftPanel from './LeftPanel';
-
 import KindlePop from './KindlePop';
 import SponsoredArticles1 from '../containers/SponsoredArticles1';
 import SponsoredArticles2 from '../containers/SponsoredArticles2';
+import OthersCustomersArticles from '../containers/OthersCustomersArticles';
+import UndiscoveredArticles from '../containers/UndiscoveredArticles';
 
 const Body = () => {
   return (
@@ -31,10 +31,9 @@ const Body = () => {
         <hr className="bucketDivider" />
         <SpecialOffers />
         <BoughtTogether />
-        <Articles
+        <OthersCustomersArticles
           title="¿Qué otros productos compran los clientes tras ver este producto?"
           articlesPerPage={4}
-          articles={[]}
         />
         <SponsoredArticles1
           title="Productos patrocinados relacionados con este artículo"
@@ -44,10 +43,9 @@ const Body = () => {
         <ProductDescription />
         <KindleRecommendation />
         <ProductDetails />
-        <Articles
+        <UndiscoveredArticles
           title="Más artículos por descubrir"
           articlesPerPage={6}
-          articles={[]}
         />
         <SponsoredArticles2
           title="Productos patrocinados relacionados con este artículo"
