@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const CustomerReviews = () => {
+
+  const [howToExpanded, setHowToExpanded] = useState(false);
+
   return (
     <div className="a-fixed-left-grid-col a-col-left" style={{ width: "300px", marginLeft: "-300px", float: "left" }}>
       <div className="a-row">
@@ -158,13 +161,16 @@ const CustomerReviews = () => {
             </div>
           </div>
         </div>
-        <div aria-live="polite" className="a-row a-expander-container a-spacing-top-small a-expander-inline-container"><a href="javascript:void(0)" data-action="a-expander-toggle" className="a-expander-header a-declarative a-expander-inline-header a-link-expander" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}">
-          <i className="a-icon a-icon-expand"></i>
-          <span className="a-expander-prompt">¿Cómo calcula Amazon las valoraciones?</span>
-        </a>
-          <div aria-expanded="false" className="a-expander-content a-expander-inline-content a-expander-inner" style={{ display: "none" }}>
-            Para calcular la clasificación global de estrellas y el desglose porcentual por estrella, no utilizamos un promedio simple. En su lugar, nuestro sistema considera aspectos como lo reciente que es la reseña y si el reseñador compró el artículo en Amazon. También analiza las reseñas para verificar la fiabilidad.
-          </div>
+        <div aria-live="polite" className="a-row a-expander-container a-spacing-top-small a-expander-inline-container">
+          <a className="a-expander-header a-declarative a-expander-inline-header a-link-expander" onClick={() => setHowToExpanded(!howToExpanded)}>
+            <i className="a-icon a-icon-expand"></i>
+            <span className="a-expander-prompt">¿Cómo calcula Amazon las valoraciones?</span>
+          </a>
+          {howToExpanded ? (
+            <div aria-expanded="false" className="a-expander-content a-expander-inline-content a-expander-inner">
+              Para calcular la clasificación global de estrellas y el desglose porcentual por estrella, no utilizamos un promedio simple. En su lugar, nuestro sistema considera aspectos como lo reciente que es la reseña y si el reseñador compró el artículo en Amazon. También analiza las reseñas para verificar la fiabilidad.
+            </div>
+          ) : null}
         </div>
       </span>
       <hr aria-hidden="true" className="a-spacing-large a-spacing-top-large a-divider-normal" />

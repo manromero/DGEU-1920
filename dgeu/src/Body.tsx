@@ -45,7 +45,6 @@ const Body = () => {
           title="Más artículos por descubrir"
           articlesPerPage={6}
         />
-        <hr className="a-divider-normal" />
         <ArticlesToDiscover
           title="Productos patrocinados relacionados con este artículo"
           articlesPerPage={6}
