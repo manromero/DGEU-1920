@@ -10,6 +10,7 @@ import reducer from './reducer';
 
 const App = () => {
   const store = createStore(reducer,
+    // Using redux-thunk to allow make async dispatch of actions
     compose(
       applyMiddleware(thunk)
     )

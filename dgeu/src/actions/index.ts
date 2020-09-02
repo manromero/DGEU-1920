@@ -17,7 +17,7 @@ const acEndLoadData = () => {
 }
 
 /**
- * Similate load data from an external service
+ * Simulate to load data from an external service
  */
 export const opeLoadData = () => (dispatch: Dispatch) => {
   dispatch(acIniLoadData());
