@@ -20,8 +20,11 @@ const acEndLoadData = () => {
  * Simulate to load data from an external service
  */
 export const opeLoadData = () => (dispatch: Dispatch) => {
-  dispatch(acIniLoadData());
-  setTimeout(() => {
-    dispatch(acEndLoadData());
-  }, 1500);
+  // TODO manromero delete
+  dispatch(acEndLoadData());
+  // TODO manromero use
+  // dispatch(acIniLoadData());
+  // setTimeout(() => {
+  //   dispatch(acEndLoadData());
+  // }, 1500);
 }

@@ -17,6 +17,7 @@ import SponsoredArticles2 from '../containers/SponsoredArticles2';
 import OthersCustomersArticles from '../containers/OthersCustomersArticles';
 import UndiscoveredArticles from '../containers/UndiscoveredArticles';
 import Loader from './Loader';
+import InformationTabs from '../containers/InformationTabs';
 
 interface IProps {
   dataLoaded: boolean;
@@ -45,6 +46,7 @@ const Body = ({ dataLoaded, opeLoadData }: IProps) => {
       <div id="dp-container" className="a-container" role="main">
         <RightPanel />
         <LeftPanel />
+        <InformationTabs />
         <MainProductInformation />
         <SitbReaderPlaceholder />
         <hr className="bucketDivider" />
