@@ -21,11 +21,11 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
   const classes = useStyles();
 
   return (
-    <div id="detailBullets_feature_div" className="celwidget" data-feature-name="detailBullets" data-csa-c-id="6f39ob-liu4wh-tvarz-dybm62" data-cel-widget="detailBullets_feature_div">
-      <div id="detailBulletsWrapper_feature_div" data-feature-name="detailBullets" data-template-name="detailBullets" className="a-section feature detail-bullets-wrapper bucket" data-cel-widget="detailBulletsWrapper_feature_div">
-        <hr className="a-divider-normal bucketDivider" />
+    <div id="detailBullets_feature_div" >
+      <div id="detailBulletsWrapper_feature_div" >
+        {/* <hr className="a-divider-normal bucketDivider" /> */}
         <h2>Detalles del producto</h2>
-        <span className="disclaim"></span>
+        {/* <span className="disclaim"></span> */}
         <div id="detailBullets_feature_div">
           <ul className="a-unordered-list a-nostyle a-vertical a-spacing-none detail-bullet-list">
             <li>
@@ -112,8 +112,6 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
             </span>
           </li>
         </ul>
-        <div className="a-row"></div>
-        <div className="a-row"></div>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import ProductDetails from '../containers/ProductDetails';
-import ProductDescription from '../containers/ProductDescription';
+// import ProductDetails from '../containers/ProductDetails';
+// import ProductDescription from '../containers/ProductDescription';
 import KindleRecommendation from './KindleRecommendation';
-import ReviewsBox from './ReviewsBox';
+// import ReviewsBox from './ReviewsBox';
 import PreloadPopUp from './PreloadPopUp';
 import RightPanel from './RightPanel';
-import MainProductInformation from '../containers/MainProductInformation';
+// import MainProductInformation from '../containers/MainProductInformation';
 import SitbReaderPlaceholder from './SitbReaderPlaceholder';
 import SpecialOffers from './SpecialOffers';
 import BoughtTogether from './BoughtTogether';
@@ -13,7 +13,7 @@ import Breadcrumbs from './Breadcrumbs';
 import LeftPanel from './LeftPanel';
 import KindlePop from './KindlePop';
 import SponsoredArticles1 from '../containers/SponsoredArticles1';
-import SponsoredArticles2 from '../containers/SponsoredArticles2';
+// import SponsoredArticles2 from '../containers/SponsoredArticles2';
 import OthersCustomersArticles from '../containers/OthersCustomersArticles';
 import UndiscoveredArticles from '../containers/UndiscoveredArticles';
 import Loader from './Loader';
@@ -47,7 +47,7 @@ const Body = ({ dataLoaded, opeLoadData }: IProps) => {
         <RightPanel />
         <LeftPanel />
         <InformationTabs />
-        <MainProductInformation />
+        {/* <MainProductInformation /> */}
         <SitbReaderPlaceholder />
         <hr className="bucketDivider" />
         <SpecialOffers />
@@ -61,19 +61,19 @@ const Body = ({ dataLoaded, opeLoadData }: IProps) => {
           articlesPerPage={6}
         />
         <PreloadPopUp />
-        <ProductDescription />
+        {/* <ProductDescription /> */}
         <KindleRecommendation />
-        <ProductDetails />
+        {/* <ProductDetails /> */}
         <UndiscoveredArticles
           title="Más artículos por descubrir"
           articlesPerPage={6}
         />
-        <SponsoredArticles2
+        {/* <SponsoredArticles2
           title="Productos patrocinados relacionados con este artículo"
           articlesPerPage={6}
-        />
-        <hr aria-hidden="true" className="a-spacing-large a-divider-normal" />
-        <ReviewsBox />
+        /> */}
+        {/* <hr aria-hidden="true" className="a-spacing-large a-divider-normal" /> */}
+        {/* <ReviewsBox /> */}
       </div>
     </div>
   );

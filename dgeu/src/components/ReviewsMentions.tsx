@@ -4,12 +4,12 @@ const ReviewsMetions = () => {
   return (
     <span className="cr-lazy-widget cr-summarization-lighthut" data-widget-name="cr-summarization-lighthut">
       <span className="cr-widget-Lighthut" data-hook="cr-widget-Lighthut">
-        <div id="cr-dp-desktop-lighthut" className="cr-lighthut-boundary cr-lighthouse-anchor-buffer celwidget" data-cel-widget="cr-dp-desktop-lighthut" data-csa-c-id="qd3yxc-ag2bbw-isqlpw-plzqw">
-          <div id="cr-dp-lighthut" data-hook="lighthut-widget" className="a-section a-spacing-extra-large cr-asin-8408197401 celwidget" data-cel-widget="cr-dp-lighthut" data-csa-c-id="v5vkm1-jso3ro-ylnrsa-tqnxwg">
+        <div id="cr-dp-desktop-lighthut" className="cr-lighthut-boundary cr-lighthouse-anchor-buffer celwidget">
+          <div id="cr-dp-lighthut" data-hook="lighthut-widget" className="a-section a-spacing-medium cr-asin-8408197401 celwidget">
             <span data-cr-trigger-on-view="{&quot;ajaxUrl&quot;:&quot;/hz/reviews-render/ajax/lighthut/report/&quot;,&quot;ajaxParamsMap&quot;:{&quot;lighthouseTerms&quot;:&quot;santiago posteguillo/novela histórica/premio planeta/imperio romano/historia de roma/buen libro/julia domna/septimio severo/antigua roma/rigor histórico/bien escrito/personaje de julia/trilogía de trajano/perfectas condiciones/merece la pena/engancha desde el principio/primer momento/trilogía de escipión/buena novela/segunda parte/trajano y escipión/guerras civiles/trabajo de investigación/últimos años/libros anteriores&quot;}}"></span>
             <h3 data-hook="lighthut-title" className="a-spacing-base">Leer reseñas que mencionen</h3>
-            <div className="a-row">
-              <div data-hook="lighthut-terms-list" id="cr-lighthut-1-" className="a-row cr-lighthut">
+            <div>
+              <div data-hook="lighthut-terms-list" id="cr-lighthut-1-" className="cr-lighthut">
                 <div className="cr-lighthouse-terms">
                   <span className="a-declarative" data-action="reviews:filter-action:apply" >
                     <a data-reftag="cm_cr_othr_d_lh_0" data-reviews-state-param="" className="a-link-normal a-text-normal" href="https://www.amazon.es/product-reviews/8408197401/ref=cm_cr_othr_d_lh_0?ie=UTF8&amp;filterByKeyword=santiago+posteguillo&amp;pageNumber=1&amp;reviewerType=all_reviews#reviews-filter-bar">

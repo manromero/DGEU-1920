@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
-import MainProductTitle from './MainProductTitle';
+// import MainProductTitle from './MainProductTitle';
 import FormatsAndEditions from './FormatsAndEditions';
 import CollegeBooks from './CollegeBooks';
 import { IPriceFormat } from '../commons/interfaces';
 import DeliveryDates from './DeliveryDates';
-import MainProductAuthor from './MainProductAuthor';
-import MainProductReview from './MainProductReview';
-import MainProductCollection from './MainProductCollection';
+// import MainProductAuthor from './MainProductAuthor';
+// import MainProductReview from './MainProductReview';
+// import MainProductCollection from './MainProductCollection';
 import useStyles from '../styles/MainProductInformation';
 
 interface IProps {
-  title: string;
-  subtitle: string;
-  author: string;
-  authorUrl: string;
-  collectionName: string;
-  collectionUrl: string;
+  // title: string;
+  // subtitle: string;
+  // author: string;
+  // authorUrl: string;
+  // collectionName: string;
+  // collectionUrl: string;
   freeDelivery: string;
   fastDelivery: string;
-  numberOpinions: number;
-  rating: number;
+  // numberOpinions: number;
+  // rating: number;
   description: string;
   moreDescription: string;
   priceFormats: IPriceFormat[];
   acSetProductSelected: (id: number) => void;
 }
-
-const MainProductInformation = ({ title, subtitle, author, authorUrl, collectionName, collectionUrl, freeDelivery, fastDelivery, numberOpinions, rating, description, moreDescription, priceFormats, acSetProductSelected }: IProps) => {
+// const MainProductInformation = ({ title, subtitle, author, authorUrl, collectionName, collectionUrl, freeDelivery, fastDelivery, numberOpinions, rating, description, moreDescription, priceFormats, acSetProductSelected }: IProps) => {
+const MainProductInformation = ({ freeDelivery, fastDelivery, description, moreDescription, priceFormats, acSetProductSelected }: IProps) => {
 
   const [readMore, setReadMore] = useState(false);
   const [showFormats, setShowFormats] = useState(false);
@@ -37,11 +37,12 @@ const MainProductInformation = ({ title, subtitle, author, authorUrl, collection
 
   return (
     <div className={classes.centerCol} >
-      <MainProductTitle title={title} subtitle={subtitle} />
+      {/* <MainProductTitle title={title} subtitle={subtitle} />
       <MainProductAuthor author={author} authorUrl={authorUrl} />
       <MainProductReview rating={rating} numberOpinions={numberOpinions} />
-      <MainProductCollection collectionName={collectionName} collectionUrl={collectionUrl} />
-      <hr />
+      <MainProductCollection collectionName={collectionName} collectionUrl={collectionUrl} /> */}
+      {/* <hr /> */}
+      <h2>Resumen del producto</h2>
       <div id="MediaMatrix" className="celwidget">
         <div id="formats" className="a-section a-spacing-large responsive">
           <a className="a-link-expander a-spacing-top-micro a-spacing-small a-size-small" onClick={() => setShowFormats(!showFormats)}>
