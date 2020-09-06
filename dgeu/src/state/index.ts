@@ -33,6 +33,8 @@ export interface IInitialState {
   // End product details
   customerReviews: IReview[];
   internationalReviews: IReview[];
+  // Active Tab
+  activeTab: number;
 };
 
 export const initialState: IInitialState = {
@@ -67,6 +69,8 @@ export const initialState: IInitialState = {
   languaje: "",
   // End product details
   customerReviews: [],
-  internationalReviews: []
+  internationalReviews: [],
+  // Active Tab
+  activeTab: 0
 }
 

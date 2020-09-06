@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
 import { IInitialState } from '../state';
 import InformationTabs from '../components/InformationTabs';
+import { bindActionCreators, Dispatch } from 'redux';
+import { acSetActiveTab } from '../actions';
 
 const mapStateToProps = (state: IInitialState) => ({
   title: state.title,
@@ -10,7 +12,16 @@ const mapStateToProps = (state: IInitialState) => ({
   collectionName: state.collectionName,
   collectionUrl: state.collectionUrl,
   numberOpinions: state.numberOpinions,
-  rating: state.rating
+  rating: state.rating,
+  activeTab: state.activeTab
 });
 
-export default connect(mapStateToProps, {})(InformationTabs);
+const mapDispatchToProps = (dispatch: Dispatch) =>
+  bindActionCreators(
+    {
+      acSetActiveTab
+    },
+    dispatch
+  );
+
+export default connect(mapStateToProps, mapDispatchToProps)(InformationTabs);

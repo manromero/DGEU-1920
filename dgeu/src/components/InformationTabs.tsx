@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MainProductTitle from './MainProductTitle';
 import MainProductAuthor from './MainProductAuthor';
 import MainProductReview from './MainProductReview';
@@ -18,11 +18,13 @@ interface IProps {
   collectionUrl: string;
   numberOpinions: number;
   rating: number;
+  activeTab: number;
+  acSetActiveTab: (activeTab: number) => void;
 }
 
 const InformationTabs = (props: IProps) => {
 
-  const [activeTab, setActiveTab] = useState(3);
+  const { activeTab, acSetActiveTab } = props;
 
   let componentToRender = (<h1>Not defined</h1>);
 
@@ -42,14 +44,14 @@ const InformationTabs = (props: IProps) => {
     <div className={classes.container}>
       <MainProductTitle title={props.title} subtitle={props.subtitle} />
       <MainProductAuthor author={props.author} authorUrl={props.authorUrl} />
-      <MainProductReview rating={props.rating} numberOpinions={props.numberOpinions} />
+      <MainProductReview rating={props.rating} numberOpinions={props.numberOpinions} acSetActiveTab={acSetActiveTab} />
       <MainProductCollection collectionName={props.collectionName} collectionUrl={props.collectionUrl} />
       {/* Tab options */}
       <div className={classes.tabHeader}>
-        <button className={activeTab === 0 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => setActiveTab(0)}>Resumen</button>
-        <button className={activeTab === 1 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => setActiveTab(1)}>Descripción</button>
-        <button className={activeTab === 2 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => setActiveTab(2)}>Detalles</button>
-        <button className={activeTab === 3 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => setActiveTab(3)}>Opiniones de Clientes</button>
+        <button className={activeTab === 0 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => acSetActiveTab(0)}>Resumen</button>
+        <button className={activeTab === 1 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => acSetActiveTab(1)}>Descripción</button>
+        <button className={activeTab === 2 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => acSetActiveTab(2)}>Detalles</button>
+        <button className={activeTab === 3 ? classes.tabHeaderButtonActive : classes.tabHeaderButton} onClick={() => acSetActiveTab(3)}>Opiniones de Clientes</button>
       </div>
       {/* Tab Content */}
       <div className={classes.tabBody}>

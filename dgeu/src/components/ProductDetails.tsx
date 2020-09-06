@@ -12,9 +12,10 @@ interface IProps {
   languaje: string;
   numberOpinions: number;
   rating: number;
+  acSetActiveTab: (activeTab: number) => void;
 }
 
-const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, languaje, numberOpinions, rating }: IProps) => {
+const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, languaje, numberOpinions, rating, acSetActiveTab }: IProps) => {
 
   const startIcon = calculateStartsClass(rating);
 
@@ -82,11 +83,7 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
                 <span className="a-declarative" data-action="acrStarsLink-click-metrics" data-acrstarslink-click-metrics="{}">
                   <span id="acrPopover" className="reviewCountTextLinkedHistogram noUnderline" title="4,5 de 5 estrellas">
                     <span className="a-declarative" data-action="a-popover">
-                      <a className="a-popover-trigger a-declarative" onClick={() => {
-                        if (document.getElementById('reviewsMedley')) {
-                          document.getElementById('reviewsMedley')!.scrollIntoView()
-                        }
-                      }}>
+                      <a className="a-popover-trigger a-declarative" onClick={() => acSetActiveTab(3)}>
                         <i className={`a-icon a-icon-star ${startIcon}`}>
                           <span className="a-icon-alt">{rating} de 5 estrellas</span>
                         </i>
@@ -98,11 +95,7 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
                 </span>
                 <span className="a-letter-space"></span>
                 <span className="a-declarative" data-action="acrLink-click-metrics" data-acrlink-click-metrics="{}">
-                  <a id="acrCustomerReviewLink" className="a-link-normal" onClick={() => {
-                    if (document.getElementById('reviewsMedley')) {
-                      document.getElementById('reviewsMedley')!.scrollIntoView()
-                    }
-                  }}>
+                  <a id="acrCustomerReviewLink" className="a-link-normal" onClick={() => acSetActiveTab(3)}>
                     <span id="acrCustomerReviewText" className="a-size-base">
                       {numberOpinions} valoraciones
                     </span>

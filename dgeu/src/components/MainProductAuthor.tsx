@@ -3,7 +3,7 @@ import useStyles from '../styles/MainProductAuthor';
 
 interface IProps {
   author: string;
-  authorUrl: string,
+  authorUrl: string;
 }
 
 const MainProductAuthor = ({ authorUrl, author }: IProps) => {

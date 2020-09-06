@@ -672,7 +672,9 @@ const data: IInitialState = {
   languaje: "Español",
   // End product details
   customerReviews: customerReviews,
-  internationalReviews: internationalReviews
+  internationalReviews: internationalReviews,
+  // Active Tab
+  activeTab: 0
 }
 
 export default data;

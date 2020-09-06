@@ -23,7 +23,7 @@ const mapStateToProps = (state: IInitialState) => ({
 const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators(
     {
-      acSetProductSelected: acSetProductSelected
+      acSetProductSelected
     },
     dispatch
   );
