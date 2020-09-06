@@ -6,8 +6,6 @@ const CustomerReviews = () => {
 
   return (
     <div className="a-fixed-left-grid-col a-col-left" style={{}}>
-      {/* <div className="a-row">
-      </div> */}
       <h2>Opiniones de clientes</h2>
       <div>
         <div className="" style={{ float: "left" }}>
@@ -19,11 +17,9 @@ const CustomerReviews = () => {
                 </i>
               </div>
               <div className="a-fixed-left-grid-col aok-align-center a-col-right" style={{ paddingLeft: "0%", float: "left" }}>
-                {/* <div className="a-row"> */}
                 <span className="a-size-base a-nowrap">
                   <span data-hook="rating-out-of-text" className="a-size-medium a-color-base">4,5 de 5</span>
                 </span>
-                {/* </div> */}
               </div>
             </div>
           </div>
@@ -34,10 +30,6 @@ const CustomerReviews = () => {
           </div>
         </div>
         <div style={{ float: "right" }}>
-          {/* <h3>Valorar este producto</h3>
-          <div>
-            Comparte tu opinión con otros clientes
-          </div> */}
           <div>
             <span className="a-button a-button-base writeReviewButton cm-cr-button-wide" id="a-autoid-47">
               <span className="a-button-inner">
@@ -190,27 +182,6 @@ const CustomerReviews = () => {
           ) : null}
         </div>
       </span>
-      {/* <hr aria-hidden="true" className="a-spacing-large a-spacing-top-large a-divider-normal" />
-      <span className="cr-lazy-widget cr-summarization-attributes" data-widget-name="cr-summarization-attributes">
-        <span className="cr-widget-SummaryAttribute" data-hook="cr-widget-SummaryAttribute"></span>
-      </span>
-      <span className="cr-lazy-widget cr-solicitation" data-widget-name="cr-solicitation"> */}
-      {/* <div data-hook="cr-solicitation" className="a-section cr-solicitation">
-          <h3 data-hook="solicitation-title" className="a-spacing-micro">Valorar este producto</h3>
-          <div data-hook="share-your-thoughts-text" id="dp-summary-share-your-thoughts" className="a-spacing-medium">
-            Comparte tu opinión con otros clientes
-          </div>
-          <div>
-            <span className="a-button a-button-base writeReviewButton cm-cr-button-wide" id="a-autoid-47">
-              <span className="a-button-inner">
-                <a href="https://www.amazon.es/review/create-review/ref=cm_cr_othr_d_wr_but_top?ie=UTF8&amp;channel=glance-detail&amp;asin=8408197401" data-hook="write-review-button" className="a-button-text" role="button" id="a-autoid-47-announce">
-                  Escribir mi opinión
-                </a>
-              </span>
-            </span>
-          </div>
-        </div> */}
-      {/* </span> */}
       <hr aria-hidden="true" className="a-spacing-top-medium a-divider-normal" />
     </div>
   );

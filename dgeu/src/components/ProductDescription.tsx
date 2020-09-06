@@ -12,7 +12,6 @@ const ProductDescription = ({ flapNote, backCover, biography }: IProps) => {
 
   return (
     <div id="editorialReviews_feature_div" className="celwidget" data-feature-name="editorialReviews" data-csa-c-id="hun84h-ygovmj-bbfwob-awt0d4" data-cel-widget="editorialReviews_feature_div">
-      {/* <div className="a-divider a-divider-section"><div className="a-divider-inner"></div></div> */}
       <h2>Descripción del producto</h2>
       <div className="a-section a-spacing-small a-padding-base">
         <div aria-live="polite" className="a-expander-container a-expander-extend-container">

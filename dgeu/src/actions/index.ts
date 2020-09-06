@@ -25,11 +25,8 @@ export const acSetActiveTab = (activeTab: number) => {
  * Simulate to load data from an external service
  */
 export const opeLoadData = () => (dispatch: Dispatch) => {
-  // TODO manromero delete
-  dispatch(acEndLoadData());
-  // TODO manromero use
-  // dispatch(acIniLoadData());
-  // setTimeout(() => {
-  //   dispatch(acEndLoadData());
-  // }, 1500);
+  dispatch(acIniLoadData());
+  setTimeout(() => {
+    dispatch(acEndLoadData());
+  }, 1000);
 }

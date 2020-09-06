@@ -159,9 +159,6 @@ const BuyBox = ({ priceFormats }: IProps) => {
                           </span>
                         </label>
                       </div>
-                      {/* <span className="prime-bbop-logo">
-                        <img src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/prime_logo_detailpage._CB485945765_.png" />
-                      </span> */}
                     </div>
                     <div id="primePopoverContent" style={{ display: "none" }}>
                       <img src="./Yo, Julia_ Premio Planeta 2018 Autores Españoles e Iberoamericanos_ Amazon.es_ Posteguillo, Santiago_ Libros_files/PremiumLogoSmallTest._CB485943203_.png" alt="Amazon Prime" id="prime-bbop-logo" />

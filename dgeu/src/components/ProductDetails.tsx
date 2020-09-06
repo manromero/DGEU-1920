@@ -24,9 +24,7 @@ const ProductDetails = ({ pages, isbn10, isbn13, dimensions, weight, publisher, 
   return (
     <div id="detailBullets_feature_div" >
       <div id="detailBulletsWrapper_feature_div" >
-        {/* <hr className="a-divider-normal bucketDivider" /> */}
         <h2>Detalles del producto</h2>
-        {/* <span className="disclaim"></span> */}
         <div id="detailBullets_feature_div">
           <ul className="a-unordered-list a-nostyle a-vertical a-spacing-none detail-bullet-list">
             <li>

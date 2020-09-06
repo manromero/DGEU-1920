@@ -2,8 +2,6 @@ import { createUseStyles } from 'react-jss'
 
 const tabActive = {
   borderBottomStyle: "solid",
-  // borderBottomWidth: "1px",
-  // borderColor: "#e7e7e7",
   color: "#da9804",
   borderBottomWidth: "5px",
   paddingBottom: '10px',
@@ -14,9 +12,6 @@ const tabActive = {
 const tabHeaderButton = {
   backgroundColor: "#FFF",
   border: "none",
-  // borderStyle: "solid",
-  // borderWidth: "1px",
-  // borderColor: "#e7e7e7",
   margin: "0px",
   outline: "none",
   cursor: "pointer",
