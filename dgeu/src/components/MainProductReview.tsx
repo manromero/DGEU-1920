@@ -5,9 +5,10 @@ import { calculateStartsClass } from '../commons/utils';
 interface IProps {
   numberOpinions: number;
   rating: number;
+  acSetActiveTab: (activeTab: number) => void;
 }
 
-const MainProductReview = ({ rating, numberOpinions }: IProps) => {
+const MainProductReview = ({ rating, numberOpinions, acSetActiveTab }: IProps) => {
 
   const startIcon = calculateStartsClass(rating);
 
@@ -18,11 +19,7 @@ const MainProductReview = ({ rating, numberOpinions }: IProps) => {
         <span>
           <span title={`${rating} de 5 estrellas`}>
             <span>
-              <a onClick={() => {
-                if (document.getElementById('reviewsMedley')) {
-                  document.getElementById('reviewsMedley')!.scrollIntoView()
-                }
-              }}>
+              <a onClick={() => acSetActiveTab(3)}>
                 <i className={`a-icon a-icon-star ${startIcon}`}>
                   <span className="a-icon-alt">{rating} de 5 estrellas</span>
                 </i>
@@ -33,11 +30,7 @@ const MainProductReview = ({ rating, numberOpinions }: IProps) => {
           </span>
         </span>
         <span>
-          <a onClick={() => {
-            if (document.getElementById('reviewsMedley')) {
-              document.getElementById('reviewsMedley')!.scrollIntoView()
-            }
-          }}>
+          <a onClick={() => acSetActiveTab(3)}>
             <span className={classes.ratings}>
               {' '}{numberOpinions} valoraciones
             </span>

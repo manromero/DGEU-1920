@@ -5,37 +5,46 @@ const CustomerReviews = () => {
   const [howToExpanded, setHowToExpanded] = useState(false);
 
   return (
-    <div className="a-fixed-left-grid-col a-col-left" style={{ width: "300px", marginLeft: "-300px", float: "left" }}>
-      <div className="a-row">
-        <h2>Opiniones de clientes</h2>
-      </div>
-      <div className="a-section a-spacing-none a-spacing-top-mini cr-widget-ACR">
-        <div className="a-fixed-left-grid AverageCustomerReviews a-spacing-small">
-          <div className="a-fixed-left-grid-inner" style={{ paddingLeft: "105px" }}>
-            <div className="a-fixed-left-grid-col a-col-left" style={{ width: "105px", marginLeft: "-105px", float: "left" }}>
-              <i data-hook="average-star-rating" className="a-icon a-icon-star-medium a-star-medium-4-5 averageStarRating">
-                <span className="a-icon-alt">4,5 de 5 estrellas</span>
-              </i>
-            </div>
-            <div className="a-fixed-left-grid-col aok-align-center a-col-right" style={{ paddingLeft: "0%", float: "left" }}>
-              <div className="a-row">
+    <div className="a-fixed-left-grid-col a-col-left" style={{}}>
+      <h2>Opiniones de clientes</h2>
+      <div>
+        <div className="" style={{ float: "left" }}>
+          <div className="a-fixed-left-grid AverageCustomerReviews a-spacing-small">
+            <div style={{ paddingLeft: "105px" }}>
+              <div className="a-fixed-left-grid-col a-col-left" style={{ width: "105px", marginLeft: "-105px", float: "left" }}>
+                <i data-hook="average-star-rating" className="a-icon a-icon-star-medium a-star-medium-4-5 averageStarRating">
+                  <span className="a-icon-alt">4,5 de 5 estrellas</span>
+                </i>
+              </div>
+              <div className="a-fixed-left-grid-col aok-align-center a-col-right" style={{ paddingLeft: "0%", float: "left" }}>
                 <span className="a-size-base a-nowrap">
                   <span data-hook="rating-out-of-text" className="a-size-medium a-color-base">4,5 de 5</span>
                 </span>
               </div>
             </div>
           </div>
-        </div>
-        <div data-hook="total-review-count" className="a-row a-spacing-medium averageStarRatingNumerical">
-          <span className="a-size-base a-color-secondary">
-            990 valoraciones de clientes
+          <div data-hook="total-review-count" className="a-spacing-medium averageStarRatingNumerical">
+            <span className="a-size-base a-color-secondary">
+              990 valoraciones de clientes
           </span>
+          </div>
+        </div>
+        <div style={{ float: "right" }}>
+          <div>
+            <span className="a-button a-button-base writeReviewButton cm-cr-button-wide" id="a-autoid-47">
+              <span className="a-button-inner">
+                <a href="https://www.amazon.es/review/create-review/ref=cm_cr_othr_d_wr_but_top?ie=UTF8&amp;channel=glance-detail&amp;asin=8408197401" data-hook="write-review-button" className="a-button-text" role="button" id="a-autoid-47-announce">
+                  Escribir mi opinión
+                </a>
+              </span>
+            </span>
+          </div>
         </div>
       </div>
       <span className="cr-widget-Histogram">
         <div className="a-fixed-left-grid a-spacing-none">
-          <div className="a-fixed-left-grid-inner" style={{ paddingLeft: "280px" }}>
-            <div className="a-fixed-left-grid-col a-col-left" style={{ width: "280px", marginLeft: "-280px", float: "left" }}>
+          <div>
+            <div className="a-fixed-left-grid-col a-col-left">
               <span className="a-declarative" data-action="reviews:filter-action:push-state" >
                 <table id="histogramTable" className="a-normal a-spacing-none" role="presentation"></table>
                 <table id="histogramTable" className="a-normal a-align-center a-spacing-base">
@@ -161,7 +170,7 @@ const CustomerReviews = () => {
             </div>
           </div>
         </div>
-        <div aria-live="polite" className="a-row a-expander-container a-spacing-top-small a-expander-inline-container">
+        <div aria-live="polite" className="a-expander-container a-spacing-top-small a-expander-inline-container">
           <a className="a-expander-header a-declarative a-expander-inline-header a-link-expander" onClick={() => setHowToExpanded(!howToExpanded)}>
             <i className="a-icon a-icon-expand"></i>
             <span className="a-expander-prompt">¿Cómo calcula Amazon las valoraciones?</span>
@@ -173,28 +182,7 @@ const CustomerReviews = () => {
           ) : null}
         </div>
       </span>
-      <hr aria-hidden="true" className="a-spacing-large a-spacing-top-large a-divider-normal" />
-      <span className="cr-lazy-widget cr-summarization-attributes" data-widget-name="cr-summarization-attributes">
-        <span className="cr-widget-SummaryAttribute" data-hook="cr-widget-SummaryAttribute"></span>
-      </span>
-      <span className="cr-lazy-widget cr-solicitation" data-widget-name="cr-solicitation">
-        <div data-hook="cr-solicitation" className="a-section cr-solicitation">
-          <h3 data-hook="solicitation-title" className="a-spacing-micro">Valorar este producto</h3>
-          <div data-hook="share-your-thoughts-text" id="dp-summary-share-your-thoughts" className="a-row a-spacing-medium">
-            Comparte tu opinión con otros clientes
-          </div>
-          <div className="a-row">
-            <span className="a-button a-button-base writeReviewButton cm-cr-button-wide" id="a-autoid-47">
-              <span className="a-button-inner">
-                <a href="https://www.amazon.es/review/create-review/ref=cm_cr_othr_d_wr_but_top?ie=UTF8&amp;channel=glance-detail&amp;asin=8408197401" data-hook="write-review-button" className="a-button-text" role="button" id="a-autoid-47-announce">
-                  Escribir mi opinión
-                </a>
-              </span>
-            </span>
-          </div>
-        </div>
-      </span>
-      <hr aria-hidden="true" className="a-spacing-extra-large a-spacing-top-extra-large a-divider-normal" />
+      <hr aria-hidden="true" className="a-spacing-top-medium a-divider-normal" />
     </div>
   );
 }

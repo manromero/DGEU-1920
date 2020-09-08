@@ -26,7 +26,11 @@ const ReviewsCustomers = ({ customerReviews }: IProps) => {
 
   return (
     <span className="cr-widget-FocalReviews" data-hook="cr-widget-FocalReviews">
-      <a id="customer-reviews-content" aria-label="Reseñas más importantes" className="a-link-normal celwidget" href="https://www.amazon.es/Yo-Julia-Planeta-Espa%C3%B1oles-Iberoamericanos/dp/8408197401/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IKO067U954NA&amp;dchild=1&amp;keywords=yo+julia&amp;qid=1598543175&amp;sprefix=yo+julia%2Caps%2C210&amp;sr=8-1#" data-csa-c-id="mo7j3r-rkgnlc-jklna0-ij075d" data-cel-widget="customer-reviews-content"></a>
+      <div id="reviews-medley-global-expand-head" data-hook="reviews-medley-global-head" className="a-section global-reviews-header">
+        <h3 data-hook="dp-global-reviews-header" className="a-spacing-base">
+          Reseñas Nacionales
+        </h3>
+      </div>
       <div id="cm-cr-dp-review-header" className="a-section a-spacing-small"></div>
       <div id="cm-cr-dp-review-sort-type" data-reftag="cm_cr_dp_d_fltrs_srt" className="a-section a-spacing-small">
         <span className="a-declarative" data-action="reviews:filter-action:change" >

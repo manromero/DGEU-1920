@@ -11,7 +11,7 @@ const mapStateToProps = (state: IInitialState) => ({
 const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators(
     {
-      opeLoadData: opeLoadData
+      opeLoadData
     },
     dispatch
   );

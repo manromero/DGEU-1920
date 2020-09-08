@@ -1,6 +1,6 @@
 import { IInitialState, initialState } from '../state';
 import { AnyAction } from 'redux';
-import { AC_SET_PRODUCT_SELECTED, AC_INI_LOAD_DATA, AC_END_LOAD_DATA } from '../actions';
+import { AC_SET_PRODUCT_SELECTED, AC_INI_LOAD_DATA, AC_END_LOAD_DATA, AC_SET_ACTIVE_TAB } from '../actions';
 import dataLoaded from '../state/data';
 
 const reducer = (state: IInitialState = initialState, action: AnyAction) => {
@@ -18,6 +18,8 @@ const reducer = (state: IInitialState = initialState, action: AnyAction) => {
         }
       })
       return { ...state, priceFormats: newPriceFormats };
+    case AC_SET_ACTIVE_TAB:
+      return { ...state, activeTab: action.activeTab };
     default:
       return state;
   }
