@@ -23,6 +23,6 @@ A este producto base se le ha aplicado un ciclo Lean UX que aporte valor al prod
 
 ```npm start```
 
-*La ejecución en modo desarrollo lanzará la aplicación en local en el puerto 3000, para visualizar abrala en el navegador http://localhost:3000 *
+*La ejecución en modo desarrollo lanzará la aplicación en local en el puerto 3000, para visualizar ábrala en el navegador http://localhost:3000*
 
 *Si deseamos construir una versión para ejecutar en entornos de producción, será necesario realizar una construcción del proyecto con el comando "npm run build", e introducir los ficheros generados en un servidor web para que puedan ser accesibles*
