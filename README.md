@@ -7,7 +7,7 @@ Se ha construido la página de detalle de un producto Amazon con tecnología Rea
 A este producto base se le ha aplicado un ciclo Lean UX que aporte valor al producto desde una perpestiva de mejora de la experiencia de resultado. Como resultado de este ciclo de mejora se ha desarrollado una caracterítica.
 
 * La versión 1 del proyecto contiene la versión base del producto.
-* La versión 1.1 del proyecto contiene la característica aplicada sobre el producto base. Esta versión se ha subido a la plataforma Heroku para facilitar su acceso: https://dgeu1920.herokuapp.com/
+* La versión 2 del proyecto contiene la característica aplicada sobre el producto base. Esta versión se ha subido a la plataforma Heroku para facilitar su acceso: https://dgeu1920.herokuapp.com/
 
 ## Ejecución del proyecto
 
